@@ -2,7 +2,7 @@
 This repo contains the code for the Smart Home Simulator done for the SOEN343 course
 
 
-## Team Members and Role - Phaes I
+## Team Members and Role - Phase I
 
 | Name                  | Role                 | ID       |
 | --------------------- | -------------------- | -------- |
@@ -23,3 +23,8 @@ The intricacies and difficulties associated with programming smart home systems 
 |The impact of which is         |The results of which is a decline in consumer satisfaction with smart home technologies and an increase in complexity and costs.        |
 |A successful solution would be |Simplifying the development process, improving the user experience, cutting costs, and hastening the adoption of smart home technologies|
 |                               |would all be beneficial solutions.                                                                                                      |
+
+| The problem of                 |                       |
+| Affects                        |                       |
+| The impact of which is         |                       |
+| A successful solution would be |                       |
