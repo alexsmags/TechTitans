@@ -28,3 +28,26 @@ The intricacies and difficulties associated with programming smart home systems 
 
 ## Product Postion Statement:
 Among the many sophisticated software tools available on the market, the Smart Home Simulator is unique in that it allows users to manage and simulate complex smart home setups. This platform is specially made for people who want to learn about smart home technologies practically as well as theoretically. It meets educational, developmental, and research demands in smart home business by providing an in-depth investigation of device interactions and behaviors within a smart home, hence filling a void in the market for comprehensive, interactive, and customisable simulation.
+
+\| Header                         | Description                                                                                                                      |
+|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| **For**                        | Tech enthusiasts, educators, and researchers.                                                                                    |
+| **Who**                        | Need a flexible platform to research and evaluate smart house technologies.                                                      |
+| **The Smart Home Simulator**   | Is a comprehensive simulation software suite.                                                                                    |
+| **That**                       | Provides a thorough and accurate simulation of smart home ecosystem.                                                             |
+| **Unlike**                     | Less complicated teaching resources or simple simulation software.                                                               |
+| **Our product**                | Offers a highly customizable, immersive, and interactive environment that promotes deep learning and innovation in smart home technology. |
+
+## Product Overview:
+### Product Perspective:-
+The Smart Home Simulator is intended to function as a stand-alone, self-contained unit. Although it can integrate with a variety of IoT and smart home devices, its fundamental operations do not rely on external systems. These systems and gadgets can communicate as they would in a user's surroundings thanks to the simulator, which offers a simulated environment. Similar to other smart home management solutions, it enables the orchestration of devices and the simulation of household interactions with IoT systems; however, what sets it apart is its focus on education and experimentation.
+
+### Assumptions and Dependancies:-
+| Assumptions | Dependencies |
+|-------------|--------------|
+| There will be sensors in all doors and windows and motion detectors in each room. | The system's security features, like alerts and mode functions, depend on these sensors. |
+| The system allows users to set an “away mode”. | Notifications and automated responses rely on the system being set to this mode. |
+| Multiple heating zones exist in the home, controlled by individual thermostats. | The effectiveness of the Smart Heating Module depends on the presence and functionality of these thermostats. |
+| The system can detect when the house is unoccupied. | Temperature adjustments and energy savings are contingent on this occupancy detection feature |
+| Notifications are sent for unusual temperature changes. | The safety and maintenance features require the system to monitor and accurately report temperature anomalies. |
+
