@@ -52,5 +52,5 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 | Notifications are sent for unusual temperature changes. | The safety and maintenance features require the system to monitor and accurately report temperature anomalies. |
 
 
-![##Domain Model](https://cdn.discordapp.com/attachments/1199789503007690815/1205263740405153864/SOEN343DomainModel.jpg?ex=65d7bc54&is=65c54754&hm=35180d3d57c21b00e1b70157a44494fc70cded5d60d3da733824a12583dcac7f&)
+![Domain Model](https://cdn.discordapp.com/attachments/1199789503007690815/1205263740405153864/SOEN343DomainModel.jpg?ex=65d7bc54&is=65c54754&hm=35180d3d57c21b00e1b70157a44494fc70cded5d60d3da733824a12583dcac7f&)
 
