@@ -93,7 +93,6 @@
     <Compile Include="Converters\BooleanToOpenClosedConverter.cs" />
     <Compile Include="Converters\InverseBooleanConverter .cs" />
     <Compile Include="Converters\NullToBoolConverter.cs" />
-    <Compile Include="Converters\WindowStatusConverter.cs" />
     <Compile Include="Models\HouseModels\Director.cs" />
     <Compile Include="Models\HouseModels\Door.cs" />
     <Compile Include="Models\HouseModels\House.cs" />
