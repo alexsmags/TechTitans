@@ -1,0 +1,107 @@
+﻿<Window x:Class="Home_Simulator.Components.AddUserDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:Home_Simulator.Components"
+        xmlns:usertype="clr-namespace:Home_Simulator.Models.ProfileModels"
+        mc:Ignorable="d"
+        Title="Add User" 
+        MaxHeight="370" MaxWidth="300"
+        MinHeight="370" MinWidth="300">
+
+    <Window.Resources>
+
+        <ObjectDataProvider 
+            x:Key="userTypeEnum" 
+            MethodName="GetValues"
+            ObjectType="{x:Type sys:Enum}">
+
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="usertype:UserType"/>
+            </ObjectDataProvider.MethodParameters>
+            
+        </ObjectDataProvider>
+        
+        <Style x:Key="InputTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="3"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+
+        <Style x:Key="InputComboBoxStyle" TargetType="ComboBox">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="3"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+
+        <Style x:Key="FormButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Background" Value="Gray"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Content="{TemplateBinding Content}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#beb5eb" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#beb5eb" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0" Header="Name" Margin="5" BorderThickness="0">
+            <TextBox Style="{StaticResource InputTextBoxStyle}" Name="NameTextBox"  Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}" />
+        </GroupBox>
+
+        <GroupBox Grid.Row="1" Header="Age" Margin="5" BorderThickness="0">
+            <TextBox Style="{StaticResource InputTextBoxStyle}" Name="AgeTextBox"  Text="{Binding UserAge, UpdateSourceTrigger=PropertyChanged}"/>
+        </GroupBox>
+
+        <GroupBox Grid.Row="2" Header="User Profile" Margin="5" BorderThickness="0">
+            <ComboBox Style="{StaticResource InputComboBoxStyle}" Name="UserTypeComboBox" 
+                      ItemsSource="{Binding Source={StaticResource userTypeEnum}}" SelectedItem="{Binding UserType, UpdateSourceTrigger=PropertyChanged}" />
+        </GroupBox>
+        
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource FormButtonStyle}" 
+                Content="Add User" Margin="5" VerticalAlignment="Bottom" FontWeight="Bold" Click="OnAddUserClick" Height="40"/>
+
+        <TextBlock x:Name="ErrorMessage"
+                       Grid.Row="4"
+                       Text="Incorrect Input"
+                       Foreground="Red"
+                       Visibility="Collapsed"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       FontWeight="Bold"
+                       Margin="5,10,0,0"/>
+    </Grid>
+</Window>
