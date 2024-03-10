@@ -1,0 +1,5 @@
+User: name=Dad, age=100, UserType=Father
+User: name=Child, age=3, UserType=Child
+User: name=Stranger, age=0, UserType=Stranger
+User: name=Mom, age=31, UserType=Mother
+User: name=Guest, age=3, UserType=Guest
