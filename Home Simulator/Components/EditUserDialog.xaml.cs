@@ -44,7 +44,9 @@ namespace Home_Simulator.Components
                 _simulationViewModel.InvokeAccess();
                 _simulationViewModel.LightPermissionManager.UpdateLightPermissionsForAllUsers(_simulationViewModel.Rooms, _simulationViewModel.CurrentUser);
             }
-            ProfileReaderService.SaveUsers(_simulationViewModel.users);
+
+            var profileReaderService = ProfileReaderService.Instance;
+            profileReaderService.SaveUsers(_simulationViewModel.users);
         }
     }
 }

@@ -38,7 +38,9 @@ namespace Home_Simulator.Commands
                     User userToRemove = dialog.SelectedUser;
 
                     _simulationViewModel.users.Remove(userToRemove);
-                    ProfileReaderService.RemoveUser(userToRemove);
+
+                    var profileReaderService = ProfileReaderService.Instance;
+                    profileReaderService.RemoveUser(userToRemove);
             }
 
         }

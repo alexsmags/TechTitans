@@ -9,11 +9,35 @@ using System.Threading.Tasks;
 
 namespace Home_Simulator.ProfileReader
 {
-    public static class ProfileReaderService
+    // Singleton Design Pattern Applied Here
+    public class ProfileReaderService
     {
+        private static ProfileReaderService instance = null;
+        private static readonly object padlock = new object();
+
         private static string _filePath = @"..\..\ProfileReader\ProfileList.txt";
 
-        public static ObservableCollection<User> LoadUsers()
+        public ProfileReaderService() { }
+
+        public static ProfileReaderService Instance
+        {
+            get
+            {
+                lock(padlock)
+                {
+                    if (instance == null)
+                    {
+                        instance = new ProfileReaderService();
+                    }
+
+                    return instance;
+                }
+                
+            }
+        }
+
+
+        public ObservableCollection<User> LoadUsers()
         {
             if (!File.Exists(_filePath))
             {
@@ -54,7 +78,7 @@ namespace Home_Simulator.ProfileReader
             return users;
         }
 
-        public static void SaveUsers(ObservableCollection<User> users)
+        public void SaveUsers(ObservableCollection<User> users)
         {
             List<string> lines = users.Select(user =>
                 $"User: name={user.Name}, age={user.Age}, UserType={user.Type?.ToString() ?? "None"}").ToList();
@@ -62,7 +86,7 @@ namespace Home_Simulator.ProfileReader
             File.WriteAllLines(_filePath, lines);
         }
 
-        public static void AddUser(User user)
+        public void AddUser(User user)
         {
             string userLine = $"User: name={user.Name}, age={user.Age}, UserType={user.Type?.ToString() ?? "None"}";
 
@@ -73,7 +97,7 @@ namespace Home_Simulator.ProfileReader
 
         }
 
-        public static void RemoveUser(User user)
+        public void RemoveUser(User user)
         {
             var lines = File.ReadAllLines(_filePath).ToList();
 

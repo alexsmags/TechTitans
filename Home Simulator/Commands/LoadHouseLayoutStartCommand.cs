@@ -38,7 +38,8 @@ namespace Home_Simulator.Commands
                 simulationViewModel.LocationService.Rooms = roomList;
                 simulationViewModel.LightPermissionManager.UpdateLightPermissionsForAllUsers(simulationViewModel.Rooms, simulationViewModel.CurrentUser);
 
-                simulationViewModel.users = ProfileReaderService.LoadUsers();
+                var profileReaderService = ProfileReaderService.Instance;
+                simulationViewModel.users = profileReaderService.LoadUsers();
 
                 _navigationStore.CurrentViewModel = simulationViewModel;
             }

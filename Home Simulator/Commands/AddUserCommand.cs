@@ -36,7 +36,9 @@ namespace Home_Simulator.Commands
                 UserType userType = (UserType) dialog.UserType;
 
                 _simulationViewModel.users.Add(new User(userName, userAge, userType));
-                ProfileReaderService.AddUser(new User(userName, userAge, userType));
+
+                var profileReaderService = ProfileReaderService.Instance;
+                profileReaderService.AddUser(new User(userName, userAge, userType));
             }
 
         }
