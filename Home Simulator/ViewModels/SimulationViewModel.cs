@@ -73,6 +73,14 @@ namespace Home_Simulator.ViewModels
 
         public ICommand EditUsersCommand { get; private set; }
 
+        public ICommand ToggleLightCommand { get; private set; }
+
+        public ICommand ToggleDoorCommand { get; private set; }
+
+        public ICommand ToggleOpenCloseWindowCommand { get; private set; }
+
+        public ICommand ToggleBlockUnblockWindowCommand { get; private set; }
+
         #endregion
 
         #region Properties
@@ -226,6 +234,11 @@ namespace Home_Simulator.ViewModels
             AddUserCommand = new AddUserCommand(this);
             RemoveUserCommand = new RemoveUserCommand(this);
             EditUsersCommand = new EditUsersCommand(this);
+
+            ToggleLightCommand = new ToggleLightCommand();
+            ToggleDoorCommand = new ToggleDoorCommand();
+            ToggleOpenCloseWindowCommand = new ToggleOpenCloseWindowCommand();
+            ToggleBlockUnblockWindowCommand = new ToggleBlockUnblockWindowCommand();
 
 
             OutsideTemperature = "Temperature: 15°C";

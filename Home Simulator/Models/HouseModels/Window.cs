@@ -85,25 +85,25 @@ namespace Home_Simulator.Models.HouseModels
 
         public void OpenWindow()
         {
-            _isOpen = true;
+            IsOpen = true;
             WindowImage = new BitmapImage(new Uri(@"\..\..\Images\HouseObjectIcons\window_open.png", UriKind.RelativeOrAbsolute));
         }
 
         public void CloseWindow()
         {
-            _isOpen = false;
+            IsOpen = false;
             WindowImage = new BitmapImage(new Uri(@"\..\..\Images\HouseObjectIcons\window_closed.png", UriKind.RelativeOrAbsolute));
         }
 
         public void BlockWindow()
         {
-            _isBlocked = true;
+            IsBlocked = true;
             WindowImage = new BitmapImage(new Uri(@"\..\..\Images\HouseObjectIcons\blocked_icon.png", UriKind.RelativeOrAbsolute));
         }
 
         public void UnBlockWindow()
         {
-            _isBlocked = false;
+            IsBlocked = false;
 
             if (_isOpen)
             {

@@ -61,10 +61,10 @@
     <Compile Include="Commands\ChangeUserCommand.cs" />
     <Compile Include="Commands\ChangeUserLocationCommand.cs" />
     <Compile Include="Commands\EditUsersCommand.cs" />
-    <Compile Include="Commands\HouseObjectCommands\BlockWindowCommand.cs" />
-    <Compile Include="Commands\HouseObjectCommands\DoorCloseCommand.cs" />
-    <Compile Include="Commands\HouseObjectCommands\DoorOpenCommand.cs" />
-    <Compile Include="Commands\HouseObjectCommands\UnBlockWindowCommand.cs" />
+    <Compile Include="Commands\HouseObjectCommands\ToggleBlockUnblockWindowCommand.cs" />
+    <Compile Include="Commands\HouseObjectCommands\ToggleDoorCommand.cs" />
+    <Compile Include="Commands\HouseObjectCommands\ToggleLightCommand.cs" />
+    <Compile Include="Commands\HouseObjectCommands\ToggleOpenCloseWindowCommand.cs" />
     <Compile Include="Commands\HouseObjectCommands\WindowCloseCommand.cs" />
     <Compile Include="Commands\HouseObjectCommands\WindowOpenCommand.cs" />
     <Compile Include="Commands\RemoveUserCommand.cs" />
@@ -173,8 +173,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Commands\CommandBase.cs" />
-    <Compile Include="Commands\HouseObjectCommands\LightOffCommand.cs" />
-    <Compile Include="Commands\HouseObjectCommands\LightOnCommand.cs" />
     <Compile Include="Commands\LoadHouseLayoutStartCommand.cs" />
     <Compile Include="Components\ModuleTab.xaml.cs">
       <DependentUpon>ModuleTab.xaml</DependentUpon>

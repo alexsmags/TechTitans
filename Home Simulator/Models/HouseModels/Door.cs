@@ -57,13 +57,13 @@ namespace Home_Simulator.Models.HouseModels
 
         public void OpenDoor()
         {
-            _isOpen = true;
+            IsOpen = true;
             DoorImage = new BitmapImage(new Uri(@"\..\..\Images\HouseObjectIcons\door_open.png", UriKind.RelativeOrAbsolute));
         }
 
         public void CloseDoor()
         {
-            _isOpen = false;
+            IsOpen = false;
             DoorImage = new BitmapImage(new Uri(@"\..\..\Images\HouseObjectIcons\door_closed.png", UriKind.RelativeOrAbsolute));
         }
 

@@ -155,7 +155,7 @@
                                                     <StackPanel Orientation="Horizontal">
                                                         <Image Source="{Binding LightImage}" Width="20" Height="20" VerticalAlignment="Center" Margin="0,0,10,0"/>
                                                         <TextBlock Text="On/Off:" Margin="0,0,3,0"></TextBlock>
-                                                        <CheckBox Content="{Binding Name}" IsChecked="{Binding On, Mode=TwoWay}" VerticalAlignment="Center" IsEnabled="{Binding UserHasAccess}"/>
+                                                        <CheckBox Content="{Binding Name}" Command="{Binding DataContext.ToggleLightCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}"  VerticalAlignment="Center" IsEnabled="{Binding UserHasAccess}"/>
                                                     </StackPanel>
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
@@ -167,7 +167,7 @@
                                                     <StackPanel Orientation="Horizontal">
                                                         <Image Source="{Binding DoorImage}" Width="20" Height="20" VerticalAlignment="Center" Margin="0,0,10,0"/>
                                                         <TextBlock Text="Open/Close:" Margin="0,0,3,0"></TextBlock>
-                                                        <CheckBox Content="{Binding Name}" IsChecked="{Binding IsOpen, Mode=TwoWay}" VerticalAlignment="Center" IsEnabled="{Binding DataContext.HasAccessToDoors, RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"/>
+                                                        <CheckBox Content="{Binding Name}" Command="{Binding DataContext.ToggleDoorCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}" VerticalAlignment="Center" IsEnabled="{Binding DataContext.HasAccessToDoors, RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"/>
                                                     </StackPanel>
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
@@ -179,9 +179,9 @@
                                                     <StackPanel Orientation="Horizontal" IsEnabled="{Binding DataContext.HasAccessToWindows, RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}">
                                                         <Image Source="{Binding WindowImage}" Width="20" Height="20" VerticalAlignment="Center" Margin="0,0,10,0"/>
                                                         <TextBlock Text="Open/Close:" Margin="0,0,3,0"></TextBlock>
-                                                        <CheckBox IsChecked="{Binding IsOpen, Mode=TwoWay}" VerticalAlignment="Center" IsEnabled="{Binding IsBlocked, Converter={StaticResource InverseBooleanConverter}}"/>
+                                                        <CheckBox Command="{Binding DataContext.ToggleOpenCloseWindowCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}" VerticalAlignment="Center" IsEnabled="{Binding IsBlocked, Converter={StaticResource InverseBooleanConverter}}"/>
                                                         <TextBlock Text="Block:" Margin="10,0,3,0"></TextBlock>
-                                                        <CheckBox IsChecked="{Binding IsBlocked, Mode=TwoWay}" VerticalAlignment="Center" IsEnabled="{Binding DataContext.HasAccessToWindows, RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"/>
+                                                        <CheckBox Command="{Binding DataContext.ToggleBlockUnblockWindowCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}" VerticalAlignment="Center" IsEnabled="{Binding DataContext.HasAccessToWindows, RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"/>
                                                     </StackPanel>
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>

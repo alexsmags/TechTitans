@@ -72,13 +72,13 @@ namespace Home_Simulator.Models
 
         public void SwitchOn()
         {
-            _on = true;
+            On = true;
             LightImage = new BitmapImage(new Uri(@"\..\..\Images\HouseObjectIcons\lightbulb_on.png", UriKind.RelativeOrAbsolute));
         }
 
         public void SwitchOff()
         {
-            _on = false;
+            On = false;
             LightImage = new BitmapImage(new Uri(@"\..\..\Images\HouseObjectIcons\lightbulb_off.png", UriKind.RelativeOrAbsolute));
         }
 
