@@ -52,13 +52,16 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 | Notifications are sent for unusual temperature changes. | The safety and maintenance features require the system to monitor and accurately report temperature anomalies. |
 
 #### Context Diagram
-![Context Diagram](https://cdn.discordapp.com/attachments/1199789503007690815/1206128411798536192/image.png?ex=65dae19e&is=65c86c9e&hm=9c9da98748589a5ae4b0b4debc81b2765437f11de0d4829173da59fc06c9100a&)
+<img width="347" alt="Screenshot 2024-03-13 160430" src="https://github.com/alexsmags/TechTitans/assets/111084379/3d5d67de-448a-46a1-bdc4-07939908340f">
 
 #### Domain Model
-![Domain Model](https://cdn.discordapp.com/attachments/1199789503007690815/1206128359340245054/image.png?ex=65dae191&is=65c86c91&hm=a52b88530fe273440036a7ca3336eee295ddf8ad9f63d49e8a4a8bfde98d5338&)
+<img width="350" alt="image" src="https://github.com/alexsmags/TechTitans/assets/111084379/8ddc5d48-8f9d-4a73-8247-62866b71437e">
 
 
-## Team Members and Role - Phase II
+
+
+# - Phase II
+## Team Members and Role 
 
 | Name                  | Role                 | ID       |
 | --------------------- | -------------------- | -------- |
@@ -67,3 +70,30 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 | Mohamad Mounir Yassin | Use Cases/Simulation Context Activity Diagram/Unit Tests  | 40198854 |
 | Saikou Diallo         | Use Cases/Design Patterns                                 | 40191902 |
 | Patrick MacEachen     | Use Cases/Unit Testing                                    | 40209790 |
+
+### Use-case diagram for the whole system
+<img width="243" alt="Screenshot 2024-03-13 154354" src="https://github.com/alexsmags/TechTitans/assets/111084379/28b0ccaa-b81e-4f48-a291-41a4674bad4f">
+
+
+### Sequence diagrams for the Smart Home Core functionality (SHC) module 
+<img width="261" alt="Screenshot 2024-03-13 154531" src="https://github.com/alexsmags/TechTitans/assets/111084379/8eb93176-6d26-444d-9a45-92a94e18e20b">
+<img width="560" alt="Screenshot 2024-03-13 154638" src="https://github.com/alexsmags/TechTitans/assets/111084379/947c22be-f52a-4ba8-a37c-1135283dc74f">
+
+
+### State-machine diagram for the Context of the Simulation
+<img width="200" alt="Screenshot 2024-03-13 155207" src="https://github.com/alexsmags/TechTitans/assets/111084379/0143d54d-4cfb-453c-9948-587266d0dfa5">
+
+### Activity diagram for Context of the Simulation
+<img width="349" alt="Screenshot 2024-03-13 155656" src="https://github.com/alexsmags/TechTitans/assets/111084379/a65eabc2-fac9-4516-a19a-30dd0ef59b8e">
+
+### Singleton Design Pattern
+<img width="416" alt="Screenshot 2024-03-13 155822" src="https://github.com/alexsmags/TechTitans/assets/111084379/b77dd350-867d-4b71-8a81-7ee47bd17a45">
+
+### Builder Design Pattern
+<img width="803" alt="image" src="https://github.com/alexsmags/TechTitans/assets/111084379/281d764f-3f2a-4a0e-a4ef-1789085f83db">
+
+### Command Design Pattern
+<img width="715" alt="Screenshot 2024-03-13 160012" src="https://github.com/alexsmags/TechTitans/assets/111084379/f24219d3-fb61-47bc-8d7d-3852cf2ff02c">
+
+
+
