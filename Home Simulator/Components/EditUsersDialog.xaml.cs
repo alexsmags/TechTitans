@@ -20,14 +20,14 @@ namespace Home_Simulator.Components
     public partial class EditUsersDialog : Window
     {
         public User SelectedUser => UsersListBox.SelectedItem as User;
-        private SimulationViewModel _simulationViewModel;   
+        private SimulationViewModel _simulationViewModel;
 
         public EditUsersDialog(SimulationViewModel simulationViewModel)
         {
             InitializeComponent();
             this.DataContext = simulationViewModel;
             UsersListBox.ItemsSource = simulationViewModel.users;
-            _simulationViewModel=simulationViewModel;
+            _simulationViewModel = simulationViewModel;
         }
 
         private void OnOkButtonClick(object sender, RoutedEventArgs e)
