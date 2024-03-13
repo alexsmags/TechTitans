@@ -65,8 +65,6 @@
     <Compile Include="Commands\HouseObjectCommands\ToggleDoorCommand.cs" />
     <Compile Include="Commands\HouseObjectCommands\ToggleLightCommand.cs" />
     <Compile Include="Commands\HouseObjectCommands\ToggleOpenCloseWindowCommand.cs" />
-    <Compile Include="Commands\HouseObjectCommands\WindowCloseCommand.cs" />
-    <Compile Include="Commands\HouseObjectCommands\WindowOpenCommand.cs" />
     <Compile Include="Commands\RemoveUserCommand.cs" />
     <Compile Include="Components\AddUserDialog.xaml.cs">
       <DependentUpon>AddUserDialog.xaml</DependentUpon>
