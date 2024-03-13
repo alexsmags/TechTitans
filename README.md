@@ -1,9 +1,9 @@
 # TechTitans
 This repo contains the code for the Smart Home Simulator done for the SOEN343 course
 
+# - Phase I
 
-## Team Members and Role - Phase I
-
+## Team Members and Role 
 | Name                  | Role                 | ID       |
 | --------------------- | -------------------- | -------- |
 | Alexander Smagorinski |Making Context Diagram/Review| 40190986 |
@@ -57,3 +57,13 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 #### Domain Model
 ![Domain Model](https://cdn.discordapp.com/attachments/1199789503007690815/1206128359340245054/image.png?ex=65dae191&is=65c86c91&hm=a52b88530fe273440036a7ca3336eee295ddf8ad9f63d49e8a4a8bfde98d5338&)
 
+
+## Team Members and Role - Phase II
+
+| Name                  | Role                 | ID       |
+| --------------------- | -------------------- | -------- |
+| Alexander Smagorinski | Use Cases/Frontend/Backend/Design Patterns                | 40190986 |
+| Cosmin Suna           | Use Cases/Simulation Context Stat-machine Diagram/Backend | 40125921 |
+| Mohamad Mounir Yassin | Use Cases/Simulation Context Activity Diagram/Unit Tests  | 40198854 |
+| Saikou Diallo         | Use Cases/Design Patterns                                 | 40191902 |
+| Patrick MacEachen     | Use Cases/Unit Testing                                    | 40209790 |
