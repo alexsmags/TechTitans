@@ -45,7 +45,7 @@ namespace Home_Simulator.Tests
 
             // Assert
             Assert.IsNull(_addUserDialog.DialogResult);
-            // Direct testing of UI element visibility (like ErrorMessage) is beyond the scope of this unit test example.
+
         }
     }
 }

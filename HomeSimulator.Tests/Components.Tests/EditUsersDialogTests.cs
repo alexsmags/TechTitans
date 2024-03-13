@@ -67,7 +67,7 @@ namespace Home_Simulator.Tests
             // Here we need to assert that the EditUserDialog was shown and that the items were refreshed
             // Since we cannot directly verify UI behavior in a unit test, we check that the DialogResult was set and that the Items were refreshed
             mockEditUserDialog.Verify(m => m.ShowDialog(), Times.Once);
-            // In a real unit test, you would need a way to verify that UsersListBox.Items.Refresh() was called
+
         }
 
 

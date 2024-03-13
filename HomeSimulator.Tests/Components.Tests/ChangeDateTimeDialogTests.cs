@@ -58,9 +58,6 @@ namespace Home_Simulator.Tests
             // Simulate setting the timeTextBox's Text.
             _dialog.SetTimeText(timeText);
 
-            // This assumes that the SetSelectedDate and SetTimeText methods are implemented in your ChangeDateTimeDialog
-            // to abstract away the direct interaction with the datePicker and timeTextBox.
-            // This is part of making the code more testable by avoiding direct UI manipulation in unit tests.
         }
 
     }
