@@ -71,9 +71,18 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 | Saikou Diallo         | Use Cases/Design Patterns                                 | 40191902 |
 | Patrick MacEachen     | Use Cases/Unit Testing                                    | 40209790 |
 
-## How to deploy Home Simulator
-1. git clone [repo]
-2. TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
+## How to deploy the Home Simulator Application
+
+### Clone this repo
+```bash
+git clone https://github.com/alexsmags/TechTitans
+```
+### Run the .exe
+```bash
+TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
+```
+
+## Diagrams
 
 ### Use-case diagram for the whole system
 <img width="243" alt="Screenshot 2024-03-13 154354" src="https://github.com/alexsmags/TechTitans/assets/111084379/28b0ccaa-b81e-4f48-a291-41a4674bad4f">
