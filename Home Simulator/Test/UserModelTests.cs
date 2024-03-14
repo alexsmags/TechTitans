@@ -1,21 +1,22 @@
-using NUnit.Framework;
+﻿using Home_Simulator.Models.ProfileModels;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Home_Simulator.Models.ProfileModels;
 
-namespace Test
+namespace Home_Simulator.Tests.Models.ProfileModels
 {
-    public class Tests
+    [TestFixture]
+    internal class UserModelTests
     {
         [SetUp]
         public void Setup()
         {
         }
 
-        public void TestChildUser()
+        public static void TestChildUser()
         {
             var user = new User("child", 1, UserType.Child);
             Assert.Multiple(() =>
