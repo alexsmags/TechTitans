@@ -133,7 +133,6 @@
                 Foreground="White" 
                 BorderThickness="0"
                 Cursor="Hand"
-                IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}"
                 />
             </StackPanel>
             <TextBlock Grid.Row="4" Text="{Binding OutsideTemperature}" Margin="5" FontWeight="Bold"/>
