@@ -145,6 +145,7 @@ namespace Home_Simulator.ViewModels
             }
         }
 
+        public List<(DateTime dateTime, double temperature)> OutsideTemperatureData { get; set; }
 
         public string CurrentTime
         {
