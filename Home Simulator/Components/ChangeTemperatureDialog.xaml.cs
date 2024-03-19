@@ -16,9 +16,9 @@ namespace Home_Simulator.Components
 {
     public partial class ChangeTemperatureDialog : Window
     {
-        public string SelectedTemperature => "Temperature: " + setTemperature.Value + "°C";
+        public double SelectedTemperature => setTemperature.Value;
 
-        public ChangeTemperatureDialog(string temperature)
+        public ChangeTemperatureDialog(double temperature)
         {
             InitializeComponent();
             UpdateTemperatureDisplay(); 

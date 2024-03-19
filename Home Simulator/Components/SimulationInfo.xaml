@@ -117,7 +117,7 @@
                     Foreground="White" 
                     BorderThickness="0"
                     Cursor="Hand" 
-                    IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}"/>        
+                    IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}"/>
             <StackPanel Grid.Row="3" Margin="5">
                 <TextBlock Text="Location:" FontWeight="Bold" HorizontalAlignment="Center"/>
                 <TextBlock Text="{Binding CurrentLocation.Name, FallbackValue='Please select a room'}" HorizontalAlignment="Center"/>
@@ -135,7 +135,18 @@
                 Cursor="Hand"
                 />
             </StackPanel>
-            <TextBlock Grid.Row="4" Text="{Binding OutsideTemperature}" Margin="5" FontWeight="Bold"/>
+            
+            <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Temperature: "></TextBlock>
+                <TextBlock>
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}{0} °C">
+                            <Binding Path="OutsideTemperature"/>
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+            </StackPanel>
+            
             <Button 
                 Command="{Binding ChangeTemperatureCommand}"
                 Style="{StaticResource ButtonWithoutMouseOver}"

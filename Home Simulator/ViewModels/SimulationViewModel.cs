@@ -31,7 +31,7 @@ namespace Home_Simulator.ViewModels
 
         private bool _hasAccessToWindows;
 
-        private string _outsideTemperature;
+        private double _outsideTemperature;
 
         private string _newZoneName;
 
@@ -135,7 +135,7 @@ namespace Home_Simulator.ViewModels
         #region Properties
         public bool CanEditUser => CurrentUser != null && users.Any();
 
-        public string OutsideTemperature
+        public double OutsideTemperature
         {
             get { return _outsideTemperature; }
             set 
@@ -320,7 +320,7 @@ namespace Home_Simulator.ViewModels
             ToggleBlockUnblockWindowCommand = new ToggleBlockUnblockWindowCommand();
 
 
-            OutsideTemperature = "Temperature: 15°C";
+            OutsideTemperature = 15;
 
             _timer = new DispatcherTimer
             {
