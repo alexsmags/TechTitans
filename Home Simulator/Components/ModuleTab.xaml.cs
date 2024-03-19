@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Home_Simulator.Models.HouseModels;
+using Home_Simulator.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,6 +35,72 @@ namespace Home_Simulator.Components
             chkMain.IsChecked = _isChecked;
 
             btnToggle.Content = _isChecked ? "None" : "All";
+        }
+
+        private void Expander_Expanded(object sender, RoutedEventArgs e)
+        {
+            // Find the parent ListBoxItem of the Expander
+            var item = FindParent<ListBoxItem>((FrameworkElement)sender);
+
+            // Check if the ListBoxItem is found and not already selected
+            if (item != null && !item.IsSelected)
+            {
+                // Set the item as selected
+                var listBox = FindParent<ListBox>(item);
+                listBox.SelectedItem = item.DataContext;
+            }
+        }
+
+        // Generic method to find a parent of a given control
+        public static T FindParent<T>(FrameworkElement child) where T : FrameworkElement
+        {
+            FrameworkElement parent = child;
+
+            while (parent != null)
+            {
+                if (parent is T correctlyTyped)
+                {
+                    return correctlyTyped;
+                }
+
+                parent = VisualTreeHelper.GetParent(parent) as FrameworkElement;
+            }
+
+            return null;
+        }
+
+        private void ComboBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            ComboBox comboBox = sender as ComboBox;
+            if (comboBox == null) return;
+
+            // Navigate up the visual tree to find the ListBoxItem
+            DependencyObject parent = comboBox;
+            while (parent != null && !(parent is ListBoxItem))
+            {
+                parent = VisualTreeHelper.GetParent(parent);
+            }
+
+            // Get the ListBoxItem
+            ListBoxItem listBoxItem = parent as ListBoxItem;
+            if (listBoxItem == null) return;
+
+            // Get the ListBox from the ListBoxItem
+            ListBox listBox = ItemsControl.ItemsControlFromItemContainer(listBoxItem) as ListBox;
+            if (listBox == null) return;
+
+            // Set the SelectedItem of the ListBox
+            listBox.SelectedItem = listBoxItem.DataContext;
+        }
+
+        private void Button_GiveFeedback(object sender, GiveFeedbackEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -46,7 +46,33 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
+        <Style TargetType="Button" x:Key="ButtonWithoutMouseOver">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                              BorderBrush="{TemplateBinding BorderBrush}"
+                              BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <ContentPresenter.Resources>
+                                    <Style TargetType="TextBlock">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=IsEnabled, RelativeSource={RelativeSource AncestorType=Button}}" Value="False">
+                                                <Setter Property="Foreground" Value="Gray"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </ContentPresenter.Resources>
+                            </ContentPresenter>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
         <converter:BooleanToOnOffConverter x:Key="BooleanToOnOffConverter" />
         <converter:InverseBooleanConverter x:Key="InverseBooleanConverter" />
         <converter:AndMultiValueConverter x:Key="AndMultiValueConverter"  />
@@ -251,10 +277,147 @@
             <TabItem Header="SHP">
 
             </TabItem>
-
+            
             <TabItem Header="SHH">
+                <Grid IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
 
+                    <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="10">
+                        <TextBox x:Name="txtZoneName"
+                     Width="200"
+                     Height="20"
+                     Margin="0,0,5,0"
+                     VerticalAlignment="Center"
+                     Text="{Binding NewZoneName, UpdateSourceTrigger=PropertyChanged}" />
+                        <Button x:Name="btnAddZone" 
+                    Content="Add Zone" 
+                    Command="{Binding AddZoneCommand}" 
+                    Margin="0,0,5,0"
+                    Padding="10,0,10,0"
+                    Background="#958bc9" 
+                    Foreground="Black" 
+                    BorderThickness="1"
+                    BorderBrush="Black"
+                    Height="20"
+                    Cursor="Hand" />
+                    </StackPanel>
+
+                    <ListBox Grid.Row="1" ItemsSource="{Binding Zones}" Margin="10"  SelectedItem="{Binding SelectedZone, Mode=TwoWay}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Expander Header="{Binding Name}" Foreground="Black" Expanded="Expander_Expanded">
+                                    <StackPanel>
+                                        <ListBox ItemsSource="{Binding Rooms}" Background="Transparent" BorderThickness="0">
+                                            <ListBox.ItemContainerStyle>
+                                                <Style TargetType="ListBoxItem">
+                                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                                </Style>
+                                            </ListBox.ItemContainerStyle>
+                                            <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Grid.Column="0" Text="{Binding Name}" FontWeight="Bold" VerticalAlignment="Center"/>
+                                                        <Button Grid.Column="1" Content="Remove"
+                                                                Command="{Binding DataContext.RemoveRoomFromZoneCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                                CommandParameter="{Binding}"
+                                                                Margin="0,5,5,5"
+                                                                Padding="5"
+                                                                Background="#D9534F"
+                                                                Foreground="White"
+                                                                FontWeight="Bold"
+                                                                Height="30"
+                                                                Cursor="Hand"/>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ListBox.ItemTemplate>
+                                        </ListBox>
+
+                                        <!-- New Section for Temperature Settings -->
+                                        <TextBlock Text="Temperature Settings" FontWeight="Bold" Margin="5"/>
+                                        <ItemsControl ItemsSource="{Binding TemperatureSettings}">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid Margin="5">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Text="{Binding newPeriodName}" Grid.Column="0" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                                                        <Slider Minimum="0" Maximum="30" Value="{Binding DesiredTemperature, Mode=TwoWay}" Grid.Column="1" Margin="0,0,5,0"/>
+                                                        <TextBlock Text="{Binding NewDesiredTemperature, StringFormat='{}{0} °C'}" Grid.Column="2" VerticalAlignment="Center"/>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+
+                                        <!-- Buttons to Add/Remove Temperature Period -->
+                                        <StackPanel Margin="5" HorizontalAlignment="Left">
+                                            <Button Content="Add Period" Style="{StaticResource ButtonWithoutMouseOver}" Background="Transparent" BorderThickness="0" Cursor="Hand"  HorizontalAlignment="Left" Command="{Binding DataContext.AddTemperaturePeriodCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Margin="0,0,0,6" />
+                                            <Button Content="View/Remove Period(s)" Style="{StaticResource ButtonWithoutMouseOver}" Background="Transparent" BorderThickness="0" Cursor="Hand" Command="{Binding DataContext.RemoveTemperaturePeriodCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" />
+                                        </StackPanel>
+
+                                        <StackPanel Orientation="Horizontal" Margin="5">
+                                            <ComboBox x:Name="RoomComboBox"
+                                                      Width="150"
+                                                      Height="30"
+                                                      ItemsSource="{Binding DataContext.AvailableRooms, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                      DisplayMemberPath="Name"
+                                                      SelectedItem="{Binding SelectedRoomToAdd, Mode=TwoWay}"
+                                                      GotFocus="ComboBox_GotFocus">
+                                                <ComboBox.Style>
+                                                    <Style TargetType="ComboBox">
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding DataContext.AvailableRooms.Count, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Value="0">
+                                                                <Setter Property="IsEnabled" Value="False"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ComboBox.Style>
+                                            </ComboBox>
+
+                                            <Button Content="Add Room"
+                                                    Command="{Binding DataContext.AddRoomToZoneCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                    CommandParameter="{Binding SelectedItem, ElementName=RoomComboBox}"
+                                                    Margin="5"
+                                                    Padding="5"
+                                                    Background="#4CAF50"
+                                                    Foreground="White"
+                                                    FontWeight="Bold"
+                                                    Height="30"
+                                                    Width="70"
+                                                    BorderThickness="0"
+                                                    Cursor="Hand"/>
+                                        </StackPanel>
+
+                                        <Button Content="Remove Zone" 
+                                                        Command="{Binding DataContext.RemoveZoneCommand, RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}" 
+                                                        CommandParameter="{Binding}"
+                                                        Margin="5"
+                                                        Height="28"
+                                                        VerticalAlignment="Top"
+                                                        Background="#D9534F"
+                                                        Foreground="White"
+                                                        BorderThickness="0"
+                                                        Cursor="Hand"/>   
+                                    </StackPanel>
+                                </Expander>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
             </TabItem>
+
+
+
 
         </TabControl>
 

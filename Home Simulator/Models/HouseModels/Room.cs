@@ -14,11 +14,37 @@ namespace Home_Simulator.Models.HouseModels
     {
         private bool _isAutomationEnabled;
 
+        private Zone _assignedZoned;
+
+        private double _roomTemperature;
+
         public List<Light> Lights { get; set; } = new List<Light>();
 
         public List<Door> Doors { get; set; } = new List<Door>();
 
         public List<Window> Windows { get; set; } = new List<Window>();
+
+        public double RoomTemperature
+        {
+            get { return _roomTemperature; }
+            set 
+            { 
+                _roomTemperature = value; 
+                OnPropertyChanged(nameof(RoomTemperature));
+            }
+        }
+
+
+        public Zone AssignedZone
+        {
+            get { return _assignedZoned; }
+            set 
+            { 
+                _assignedZoned = value;
+                OnPropertyChanged(nameof(AssignedZone));
+            }
+        }
+
 
         public ObservableCollection<User> _usersInRoom { get; set; } = new ObservableCollection<User>();
 

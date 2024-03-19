@@ -33,6 +33,8 @@ namespace Home_Simulator.ViewModels
 
         private string _outsideTemperature;
 
+        private string _newZoneName;
+
         private DispatcherTimer _timer;
 
         private bool _isSimulationRunning;
@@ -40,6 +42,36 @@ namespace Home_Simulator.ViewModels
         public DateTimeModel simulationModel;
 
         public ObservableCollection<User> users;
+
+        private ObservableCollection<Room> _availableRooms = new ObservableCollection<Room>();
+
+        private ObservableCollection<Zone> _zones = new ObservableCollection<Zone>();
+
+        public ObservableCollection<Zone> Zones
+        {
+            get { return _zones; }
+            set
+            {
+                if (_zones != value)
+                {
+                    _zones = value;
+                    OnPropertyChanged(nameof(Zones));
+                }
+            }
+        }
+
+        public ObservableCollection<Room> AvailableRooms
+        {
+            get { return _availableRooms; }
+            set
+            {
+                if (_availableRooms != value)
+                {
+                    _availableRooms = value;
+                    OnPropertyChanged(nameof(AvailableRooms));
+                }
+            }
+        }
 
         public LocationService LocationService { get; set; }
 
@@ -52,6 +84,8 @@ namespace Home_Simulator.ViewModels
         private User _currentUser;
 
         private Location _currentLocation;
+
+        private Zone _selectedZone;
 
         #endregion
 
@@ -81,10 +115,24 @@ namespace Home_Simulator.ViewModels
 
         public ICommand ToggleBlockUnblockWindowCommand { get; private set; }
 
+        public ICommand AddRoomToZoneCommand { get; private set; }
+
+        public ICommand AddZoneCommand { get; private set; }
+
+        public ICommand RemoveZoneCommand { get; private set; }
+
+        public ICommand RemoveRoomFromZoneCommand { get; private set; }
+
+        public ICommand AddTemperaturePeriodCommand { get; private set; }
+
+        public ICommand RemoveTemperaturePeriodCommand { get; private set; }
+
+        public ICommand DeletePeriodCommand { get; private set; }
+
+
         #endregion
 
         #region Properties
-
         public bool CanEditUser => CurrentUser != null && users.Any();
 
         public string OutsideTemperature
@@ -207,6 +255,30 @@ namespace Home_Simulator.ViewModels
             }
         }
 
+        public Zone SelectedZone
+        {
+            get { return _selectedZone; }
+            set
+            {
+                if (_selectedZone != value)
+                {
+                    _selectedZone = value;
+                    OnPropertyChanged(nameof(SelectedZone));
+                    OnPropertyChanged(nameof(SelectedZone.Rooms));
+                }
+            }
+        }
+
+        public string NewZoneName
+        {
+            get { return _newZoneName; }
+            set
+            {
+                _newZoneName = value;
+                OnPropertyChanged(nameof(NewZoneName));
+            }
+        }
+
 
         #endregion
 
@@ -234,6 +306,13 @@ namespace Home_Simulator.ViewModels
             AddUserCommand = new AddUserCommand(this);
             RemoveUserCommand = new RemoveUserCommand(this);
             EditUsersCommand = new EditUsersCommand(this);
+            AddRoomToZoneCommand = new AddRoomToZoneCommand(this);
+            RemoveRoomFromZoneCommand = new RemoveRoomFromZoneCommand(this);
+            AddZoneCommand = new AddZoneCommand(this);
+            RemoveZoneCommand = new RemoveZoneCommand(this);
+            AddTemperaturePeriodCommand = new AddTemperaturePeriodCommand(this);
+            RemoveTemperaturePeriodCommand = new RemoveTemperaturePeriodCommand(this);
+            DeletePeriodCommand = new DeletePeriodCommand(this);
 
             ToggleLightCommand = new ToggleLightCommand();
             ToggleDoorCommand = new ToggleDoorCommand();
@@ -252,11 +331,32 @@ namespace Home_Simulator.ViewModels
                 simulationModel.IncrementTime();
                 OnPropertyChanged(nameof(CurrentTime));
                 OnPropertyChanged(nameof(CurrentDate));
+                UpdateRoomTemperatures();
             };
 
         }
 
         public void InvokeCurentUserPropertyChanged () => OnPropertyChanged(nameof(CurrentUser));
+
+        // This will be encapsulated later on, most likely using Observer Design Pattern. 
+        private void UpdateRoomTemperatures()
+        {
+            foreach (var zone in Zones)
+            {
+                var currentTime = simulationModel.SimulationTime;
+                foreach (var period in zone.TemperaturePeriods)
+                {
+                    if (currentTime >= period.StartTime && currentTime < period.EndTime)
+                    {
+                        foreach (var room in zone.Rooms)
+                        {
+                            room.RoomTemperature = period.DesiredTemperature;
+                        }
+                        break; 
+                    }
+                }
+            }
+        }
 
         public void InvokeAccess()
         {

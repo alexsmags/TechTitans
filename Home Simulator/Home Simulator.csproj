@@ -55,17 +55,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\AddRoomToZoneCommand.cs" />
+    <Compile Include="Commands\AddTemperaturePeriodCommand.cs" />
     <Compile Include="Commands\AddUserCommand.cs" />
+    <Compile Include="Commands\AddZoneCommand.cs" />
     <Compile Include="Commands\ChangeDateTimeCommand.cs" />
     <Compile Include="Commands\ChangeTemperatureCommand.cs" />
     <Compile Include="Commands\ChangeUserCommand.cs" />
     <Compile Include="Commands\ChangeUserLocationCommand.cs" />
+    <Compile Include="Commands\DeletePeriodCommand .cs" />
     <Compile Include="Commands\EditUsersCommand.cs" />
     <Compile Include="Commands\HouseObjectCommands\ToggleBlockUnblockWindowCommand.cs" />
     <Compile Include="Commands\HouseObjectCommands\ToggleDoorCommand.cs" />
     <Compile Include="Commands\HouseObjectCommands\ToggleLightCommand.cs" />
     <Compile Include="Commands\HouseObjectCommands\ToggleOpenCloseWindowCommand.cs" />
+    <Compile Include="Commands\RemoveRoomFromZoneCommand.cs" />
+    <Compile Include="Commands\RemoveTemperaturePeriodCommand.cs" />
     <Compile Include="Commands\RemoveUserCommand.cs" />
+    <Compile Include="Commands\RemoveZoneCommand.cs" />
     <Compile Include="Components\AddUserDialog.xaml.cs">
       <DependentUpon>AddUserDialog.xaml</DependentUpon>
     </Compile>
@@ -83,6 +90,12 @@
     </Compile>
     <Compile Include="Components\EditUsersDialog.xaml.cs">
       <DependentUpon>EditUsersDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\RemoveTemperaturePeriodDialog.xaml.cs">
+      <DependentUpon>RemoveTemperaturePeriodDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\TemperaturePeriodDialog.xaml.cs">
+      <DependentUpon>TemperaturePeriodDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Components\UserSelectionDialog.xaml.cs">
       <DependentUpon>UserSelectionDialog.xaml</DependentUpon>
@@ -102,7 +115,9 @@
     <Compile Include="Models\HouseModels\OutdoorLocation.cs" />
     <Compile Include="Models\HouseModels\Room.cs" />
     <Compile Include="Models\HouseModels\Window.cs" />
+    <Compile Include="Models\HouseModels\Zone.cs" />
     <Compile Include="Models\HouseSimulationModels\DateTimeModel.cs" />
+    <Compile Include="Models\HouseSimulationModels\TemperaturePeriodModel.cs" />
     <Compile Include="Models\LightPermissionManager.cs" />
     <Compile Include="Models\ProfileModels\User.cs" />
     <Compile Include="Models\ProfileModels\UserType.cs" />
@@ -146,6 +161,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Components\RemoveTemperaturePeriodDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Components\Room.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -155,6 +174,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Components\SimulationInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\TemperaturePeriodDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

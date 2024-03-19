@@ -20,6 +20,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <!-- Bind the room name to the TextBlock -->
@@ -71,7 +72,18 @@
                 <TextBlock Text="People: "></TextBlock>
                 <TextBlock Text="{Binding UsersInRoom.Count}"></TextBlock>
             </StackPanel>
-            
+
+            <StackPanel Grid.Row="5" Orientation="Horizontal">
+                <TextBlock Text="Temperature: "></TextBlock>
+                <TextBlock>
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}{0} °C">
+                            <Binding Path="RoomTemperature"/>
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+            </StackPanel>
+
         </Grid>
     </Border>
 </UserControl>

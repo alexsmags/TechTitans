@@ -1,0 +1,75 @@
+﻿<Window x:Class="Home_Simulator.Components.TemperaturePeriodDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Home_Simulator.Components"
+        mc:Ignorable="d"
+        Title="Temperature Period" Height="230" Width="400"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <Style x:Key="FormButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Background" Value="Gray"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="15">
+                            <ContentPresenter HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              Content="{TemplateBinding Content}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#beb5eb" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#beb5eb" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
+            <TextBlock VerticalAlignment="Center" Text="Period Name:"/>
+            <TextBox x:Name="periodNameTextBox" Width="200" Margin="10,0,0,0"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,10">
+            <TextBlock VerticalAlignment="Center" Text="Time Range:"/>
+            <TextBox x:Name="startTimeTextBox" Width="90" Margin="10,0,5,0"/>
+            <TextBlock VerticalAlignment="Center" Text="-"/>
+            <TextBox x:Name="endTimeTextBox" Width="90" Margin="5,0,0,0"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="0,0,0,20">
+            <TextBlock VerticalAlignment="Center" Text="Temperature (°C):"/>
+            <Slider x:Name="temperatureSlider" Width="200" Margin="10,0,0,0" Minimum="0" Maximum="40" IsSnapToTickEnabled="True" LargeChange="1" TickFrequency="1" Value="{Binding NewDesiredTemperature, UpdateSourceTrigger=PropertyChanged}" ValueChanged="setTemperature_ValueChanged"/>
+        </StackPanel>
+        
+        <TextBlock x:Name="tempDisplay" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3"></TextBlock>
+
+        <Button Content="Save" Grid.Row="4" HorizontalAlignment="Center" Width="100" Height="30" Margin="0,20,0,0" Click="OnSaveButtonClick" Cursor="Hand" FontSize="15" FontWeight="Bold" Style="{StaticResource FormButtonStyle}"/>
+    </Grid>
+</Window>

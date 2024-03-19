@@ -36,6 +36,10 @@ namespace Home_Simulator.Commands
                 SimulationViewModel simulationViewModel = new SimulationViewModel();
                 simulationViewModel.LocationService.AddRooms(roomList);
                 simulationViewModel.LocationService.Rooms = roomList;
+                
+                ObservableCollection <Room> availableRooms = new ObservableCollection<Room>(roomList);
+
+                simulationViewModel.AvailableRooms = availableRooms;
                 simulationViewModel.LightPermissionManager.UpdateLightPermissionsForAllUsers(simulationViewModel.Rooms, simulationViewModel.CurrentUser);
 
                 var profileReaderService = ProfileReaderService.Instance;
