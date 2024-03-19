@@ -100,9 +100,9 @@
     <Compile Include="Components\UserSelectionDialog.xaml.cs">
       <DependentUpon>UserSelectionDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converters\AndMultiValueConverter.cs" />
+    <Compile Include="Converters\BooleanToOnOffConverter.cs" />
     <Compile Include="Converters\BooleanToOpenClosedConverter.cs" />
-    <Compile Include="Converters\InverseBooleanConverter .cs" />
+    <Compile Include="Converters\InverseBooleanConverter.cs" />
     <Compile Include="Converters\NullToBoolConverter.cs" />
     <Compile Include="Models\HouseModels\Director.cs" />
     <Compile Include="Models\HouseModels\Door.cs" />
@@ -207,7 +207,6 @@
     <Compile Include="Components\SimulationInfo.xaml.cs">
       <DependentUpon>SimulationInfo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converters\BooleanToOnOffConverter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -239,6 +238,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -289,5 +289,6 @@
   <ItemGroup>
     <Resource Include="Images\ProfileIcons\Child.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -75,7 +75,6 @@
 
         <converter:BooleanToOnOffConverter x:Key="BooleanToOnOffConverter" />
         <converter:InverseBooleanConverter x:Key="InverseBooleanConverter" />
-        <converter:AndMultiValueConverter x:Key="AndMultiValueConverter"  />
     </UserControl.Resources>
     
     <Grid>
