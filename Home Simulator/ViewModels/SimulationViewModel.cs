@@ -145,6 +145,8 @@ namespace Home_Simulator.ViewModels
             {
                 _outsideTemperature = value;
                 OnPropertyChanged(nameof(OutsideTemperature));
+                _weatherService.SetOutsideTemperature(_outsideTemperature);
+
             }
         }
 
