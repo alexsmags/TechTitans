@@ -364,6 +364,8 @@ namespace Home_Simulator.ViewModels
                     }
                 }
             }
+            double insideTemperature = CalculateAverageRoomTemperature();
+            _airConditioningController.SetInsideTemperature(insideTemperature);
         }
 
         public void InvokeAccess()
