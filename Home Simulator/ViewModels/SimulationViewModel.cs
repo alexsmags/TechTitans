@@ -16,6 +16,7 @@ using Home_Simulator.Models.ProfileModels;
 using System.Windows;
 using Home_Simulator.Commands;
 using Home_Simulator.Stores;
+using System.Globalization;
 
 namespace Home_Simulator.ViewModels
 {
@@ -147,6 +148,7 @@ namespace Home_Simulator.ViewModels
 
         public List<(DateTime dateTime, double temperature)> OutsideTemperatureData { get; set; }
 
+
         public string CurrentTime
         {
             get { return simulationModel.GetCurrentTime(); }
@@ -154,6 +156,7 @@ namespace Home_Simulator.ViewModels
             {
                 _currentTime = simulationModel.GetCurrentTime();
                 OnPropertyChanged(nameof(CurrentTime));
+                
             }
         }
 
@@ -321,7 +324,7 @@ namespace Home_Simulator.ViewModels
             ToggleBlockUnblockWindowCommand = new ToggleBlockUnblockWindowCommand();
 
 
-            OutsideTemperature = 15;
+            OutsideTemperature = 18;
 
             _timer = new DispatcherTimer
             {
@@ -333,8 +336,32 @@ namespace Home_Simulator.ViewModels
                 OnPropertyChanged(nameof(CurrentTime));
                 OnPropertyChanged(nameof(CurrentDate));
                 UpdateRoomTemperatures();
+                UpdateOutsideTemperature();
             };
 
+        }
+
+
+        public void UpdateOutsideTemperature()
+        {
+            // Find temperature data for the current date and time in OutsideTemperatureData
+            var currentDate = DateTime.ParseExact(CurrentDate, "yyyy-MM-dd", CultureInfo.InvariantCulture).ToString("yyyy-MM-dd"); ;
+            var currentHour = DateTime.ParseExact(CurrentTime, "HH:mm:ss", CultureInfo.InvariantCulture).Hour;
+
+            var temperatureData = OutsideTemperatureData.FirstOrDefault(data =>
+                data.dateTime.Date.ToString("yyyy-MM-dd") == currentDate &&
+                data.dateTime.Hour == currentHour);
+
+            if (temperatureData != default)
+            {
+                // Update OutsideTemperature with the temperature data
+                OutsideTemperature = temperatureData.temperature;
+            }
+            else
+            {
+                // If no matching temperature data is found, set a default value
+                OutsideTemperature = 10; // Or any other default value
+            }
         }
 
         public void InvokeCurentUserPropertyChanged () => OnPropertyChanged(nameof(CurrentUser));

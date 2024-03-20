@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Home_Simulator.Models.HouseSimulationModels
 {
@@ -26,7 +27,7 @@ namespace Home_Simulator.Models.HouseSimulationModels
 
         public void IncrementTime()
         {
-            TimeSpan timeIncrement = TimeSpan.FromSeconds(_timeSpeed);
+            TimeSpan timeIncrement = TimeSpan.FromSeconds(_timeSpeed*20);
             SimulationTime = SimulationTime.Add(timeIncrement);
 
             if (SimulationTime.TotalHours >= 24)
@@ -36,8 +37,17 @@ namespace Home_Simulator.Models.HouseSimulationModels
             }
         }
 
+
+        /**
         public string GetCurrentTime() => SimulationTime.ToString(@"hh\:mm\:ss");
 
         public string GetCurrentDate() => SimulationDate.ToString("M") + ", " + SimulationDate.ToString("yyyy");
+        **/
+        public string GetCurrentTime() => SimulationTime.ToString(@"hh\:mm\:ss"); // HH for 24-hour format
+
+        public string GetCurrentDate() => SimulationDate.ToString("yyyy-MM-dd"); // yyyy-MM-dd format
+
+
+
     }
 }

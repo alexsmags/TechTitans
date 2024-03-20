@@ -52,13 +52,24 @@ namespace Home_Simulator.Commands
 
                     foreach (var line in lines.Skip(1)) // Skip header
                     {
-                        var parts = line.Split(',');
-
-                        if (parts.Length >= 3)
+                        Console.WriteLine("Line: " + line); // Print out the line
+                        var parts = line.Split('\t');
+                        var parts2 = parts[0].Split(',');
+                        try
                         {
-                            var date = DateTime.ParseExact(parts[0] + parts[1], "yyyy-MM-ddHH:mm", CultureInfo.InvariantCulture);
-                            var temperature = double.Parse(parts[2], CultureInfo.InvariantCulture);
-                            temperatureData.Add((date, temperature));
+                            if (parts2.Length >= 3)
+                            {
+                                var dateAndTime = parts2[0] + " " + parts2[1];
+                                var date = DateTime.ParseExact(dateAndTime, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture);
+                                var temperature = double.Parse(parts2[2], CultureInfo.InvariantCulture);
+                                temperatureData.Add((date, temperature));
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            // Log the problematic line
+                            Console.WriteLine($"Error parsing line: {line}");
+                            Console.WriteLine($"Error message: {ex.Message}");
                         }
                     }
 
@@ -66,6 +77,7 @@ namespace Home_Simulator.Commands
                     _simulationViewModel.OutsideTemperatureData = temperatureData;
 
                     MessageBox.Show("Temperature data loaded successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+
                 }
                 catch (Exception ex)
                 {
