@@ -1,4 +1,4 @@
-namespace Home_Simulator.HouseSimulationModels
+namespace Home_Simulator.Models.HouseSimulationModels
 {
     public class MockWeatherService : IWeatherService
     {
@@ -12,6 +12,11 @@ namespace Home_Simulator.HouseSimulationModels
         public double GetOutsideTemperature()
         {
             return _outsideTemperature;
+        }
+
+        public void SetOutsideTemperature(double temperature)
+        {
+            _outsideTemperature = temperature;
         }
     }
 }

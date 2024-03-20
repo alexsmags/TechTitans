@@ -21,6 +21,11 @@ namespace Home_Simulator.HouseSimulationModels
             return _insideTemperature;
         }
 
+        public void SetInsideTemperature(double temperature)
+        {
+            _insideTemperature = temperature;
+        }
+
         public bool IsAirConditioningOn()
         {
             return _isOn;
