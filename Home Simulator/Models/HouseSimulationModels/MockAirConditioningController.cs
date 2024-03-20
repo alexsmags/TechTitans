@@ -1,4 +1,4 @@
-namespace Home_Simulator.HouseSimulationModels
+namespace Home_Simulator.Models.HouseSimulationModels
 {
     public class MockAirConditioningController : IAirConditioningController
     {
