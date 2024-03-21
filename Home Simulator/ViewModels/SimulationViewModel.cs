@@ -22,6 +22,9 @@ namespace Home_Simulator.ViewModels
     public class SimulationViewModel : ViewModelBase
     {
         #region Fields
+        private IWeatherService _weatherService;
+        private IAirConditioningController _airConditioningController;
+        private AirConditioningManagementViewModel _acManagementViewModel;
 
         private string _currentTime;
 
@@ -138,10 +141,12 @@ namespace Home_Simulator.ViewModels
         public double OutsideTemperature
         {
             get { return _outsideTemperature; }
-            set 
-            { 
+            set
+            {
                 _outsideTemperature = value;
                 OnPropertyChanged(nameof(OutsideTemperature));
+                _weatherService.SetOutsideTemperature(_outsideTemperature);
+
             }
         }
 
@@ -219,7 +224,7 @@ namespace Home_Simulator.ViewModels
         public Location CurrentLocation
         {
             get { return _currentLocation; }
-            set 
+            set
             {
                 _currentLocation = value;
                 OnPropertyChanged(nameof(CurrentLocation));
@@ -319,6 +324,9 @@ namespace Home_Simulator.ViewModels
             ToggleOpenCloseWindowCommand = new ToggleOpenCloseWindowCommand();
             ToggleBlockUnblockWindowCommand = new ToggleBlockUnblockWindowCommand();
 
+            _weatherService = new MockWeatherService(OutsideTemperature);
+            _airConditioningController = new MockAirConditioningController(22.0);
+            _acManagementViewModel = new AirConditioningManagementViewModel(_weatherService, _airConditioningController);
 
             OutsideTemperature = 15;
 
@@ -326,17 +334,19 @@ namespace Home_Simulator.ViewModels
             {
                 Interval = TimeSpan.FromSeconds(1)
             };
-            _timer.Tick += (sender, e) =>
-            {
-                simulationModel.IncrementTime();
-                OnPropertyChanged(nameof(CurrentTime));
-                OnPropertyChanged(nameof(CurrentDate));
-                UpdateRoomTemperatures();
-            };
-
+            _timer.Tick += Timer_Tick;
         }
 
-        public void InvokeCurentUserPropertyChanged () => OnPropertyChanged(nameof(CurrentUser));
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            simulationModel.IncrementTime();
+            OnPropertyChanged(nameof(CurrentTime));
+            OnPropertyChanged(nameof(CurrentDate));
+            UpdateRoomTemperatures();
+
+            _acManagementViewModel.CheckAndManageAirConditioning();
+        }
+        public void InvokeCurentUserPropertyChanged() => OnPropertyChanged(nameof(CurrentUser));
 
         // This will be encapsulated later on, most likely using Observer Design Pattern. 
         private void UpdateRoomTemperatures()
@@ -352,10 +362,12 @@ namespace Home_Simulator.ViewModels
                         {
                             room.RoomTemperature = period.DesiredTemperature;
                         }
-                        break; 
+                        break;
                     }
                 }
             }
+            double insideTemperature = CalculateAverageRoomTemperature();
+            _airConditioningController.SetInsideTemperature(insideTemperature);
         }
 
         public void InvokeAccess()
