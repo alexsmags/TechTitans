@@ -69,6 +69,7 @@
     <Compile Include="Commands\HouseObjectCommands\ToggleDoorCommand.cs" />
     <Compile Include="Commands\HouseObjectCommands\ToggleLightCommand.cs" />
     <Compile Include="Commands\HouseObjectCommands\ToggleOpenCloseWindowCommand.cs" />
+    <Compile Include="Commands\LoadCSVTemperatureCommand.cs" />
     <Compile Include="Commands\RemoveRoomFromZoneCommand.cs" />
     <Compile Include="Commands\RemoveTemperaturePeriodCommand.cs" />
     <Compile Include="Commands\RemoveUserCommand.cs" />

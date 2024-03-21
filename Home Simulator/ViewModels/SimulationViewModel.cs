@@ -129,6 +129,8 @@ namespace Home_Simulator.ViewModels
         public ICommand RemoveTemperaturePeriodCommand { get; private set; }
 
         public ICommand DeletePeriodCommand { get; private set; }
+        
+        public ICommand LoadCSVTemperatureCommand { get; private set; }
 
 
         #endregion
@@ -317,12 +319,13 @@ namespace Home_Simulator.ViewModels
             AddTemperaturePeriodCommand = new AddTemperaturePeriodCommand(this);
             RemoveTemperaturePeriodCommand = new RemoveTemperaturePeriodCommand(this);
             DeletePeriodCommand = new DeletePeriodCommand(this);
+            LoadCSVTemperatureCommand = new LoadCSVTemperatureCommand(this);
 
             ToggleLightCommand = new ToggleLightCommand();
             ToggleDoorCommand = new ToggleDoorCommand();
             ToggleOpenCloseWindowCommand = new ToggleOpenCloseWindowCommand();
             ToggleBlockUnblockWindowCommand = new ToggleBlockUnblockWindowCommand();
-
+        
 
             OutsideTemperature = 18;
 
