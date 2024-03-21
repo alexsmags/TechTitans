@@ -22,7 +22,8 @@ namespace Home_Simulator.Models.HouseSimulationModels
         public DateTimeModel()
         {
             SimulationTime = TimeSpan.Zero;
-            SimulationDate = DateTime.Now;
+            //Changed date for summertime
+            SimulationDate = DateTime.Now.AddDays(120);
         }
 
         public void IncrementTime()

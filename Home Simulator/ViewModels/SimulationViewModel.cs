@@ -337,15 +337,23 @@ namespace Home_Simulator.ViewModels
                 OnPropertyChanged(nameof(CurrentDate));
                 UpdateRoomTemperatures();
                 UpdateOutsideTemperature();
+                UpdateWindowState();
             };
 
         }
 
-
+        //To be Encapsulated
         public void UpdateOutsideTemperature()
         {
+            if (OutsideTemperatureData == null)
+            {
+                // Handle the case where OutsideTemperatureData is null
+                // For example, you might throw an exception, log an error, or set a default value
+                OutsideTemperature = 10; // Or any other default value
+                return;
+            }
             // Find temperature data for the current date and time in OutsideTemperatureData
-            var currentDate = DateTime.ParseExact(CurrentDate, "yyyy-MM-dd", CultureInfo.InvariantCulture).ToString("yyyy-MM-dd"); ;
+            var currentDate = DateTime.ParseExact(CurrentDate, "yyyy-MM-dd", CultureInfo.InvariantCulture).ToString("yyyy-MM-dd");
             var currentHour = DateTime.ParseExact(CurrentTime, "HH:mm:ss", CultureInfo.InvariantCulture).Hour;
 
             var temperatureData = OutsideTemperatureData.FirstOrDefault(data =>
@@ -361,6 +369,32 @@ namespace Home_Simulator.ViewModels
             {
                 // If no matching temperature data is found, set a default value
                 OutsideTemperature = 10; // Or any other default value
+            }
+        }
+
+        //To be Encapsulated
+        public void UpdateWindowState()
+        {
+            // Check if it is summer (for demonstration, let's say summer is from June to August)
+            var currentDate = DateTime.ParseExact(CurrentDate, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+            int currentMonth = currentDate.Month;
+
+            bool isSummer = currentMonth >= 6 && currentMonth <= 8;
+
+            foreach (var room in Rooms)
+            {
+                if (isSummer && OutsideTemperature < room.RoomTemperature)
+                {
+                    // It's summer and outside temperature is cooler than room temperature
+                    // Open all windows in the room
+                    foreach (var window in room.Windows)
+                    {
+                        if (!window.IsBlocked)
+                        {
+                            window.OpenWindow();
+                        }
+                    }
+                }
             }
         }
 
