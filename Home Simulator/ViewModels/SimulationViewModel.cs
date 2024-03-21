@@ -22,9 +22,6 @@ namespace Home_Simulator.ViewModels
     public class SimulationViewModel : ViewModelBase
     {
         #region Fields
-        private IWeatherService _weatherService;
-        private IAirConditioningController _airConditioningController;
-        private AirConditioningManagementViewModel _acManagementViewModel;
 
         private string _currentTime;
 
@@ -145,7 +142,6 @@ namespace Home_Simulator.ViewModels
             {
                 _outsideTemperature = value;
                 OnPropertyChanged(nameof(OutsideTemperature));
-                _weatherService.SetOutsideTemperature(_outsideTemperature);
 
             }
         }
@@ -324,10 +320,6 @@ namespace Home_Simulator.ViewModels
             ToggleOpenCloseWindowCommand = new ToggleOpenCloseWindowCommand();
             ToggleBlockUnblockWindowCommand = new ToggleBlockUnblockWindowCommand();
 
-            _weatherService = new MockWeatherService(OutsideTemperature);
-            _airConditioningController = new MockAirConditioningController(22.0);
-            _acManagementViewModel = new AirConditioningManagementViewModel(_weatherService, _airConditioningController);
-
             OutsideTemperature = 15;
 
             _timer = new DispatcherTimer
@@ -343,8 +335,6 @@ namespace Home_Simulator.ViewModels
             OnPropertyChanged(nameof(CurrentTime));
             OnPropertyChanged(nameof(CurrentDate));
             UpdateRoomTemperatures();
-
-            _acManagementViewModel.CheckAndManageAirConditioning();
         }
         public void InvokeCurentUserPropertyChanged() => OnPropertyChanged(nameof(CurrentUser));
 
@@ -366,8 +356,6 @@ namespace Home_Simulator.ViewModels
                     }
                 }
             }
-            double insideTemperature = CalculateAverageRoomTemperature();
-            _airConditioningController.SetInsideTemperature(insideTemperature);
         }
 
         public void InvokeAccess()
