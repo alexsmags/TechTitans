@@ -329,7 +329,7 @@ namespace Home_Simulator.ViewModels
                 
                 if (e.PropertyName == nameof(CurrentLocation))
                 {
-                    _zoneRoomTemperatureService.UpdateRoomTemperatures(this);
+                    _zoneRoomTemperatureService.AdjustRoomTemperature(this);
                 }
             };
 
@@ -339,7 +339,7 @@ namespace Home_Simulator.ViewModels
         public void InvokeCurrentLocationPropertyChanged()
         {
             OnPropertyChanged(nameof(CurrentLocation));
-            _zoneRoomTemperatureService.UpdateRoomTemperatures(this);
+            _zoneRoomTemperatureService.AdjustRoomTemperature(this);
         }
 
         public void InvokeAccess()
