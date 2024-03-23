@@ -11,6 +11,8 @@ namespace Home_Simulator.Models.HouseModels
         public OutdoorLocation() 
         {
             Name = "Outdoor";
+            IsOutdoor = true;
+
         }
 
 	}
