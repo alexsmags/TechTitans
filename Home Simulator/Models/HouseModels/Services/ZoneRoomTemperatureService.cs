@@ -30,7 +30,10 @@ namespace Home_Simulator.Models.HouseModels.Services
 
         public void AdjustRoomTemperature(SimulationViewModel simulationViewModel)
         {
-            bool isAllUserOutdoor = simulationViewModel.Zones.All(z => z.Rooms.All(r => r.UsersInRoom.Count == 0));
+            bool isAllUserOutdoor = simulationViewModel.users.All(u => u.CurrentLocation?.IsOutdoor ?? true);
+
+
+            
 
             foreach (var zone in simulationViewModel.Zones)
             {
