@@ -320,16 +320,27 @@ namespace Home_Simulator.ViewModels
                     _outsideTemperatureService.UpdateOutsideTemperature(this);
                 }
 
+
                 if (e.PropertyName == nameof(DateTimeModel.SimulationTime))
                 {
                     _zoneRoomTemperatureService.UpdateRoomTemperatures(this);
                     _windowStateService.UpdateWindowStates(this);
+                }
+                
+                if (e.PropertyName == nameof(CurrentLocation))
+                {
+                    _zoneRoomTemperatureService.UpdateRoomTemperatures(this);
                 }
             };
 
         }
 
         public void InvokeCurentUserPropertyChanged() => OnPropertyChanged(nameof(CurrentUser));
+        public void InvokeCurrentLocationPropertyChanged()
+        {
+            OnPropertyChanged(nameof(CurrentLocation));
+            _zoneRoomTemperatureService.UpdateRoomTemperatures(this);
+        }
 
         public void InvokeAccess()
         {
