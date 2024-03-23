@@ -11,6 +11,25 @@ namespace Home_Simulator.Models.HouseModels.Services
     {
         public void UpdateRoomTemperatures(SimulationViewModel simulationViewModel)
         {
+            foreach (var zone in simulationViewModel.Zones)
+            {
+                var currentTime = simulationViewModel.SimulationModel.SimulationTime;
+                foreach (var period in zone.TemperaturePeriods)
+                {
+                    if (currentTime >= period.StartTime && currentTime < period.EndTime)
+                    {
+                        foreach (var room in zone.Rooms)
+                        {
+                            room.RoomTemperature = period.DesiredTemperature;
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+
+        public void AdjustRoomTemperature(SimulationViewModel simulationViewModel)
+        {
             bool isAllUserOutdoor = simulationViewModel.Zones.All(z => z.Rooms.All(r => r.UsersInRoom.Count == 0));
 
             foreach (var zone in simulationViewModel.Zones)
