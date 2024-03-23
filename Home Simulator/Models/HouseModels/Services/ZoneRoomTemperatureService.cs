@@ -32,9 +32,6 @@ namespace Home_Simulator.Models.HouseModels.Services
         {
             bool isAllUserOutdoor = simulationViewModel.users.All(u => u.CurrentLocation?.IsOutdoor ?? true);
 
-
-            
-
             foreach (var zone in simulationViewModel.Zones)
             {
                 var currentTime = simulationViewModel.SimulationModel.SimulationTime;
