@@ -21,7 +21,7 @@ namespace Home_Simulator.Commands
 
         public override void Execute(object parameter)
         {
-            var dialog = new ChangeDateTimeDialog(_simulationViewModel.simulationModel);
+            var dialog = new ChangeDateTimeDialog(_simulationViewModel.SimulationModel);
 
             dialog.Owner = Application.Current.MainWindow;
             dialog.WindowStartupLocation = WindowStartupLocation.CenterOwner;
@@ -29,12 +29,8 @@ namespace Home_Simulator.Commands
 
             if (result == true)
             {
-                _simulationViewModel.simulationModel.SimulationDate = dialog.SelectedDateTime.Date;
-                _simulationViewModel.simulationModel.SimulationTime = dialog.SelectedDateTime.TimeOfDay;
-
-                // Update the View's Date/Time properties
-                _simulationViewModel.CurrentDate = dialog.SelectedDateTime.TimeOfDay.ToString();
-                _simulationViewModel.CurrentTime = dialog.SelectedDateTime.TimeOfDay.ToString();
+                _simulationViewModel.SimulationModel.SimulationDate = dialog.SelectedDateTime.Date;
+                _simulationViewModel.SimulationModel.SimulationTime = dialog.SelectedDateTime.TimeOfDay;
             }
         }
     }

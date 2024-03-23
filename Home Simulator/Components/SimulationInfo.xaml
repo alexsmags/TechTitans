@@ -175,8 +175,8 @@
        />
             </StackPanel>
             <StackPanel Grid.Row="5">
-                <TextBlock Grid.Row="5" Text="{Binding CurrentDate}" Margin="5" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBlock Grid.Row="5" Text="{Binding CurrentTime}" Margin="5" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="5" Text="{Binding SimulationModel.FormattedSimulationDate}" Margin="5" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="5" Text="{Binding SimulationModel.SimulationTime}" Margin="5" FontWeight="Bold" HorizontalAlignment="Center"/>
             </StackPanel>
             <StackPanel Grid.Row="6">
                 <TextBlock Text="Time speed" Margin="5" FontWeight="Bold" HorizontalAlignment="Center"/>

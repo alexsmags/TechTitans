@@ -115,6 +115,9 @@
     <Compile Include="Models\HouseModels\LocationService.cs" />
     <Compile Include="Models\HouseModels\OutdoorLocation.cs" />
     <Compile Include="Models\HouseModels\Room.cs" />
+    <Compile Include="Models\HouseModels\Services\OutsideTemperatureService.cs" />
+    <Compile Include="Models\HouseModels\Services\WindowStateService.cs" />
+    <Compile Include="Models\HouseModels\Services\ZoneRoomTemperatureService.cs" />
     <Compile Include="Models\HouseModels\Window.cs" />
     <Compile Include="Models\HouseModels\Zone.cs" />
     <Compile Include="Models\HouseSimulationModels\DateTimeModel.cs" />
