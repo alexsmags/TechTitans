@@ -141,10 +141,11 @@ namespace Home_Simulator.ViewModels
         public double OutsideTemperature
         {
             get { return _outsideTemperature; }
-            set 
-            { 
+            set
+            {
                 _outsideTemperature = value;
                 OnPropertyChanged(nameof(OutsideTemperature));
+
             }
         }
 
@@ -225,7 +226,7 @@ namespace Home_Simulator.ViewModels
         public Location CurrentLocation
         {
             get { return _currentLocation; }
-            set 
+            set
             {
                 _currentLocation = value;
                 OnPropertyChanged(nameof(CurrentLocation));
@@ -400,8 +401,7 @@ namespace Home_Simulator.ViewModels
                 }
             }
         }
-
-        public void InvokeCurentUserPropertyChanged () => OnPropertyChanged(nameof(CurrentUser));
+        public void InvokeCurentUserPropertyChanged() => OnPropertyChanged(nameof(CurrentUser));
 
         // This will be encapsulated later on, most likely using Observer Design Pattern. 
         private void UpdateRoomTemperatures()
@@ -417,7 +417,7 @@ namespace Home_Simulator.ViewModels
                         {
                             room.RoomTemperature = period.DesiredTemperature;
                         }
-                        break; 
+                        break;
                     }
                 }
             }
