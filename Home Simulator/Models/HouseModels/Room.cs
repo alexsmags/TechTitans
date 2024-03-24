@@ -26,11 +26,16 @@ namespace Home_Simulator.Models.HouseModels
 
         public double RoomTemperature
         {
-            get { return _roomTemperature; }
-            set 
-            { 
-                _roomTemperature = value; 
+            get => _roomTemperature;
+            set
+            {
+                _roomTemperature = value;
                 OnPropertyChanged(nameof(RoomTemperature));
+
+                if (AirConditioner != null && _roomTemperature < AirConditioner.DesiredTemperature)
+                {
+                    AirConditioner.TurnOffAC();
+                }
             }
         }
 
