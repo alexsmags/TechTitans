@@ -93,6 +93,13 @@ namespace Home_Simulator.Models.HouseModels
             ACImage = new BitmapImage(new Uri(@"\..\..\Images\HouseObjectIcons\ac_off.png", UriKind.RelativeOrAbsolute));
         }
 
+        private void AdjustACBasedOnTemperature()
+        {
+            if (IsOn && OutsideTemperature < InsideTemperature)
+            {
+                TurnOffAC();
+            }
+        }
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
