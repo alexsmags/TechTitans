@@ -26,33 +26,22 @@ namespace Home_Simulator.Models.HouseModels.Services
                     }
                 }
             }
-        }
-
-        public void AdjustRoomTemperature(SimulationViewModel simulationViewModel)
+        }public void AdjustRoomTemperature(SimulationViewModel simulationViewModel)
         {
-            bool isAllUserOutdoor = simulationViewModel.users.All(u => u.CurrentLocation?.IsOutdoor ?? true);
+        bool isAllUsersOutdoor = simulationViewModel.users.All(user => user.CurrentLocation?.IsOutdoor == true);
+         var currentTime = simulationViewModel.SimulationModel.SimulationTime;
+         var currentDate = simulationViewModel.SimulationModel.SimulationDate;
 
-            foreach (var zone in simulationViewModel.Zones)
-            {
-                var currentTime = simulationViewModel.SimulationModel.SimulationTime;
-                var currentDate = simulationViewModel.SimulationModel.SimulationDate;
+            var isWinter = (currentDate >= new DateTime(currentDate.Year - 1, 12, 21) && currentDate <= new DateTime(currentDate.Year, 3, 21)) 
+                     || (currentDate >= new DateTime(currentDate.Year, 12, 21) && currentDate <= new DateTime(currentDate.Year + 1, 3, 21));
 
-                var isWinter =
-                        (currentDate >= new DateTime(currentDate.Year - 1, 12, 21) && currentDate <= new DateTime(currentDate.Year, 3, 21))
-                        || (currentDate >= new DateTime(currentDate.Year, 12, 21) && currentDate <= new DateTime(currentDate.Year + 1, 3, 21));
-
-                foreach (var period in zone.TemperaturePeriods)
+                if (isWinter && isAllUsersOutdoor)
                 {
-                    if (currentTime >= period.StartTime && currentTime < period.EndTime)
+                    foreach(var room in simulationViewModel.Rooms)
                     {
-                        foreach (var room in zone.Rooms)
-                        {
-                            room.RoomTemperature = isWinter && isAllUserOutdoor && !room.IsOutdoor ? 17.0 : period.DesiredTemperature;
-                        }
-                        break;
+                        room.RoomTemperature = 17;
                     }
                 }
-            }
         }
     }
 }
