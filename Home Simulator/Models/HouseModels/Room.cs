@@ -24,6 +24,8 @@ namespace Home_Simulator.Models.HouseModels
 
         public List<Window> Windows { get; set; } = new List<Window>();
 
+        public AirConditioner AirConditioner { get; set; }
+
         public double RoomTemperature
         {
             get => _roomTemperature;
