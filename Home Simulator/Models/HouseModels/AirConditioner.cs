@@ -18,6 +18,9 @@ namespace Home_Simulator.Models.HouseModels
 
         private BitmapImage _acImage;
 
+        private double _insideTemperature;
+        private double _outsideTemperature;
+
         public bool IsOn
         {
             get { return _isOn; }
@@ -48,6 +51,18 @@ namespace Home_Simulator.Models.HouseModels
                 OnPropertyChanged(nameof(ACImage));
             }
         }
+
+        public double InsideTemperature
+        {
+            get { return _insideTemperature; }
+            set
+            {
+                _insideTemperature = value;
+                OnPropertyChanged(nameof(InsideTemperature));
+                AdjustACBasedOnTemperature();
+            }
+        }
+
         public AirConditioner()
         {
             _acImage = new BitmapImage(new Uri(@"\..\..\Images\HouseObjectIcons\ac_off.png", UriKind.RelativeOrAbsolute));
