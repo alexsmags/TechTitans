@@ -26,6 +26,12 @@ namespace Home_Simulator.Models.HouseModels
             return IsSummer(currentDate) && outsideTemperature < insideTemperature;
         }
 
+        private static bool IsSummer(DateTime date)
+        {
+            return date.Month >= 6 && date.Month <= 8;
+        }
+
+
         public bool IsOn
         {
             get { return _isOn; }
