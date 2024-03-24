@@ -63,6 +63,17 @@ namespace Home_Simulator.Models.HouseModels
             }
         }
 
+        public double OutsideTemperature
+        {
+            get { return _outsideTemperature; }
+            set
+            {
+                _outsideTemperature = value;
+                OnPropertyChanged(nameof(OutsideTemperature));
+                AdjustACBasedOnTemperature();
+            }
+        }
+
         public AirConditioner()
         {
             _acImage = new BitmapImage(new Uri(@"\..\..\Images\HouseObjectIcons\ac_off.png", UriKind.RelativeOrAbsolute));
