@@ -34,12 +34,20 @@ namespace Home_Simulator.Models.HouseModels
                 _roomTemperature = value;
                 OnPropertyChanged(nameof(RoomTemperature));
 
-                if (AirConditioner != null && _roomTemperature < AirConditioner.DesiredTemperature)
+                if (AirConditioner != null)
                 {
-                    AirConditioner.TurnOffAC();
+                    if (_roomTemperature < AirConditioner.DesiredTemperature && AirConditioner.IsOn)
+                    {
+                        AirConditioner.TurnOffAC();
+                    }
+                    else if (_roomTemperature > AirConditioner.DesiredTemperature && !AirConditioner.IsOn)
+                    {
+                        AirConditioner.TurnOnAC();
+                    }
                 }
             }
         }
+
 
 
         public Zone AssignedZone
