@@ -63,7 +63,6 @@ namespace Home_Simulator.Commands
                     }
 
                     _simulationViewModel.CurrentLocation = _simulationViewModel.CurrentUser.CurrentLocation;
-                    _simulationViewModel.InvokeCurrentLocationPropertyChanged();
                     _simulationViewModel.InvokeAccess();
                 }        
             }

@@ -169,6 +169,7 @@ namespace Home_Simulator.ViewModels
             {
                 _currentLocation = value;
                 OnPropertyChanged(nameof(CurrentLocation));
+                _zoneRoomTemperatureService.AdjustRoomTemperature(this);
                 LightPermissionManager.UpdateLightPermissionsForAllUsers(Rooms, CurrentUser);
 
             }
@@ -318,6 +319,7 @@ namespace Home_Simulator.ViewModels
                 if (e.PropertyName == nameof(DateTimeModel.SimulationDate))
                 {
                     _outsideTemperatureService.UpdateOutsideTemperature(this);
+                    _zoneRoomTemperatureService.AdjustRoomTemperature(this);
                 }
 
                 if (e.PropertyName == nameof(DateTimeModel.SimulationTime))
