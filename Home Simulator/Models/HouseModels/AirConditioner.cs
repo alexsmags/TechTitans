@@ -33,9 +33,9 @@ namespace Home_Simulator.Models.HouseModels
             return date.Month >= 6 && date.Month <= 8;
         }
 
-        public void CheckAndAdjustTemperature(double outsideTemperature, DateTime currentDate)
+        public void CheckAndAdjustTemperature(DateTime currentDate)
         {
-            if (ShouldOperate(outsideTemperature, this.RoomTemperature, currentDate) && IsOn)
+            if (ShouldOperate(OutsideTemperature, InsideTemperature, currentDate) && IsOn)
             {
                 TurnOffAC();
             }
