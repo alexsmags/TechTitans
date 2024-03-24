@@ -21,6 +21,8 @@ namespace Home_Simulator.Models.HouseModels
         private double _insideTemperature;
         private double _outsideTemperature;
 
+        public double DesiredTemperature { get; set; }
+
         private bool ShouldOperate(double outsideTemperature, double insideTemperature, DateTime currentDate)
         {
             return IsSummer(currentDate) && outsideTemperature < insideTemperature;
