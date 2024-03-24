@@ -40,6 +40,10 @@ namespace Home_Simulator.Models.HouseModels
                 room.Windows.Add(new Window());
             }
         }
+        public void addAirConditioner()
+        {
+            _house.AirConditioner = new AirConditioner(); 
+        }
         public House GetHouse()
         {
             House result = _house;

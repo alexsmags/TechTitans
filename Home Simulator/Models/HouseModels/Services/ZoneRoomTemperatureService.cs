@@ -26,7 +26,9 @@ namespace Home_Simulator.Models.HouseModels.Services
                     }
                 }
             }
-        }public void AdjustRoomTemperature(SimulationViewModel simulationViewModel)
+        }
+        
+        public void AdjustRoomTemperature(SimulationViewModel simulationViewModel)
         {
         bool isAllUsersOutdoor = simulationViewModel.users.All(user => user.CurrentLocation?.IsOutdoor == true);
          var currentTime = simulationViewModel.SimulationModel.SimulationTime;

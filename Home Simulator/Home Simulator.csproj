@@ -105,6 +105,7 @@
     <Compile Include="Converters\BooleanToOpenClosedConverter.cs" />
     <Compile Include="Converters\InverseBooleanConverter.cs" />
     <Compile Include="Converters\NullToBoolConverter.cs" />
+    <Compile Include="Models\HouseModels\AirConditioner.cs" />
     <Compile Include="Models\HouseModels\Director.cs" />
     <Compile Include="Models\HouseModels\Door.cs" />
     <Compile Include="Models\HouseModels\House.cs" />
@@ -293,6 +294,11 @@
   <ItemGroup>
     <Resource Include="Images\ProfileIcons\Child.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\HouseObjectIcons\ac_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HouseObjectIcons\ac_off.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
