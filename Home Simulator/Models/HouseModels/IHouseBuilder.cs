@@ -12,7 +12,7 @@ namespace Home_Simulator.Models.HouseModels
         void AddLights(int numberOfLights);
         void AddDoors(int numberOfDoors);
         void AddWindows(int numberOfWindows);
-        void addAirConditioner();
+        void AddAirConditioner();
         House GetHouse(); 
         void NameRoom(string name);
     }
