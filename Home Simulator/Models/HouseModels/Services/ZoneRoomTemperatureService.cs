@@ -21,6 +21,7 @@ namespace Home_Simulator.Models.HouseModels.Services
                         foreach (var room in zone.Rooms)
                         {
                             room.RoomTemperature = period.DesiredTemperature;
+                            simulationViewModel.AddLogMessage($"Room {room.Name} temperature set to {period.DesiredTemperature}°C");
                         }
                         break;
                     }
@@ -42,6 +43,7 @@ namespace Home_Simulator.Models.HouseModels.Services
                     foreach(var room in simulationViewModel.Rooms)
                     {
                         room.RoomTemperature = 17;
+                        simulationViewModel.AddLogMessage($"Room {room.Name} temperature set to 17°C");
                     }
                 }
         }

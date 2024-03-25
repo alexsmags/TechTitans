@@ -27,6 +27,7 @@ namespace Home_Simulator.Models.HouseModels.Services
             if (temperatureData != default)
             {
                 simulationViewModel.OutsideTemperature = temperatureData.temperature;
+                simulationViewModel.AddLogMessage($"Outside temperature updated to {temperatureData.temperature}°C");
             }
             else
             {
