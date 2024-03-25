@@ -10,7 +10,6 @@ This repo contains the code for the Smart Home Simulator done for the SOEN343 co
 | Cosmin Suna           | Making Domain Model/Review  | 40125921 |
 | Mohamad Mounir Yassin |    Documentation/Review     | 40198854 |
 | Saikou Diallo         | Making Domain Model/Review  | 40191902 |
-| Theodore Ku           |Making Context Diagram/Review| 40191463 |
 | Patrick MacEachen     | Making Domain Model/Review  | 40209790 |
 
 
@@ -108,5 +107,16 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 ### Command Design Pattern
 <img width="715" alt="Screenshot 2024-03-13 160012" src="https://github.com/alexsmags/TechTitans/assets/111084379/f24219d3-fb61-47bc-8d7d-3852cf2ff02c">
 
+# - Phase III
+## Team Members and Role 
+| Name                  | Role                 | ID       |
+| --------------------- | -------------------- | -------- |
+| Alexander Smagorinski | UC 1.1, UC 1.2,Design Patterns                | 40190986 |
+| Cosmin Suna           | UC 1.6 | 40125921 |
+| Mohamad Mounir Yassin | UC 1.6 implementation, Activity Diagram for SHH module  | 40198854 |
+| Saikou Diallo         |  | 40191902 |
+| Patrick MacEachen     |  | 40209790 |
 
-
+### State-machine diagram for the SHH module
+### Activity diagram for the SHH module
+![ZLJ1Rjim3BthAtXCJiDE0-81Qx4ES85s7M0Ck-oYIdH2m183YKhcVVqekrcyfHbsiYG-FfAFf6-os2Gb34P81eGkw1LQj49n2wkkRTVmoBwewTO97KX6k2ExJJOOC_aQivaiLjIxRQ4Ris1eZA4ULlTvyJOpu8Sro0uZh4RCQmEm-PenWNKESyOPxstUFRDDlb7xRuXBcfOYE4](https://github.com/alexsmags/TechTitans/assets/111084379/1027c9f2-f2d3-4362-86ca-6fa1d3e52e77)
