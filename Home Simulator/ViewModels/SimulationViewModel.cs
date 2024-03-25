@@ -18,7 +18,7 @@ using Home_Simulator.Commands;
 using Home_Simulator.Stores;
 using System.Globalization;
 using Home_Simulator.Models.HouseModels.Services;
-
+using Home_Simulator.MessageLogs;
 
 namespace Home_Simulator.ViewModels
 {
@@ -26,6 +26,7 @@ namespace Home_Simulator.ViewModels
     {
         #region Fields
 
+        private Log _log;
         private ObservableCollection<string> _logMessages = new ObservableCollection<string>();
 
         private double _outsideTemperature;
@@ -169,11 +170,13 @@ namespace Home_Simulator.ViewModels
 
                     if (previousUser == null)
                     {
-                        LogMessages.Add($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user set to {_currentUser.Name}");
+                        _log.AddMessage($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user set to {_currentUser.Name}");
+                        //LogMessages.Add($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user set to {_currentUser.Name}");
                     }
                     else
                     {
-                        LogMessages.Add($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user changed from {(previousUser.Name)} to {_currentUser.Name }");
+                        _log.AddMessage($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user changed from {(previousUser.Name)} to {_currentUser.Name }");
+                        //LogMessages.Add($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user changed from {(previousUser.Name)} to {_currentUser.Name }");
                     }
 
                     OnPropertyChanged(nameof(CurrentUser));
@@ -328,6 +331,8 @@ namespace Home_Simulator.ViewModels
             _outsideTemperatureService = new OutsideTemperatureService();
             _zoneRoomTemperatureService = new ZoneRoomTemperatureService();
 
+
+            _log = new Log(this);
 
             
             _timer = new DispatcherTimer
