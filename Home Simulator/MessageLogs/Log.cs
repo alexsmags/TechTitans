@@ -13,7 +13,6 @@ namespace Home_Simulator.MessageLogs
     public class Log
     {
         private static string _filePath = @"..\..\MessageLogs\SimulationLogs.txt";
-
         private SimulationViewModel _simulationViewModel;
 
         public Log(SimulationViewModel simulationViewModel)
@@ -23,7 +22,15 @@ namespace Home_Simulator.MessageLogs
 
         public void AddMessage(string message)
         {
-            string log = $"{DateTime.Now} - {message}";
+            string log;
+            if (_simulationViewModel.CurrentUser == null)
+            {
+                log = $"{DateTime.Now} - {message}";
+            }
+            else
+            {
+                log = $"{DateTime.Now} - {_simulationViewModel.CurrentUser.Name} : {message}";
+            }
            _simulationViewModel.LogMessages.Add(log);
             using (StreamWriter sw = File.AppendText(_filePath))
             {
