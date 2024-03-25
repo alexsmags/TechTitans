@@ -26,7 +26,8 @@ namespace Home_Simulator.ViewModels
     {
         #region Fields
 
-        private Log _log;
+        private  Log _log;
+
         private ObservableCollection<string> _logMessages = new ObservableCollection<string>();
 
         private double _outsideTemperature;
@@ -146,13 +147,23 @@ namespace Home_Simulator.ViewModels
             {
                 if (_isSimulationRunning != value)
                 {
+                    bool previousValue = _isSimulationRunning;
                     _isSimulationRunning = value;
                     OnPropertyChanged(nameof(IsSimulationRunning));
 
                     if (_isSimulationRunning)
+                    {
                         _timer.Start();
+                        _log.AddMessage("Simulation started");
+                    }
                     else
+                    {
                         _timer.Stop();
+                        if (previousValue)
+                        {
+                            _log.AddMessage("Simulation stopped");
+                        }
+                    }
                 }
             }
         }
@@ -167,18 +178,6 @@ namespace Home_Simulator.ViewModels
                     var previousUser = _currentUser;
                     _currentUser = value;
                     CurrentLocation = _currentUser?.CurrentLocation;
-
-                    if (previousUser == null)
-                    {
-                        _log.AddMessage($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user set to {_currentUser.Name}");
-                        //LogMessages.Add($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user set to {_currentUser.Name}");
-                    }
-                    else
-                    {
-                        _log.AddMessage($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user changed from {(previousUser.Name)} to {_currentUser.Name }");
-                        //LogMessages.Add($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user changed from {(previousUser.Name)} to {_currentUser.Name }");
-                    }
-
                     OnPropertyChanged(nameof(CurrentUser));
                     OnPropertyChanged(nameof(CanEditUser));
                     OnPropertyChanged(nameof(HasAccessToDoors));
@@ -288,6 +287,11 @@ namespace Home_Simulator.ViewModels
             }
         }
 
+        public void AddLogMessage(string message)
+        {
+            _log.AddMessage(message);
+        }
+
         #endregion
 
         #region Constructors
@@ -322,10 +326,10 @@ namespace Home_Simulator.ViewModels
             RemoveTemperaturePeriodCommand = new RemoveTemperaturePeriodCommand(this);
             DeletePeriodCommand = new DeletePeriodCommand(this);
             LoadCSVTemperatureCommand = new LoadCSVTemperatureCommand(this);
-            ToggleLightCommand = new ToggleLightCommand();
-            ToggleDoorCommand = new ToggleDoorCommand();
-            ToggleOpenCloseWindowCommand = new ToggleOpenCloseWindowCommand();
-            ToggleBlockUnblockWindowCommand = new ToggleBlockUnblockWindowCommand();
+            ToggleLightCommand = new ToggleLightCommand(this);
+            ToggleDoorCommand = new ToggleDoorCommand(this);
+            ToggleOpenCloseWindowCommand = new ToggleOpenCloseWindowCommand(this);
+            ToggleBlockUnblockWindowCommand = new ToggleBlockUnblockWindowCommand(this);
 
             _windowStateService = new WindowStateService();
             _outsideTemperatureService = new OutsideTemperatureService();
