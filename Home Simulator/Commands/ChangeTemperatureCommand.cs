@@ -32,6 +32,7 @@ namespace Home_Simulator.Commands
              if (result == true)
              {
                  _simulationViewModel.OutsideTemperature = dialog.SelectedTemperature;
+                _simulationViewModel.AddLogMessage($"Temperature changed to {dialog.SelectedTemperature}");
              }
 
             

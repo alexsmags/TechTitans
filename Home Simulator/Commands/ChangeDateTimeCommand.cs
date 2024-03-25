@@ -31,6 +31,7 @@ namespace Home_Simulator.Commands
             {
                 _simulationViewModel.SimulationModel.SimulationDate = dialog.SelectedDateTime.Date;
                 _simulationViewModel.SimulationModel.SimulationTime = dialog.SelectedDateTime.TimeOfDay;
+                _simulationViewModel.AddLogMessage($"Date and Time changed to {dialog.SelectedDateTime}");
             }
         }
     }

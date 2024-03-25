@@ -28,6 +28,7 @@ namespace Home_Simulator.Commands
                     if (roomToMatch.Equals(roomToAdd)) 
                     {
                         _simulationViewModel.SelectedZone.Rooms.Add(roomToMatch);
+                        _simulationViewModel.AddLogMessage($"Room {roomToMatch.Name} added to zone {_simulationViewModel.SelectedZone.Name}");
                     }
                 }
 

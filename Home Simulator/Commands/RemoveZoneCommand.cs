@@ -32,6 +32,7 @@ namespace Home_Simulator.Commands
                 }
 
                 _simulationViewModel.Zones.Remove(zone);
+                _simulationViewModel.AddLogMessage($"Zone '{zone.Name}' removed.");
             }
         }
     }

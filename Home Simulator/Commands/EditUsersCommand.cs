@@ -27,6 +27,7 @@ namespace Home_Simulator.Commands
             dialog.Owner = Application.Current.MainWindow;
             dialog.WindowStartupLocation = WindowStartupLocation.CenterOwner;
             var result = dialog.ShowDialog();
+            _simulationViewModel.AddLogMessage($"User '{_simulationViewModel.CurrentUser.Name}' edited.");
 
         }
     }

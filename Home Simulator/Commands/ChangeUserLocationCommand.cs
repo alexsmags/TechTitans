@@ -45,12 +45,14 @@ namespace Home_Simulator.Commands
                         if (oldRoom != null && oldRoom != dialog.SelectedRoom)
                         {
                             oldRoom.RemoveUser(_simulationViewModel.CurrentUser);
-                            currentRoom.AddUser(_simulationViewModel.CurrentUser);  
+                            currentRoom.AddUser(_simulationViewModel.CurrentUser);
+                            _simulationViewModel.AddLogMessage($"User '{_simulationViewModel.CurrentUser.Name}' moved from '{oldRoom.Name}' to '{currentRoom.Name}'.");
 
                         }
                         else
                         {
                             currentRoom.AddUser(_simulationViewModel.CurrentUser);
+                            _simulationViewModel.AddLogMessage($"User '{_simulationViewModel.CurrentUser.Name}' moved to '{currentRoom.Name}'.");
                         }
 
                     }
@@ -59,6 +61,7 @@ namespace Home_Simulator.Commands
                        if (oldRoom != null) 
                        { 
                             oldRoom.RemoveUser(_simulationViewModel?.CurrentUser); 
+                            _simulationViewModel.AddLogMessage($"User '{_simulationViewModel.CurrentUser.Name}' moved from '{oldRoom.Name}' to 'Outside'.");
                        }
                     }
 

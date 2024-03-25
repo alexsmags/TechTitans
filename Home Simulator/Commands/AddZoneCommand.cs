@@ -28,6 +28,7 @@ namespace Home_Simulator.Commands
                 {
                     _simulationViewModel.Zones.Add(new Zone(_simulationViewModel.NewZoneName));
                     _simulationViewModel.NewZoneName = string.Empty;
+                    _simulationViewModel.AddLogMessage($"Zone '{_simulationViewModel.Zones.Last().Name}' added.");
                 }
                 else
                 {

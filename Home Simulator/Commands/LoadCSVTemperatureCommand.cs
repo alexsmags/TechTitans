@@ -57,7 +57,7 @@ namespace Home_Simulator.Commands
 
                     _simulationViewModel.OutsideTemperatureData = temperatureData;
                     _simulationViewModel.SimulationModel.SimulationDate = _simulationViewModel.SimulationModel.SimulationDate;
-
+                    _simulationViewModel.AddLogMessage("Temperature data loaded successfully.");
 
 
                     MessageBox.Show("Temperature data loaded successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -66,6 +66,7 @@ namespace Home_Simulator.Commands
                 catch (Exception ex)
                 {
                     MessageBox.Show($"Error loading temperature data: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    _simulationViewModel.AddLogMessage($"Error loading temperature data: {ex.Message}");
                 }
             }
         }

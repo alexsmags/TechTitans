@@ -25,6 +25,12 @@ namespace Home_Simulator.Commands
             dialog.Owner = Application.Current.MainWindow;
             dialog.WindowStartupLocation = WindowStartupLocation.CenterOwner;
             var result = dialog.ShowDialog();
+            if (result == true)
+            {
+                var temperaturePeriod = _simulationViewModel.SelectedZone.TemperaturePeriods.Last();
+                _simulationViewModel.AddLogMessage($"Temperature period {temperaturePeriod.PeriodName} with temperature {temperaturePeriod.DesiredTemperature} is set from {temperaturePeriod.StartTime} to {temperaturePeriod.EndTime}");
+
+            }
         }
     }
 }

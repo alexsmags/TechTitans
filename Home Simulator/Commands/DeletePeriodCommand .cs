@@ -23,6 +23,7 @@ namespace Home_Simulator.Commands
             if (_simulationViewModel.SelectedZone != null && period != null)
             {
                 _simulationViewModel.SelectedZone.TemperaturePeriods.Remove(period);
+                _simulationViewModel.AddLogMessage($"Period '{period.PeriodName}' deleted.");
             }
         }
     }

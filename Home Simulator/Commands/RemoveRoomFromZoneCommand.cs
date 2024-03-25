@@ -26,6 +26,7 @@ namespace Home_Simulator.Commands
                     if (roomToMatch.Equals(roomToRemove))
                     {
                         _simulationViewModel.SelectedZone.Rooms.Remove(roomToMatch);
+                        _simulationViewModel.AddLogMessage($"Room '{roomToMatch.Name}' removed from zone '{_simulationViewModel.SelectedZone.Name}'.");
                     }
                 } 
                 _simulationViewModel.AvailableRooms.Add(roomToRemove);
