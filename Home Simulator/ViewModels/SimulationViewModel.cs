@@ -19,11 +19,14 @@ using Home_Simulator.Stores;
 using System.Globalization;
 using Home_Simulator.Models.HouseModels.Services;
 
+
 namespace Home_Simulator.ViewModels
 {
     public class SimulationViewModel : ViewModelBase
     {
         #region Fields
+
+        private ObservableCollection<string> _logMessages = new ObservableCollection<string>();
 
         private double _outsideTemperature;
 
@@ -110,6 +113,16 @@ namespace Home_Simulator.ViewModels
 
         #region Properties
 
+        public ObservableCollection<string> LogMessages
+        {
+            get { return _logMessages; }
+            set
+            {
+                _logMessages = value;
+                OnPropertyChanged(nameof(LogMessages));
+            }
+        }
+
         public bool CanEditUser => CurrentUser != null && users.Any();
 
         public List<(DateTime dateTime, double temperature)> OutsideTemperatureData { get; set; }
@@ -118,7 +131,7 @@ namespace Home_Simulator.ViewModels
         {
             get { return _outsideTemperature; }
             set
-            {
+            {   
                 _outsideTemperature = value;
                 OnPropertyChanged(nameof(OutsideTemperature));
 
@@ -150,8 +163,18 @@ namespace Home_Simulator.ViewModels
             {
                 if (_currentUser != value)
                 {
+                    var previousUser = _currentUser;
                     _currentUser = value;
                     CurrentLocation = _currentUser?.CurrentLocation;
+
+                    if (previousUser == null)
+                    {
+                        LogMessages.Add($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user set to {_currentUser.Name}");
+                    }
+                    else
+                    {
+                        LogMessages.Add($"{DateTime.Now.ToString("MM-dd-yyyy: HH:mm")} - Current user changed from {(previousUser.Name)} to {_currentUser.Name }");
+                    }
 
                     OnPropertyChanged(nameof(CurrentUser));
                     OnPropertyChanged(nameof(CanEditUser));
@@ -305,6 +328,8 @@ namespace Home_Simulator.ViewModels
             _outsideTemperatureService = new OutsideTemperatureService();
             _zoneRoomTemperatureService = new ZoneRoomTemperatureService();
 
+
+            
             _timer = new DispatcherTimer
             {
                 Interval = TimeSpan.FromSeconds(1)
