@@ -24,5 +24,10 @@ namespace Home_Simulator.Views
         {
             InitializeComponent();
         }
+
+        private void ModuleTab_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

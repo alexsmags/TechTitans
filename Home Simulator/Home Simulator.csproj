@@ -92,6 +92,9 @@
     <Compile Include="Components\EditUsersDialog.xaml.cs">
       <DependentUpon>EditUsersDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Components\LogView.xaml.cs">
+      <DependentUpon>LogView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Components\RemoveTemperaturePeriodDialog.xaml.cs">
       <DependentUpon>RemoveTemperaturePeriodDialog.xaml</DependentUpon>
     </Compile>
@@ -105,6 +108,7 @@
     <Compile Include="Converters\BooleanToOpenClosedConverter.cs" />
     <Compile Include="Converters\InverseBooleanConverter.cs" />
     <Compile Include="Converters\NullToBoolConverter.cs" />
+    <Compile Include="MessageLogs\Log.cs" />
     <Compile Include="Models\HouseModels\AirConditioner.cs" />
     <Compile Include="Models\HouseModels\Director.cs" />
     <Compile Include="Models\HouseModels\Door.cs" />
@@ -159,6 +163,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Components\EditUsersDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\LogView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -299,6 +307,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\HouseObjectIcons\ac_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MessageLogs\SimulationLogs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
