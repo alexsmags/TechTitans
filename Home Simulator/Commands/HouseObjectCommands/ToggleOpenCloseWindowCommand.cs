@@ -1,4 +1,5 @@
 ﻿using Home_Simulator.Models.HouseModels;
+using Home_Simulator.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,13 @@ namespace Home_Simulator.Commands.HouseObjectCommands
     {
         public event EventHandler CanExecuteChanged;
 
+        private readonly SimulationViewModel _simulationViewModel;
+
+        public ToggleOpenCloseWindowCommand(SimulationViewModel simulationViewModel)
+        {
+            _simulationViewModel = simulationViewModel;
+        }
+
         public bool CanExecute(object parameter) => parameter is Window;
 
         public void Execute(object parameter)
@@ -21,10 +29,12 @@ namespace Home_Simulator.Commands.HouseObjectCommands
                 if (window.IsOpen)
                 {
                     window.CloseWindow();
+                    _simulationViewModel.AddLogMessage($"Window {window.WindowName} closed");
                 }
                 else
                 {
                     window.OpenWindow();
+                    _simulationViewModel.AddLogMessage($"Window {window.WindowName} opened");
                 }
 
             }
