@@ -69,7 +69,7 @@ namespace Home_Simulator.Models.HouseSimulationModels
 
         public void IncrementTime()
         {
-            TimeSpan timeIncrement = TimeSpan.FromSeconds(_timeSpeed * 20);
+            TimeSpan timeIncrement = TimeSpan.FromSeconds(_timeSpeed);
             SimulationTime = SimulationTime.Add(timeIncrement);
 
             if (SimulationTime.TotalHours >= 24)

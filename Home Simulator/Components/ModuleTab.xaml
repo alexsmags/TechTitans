@@ -73,6 +73,54 @@
             </Setter>
         </Style>
 
+        <Style x:Key="AnimatedSliderToggleButtonStyle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Width" Value="60"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border Background="{TemplateBinding Background}" 
+                     BorderBrush="{TemplateBinding BorderBrush}" 
+                     BorderThickness="{TemplateBinding BorderThickness}" 
+                     CornerRadius="15">
+                            <Grid>
+                                <Ellipse Name="toggleButtonEllipse" Width="20" Height="20" Fill="LightGray" Stroke="Black" StrokeThickness="1" HorizontalAlignment="Left" Margin="3"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Background" Value="White"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ThicknessAnimation Storyboard.TargetName="toggleButtonEllipse" Storyboard.TargetProperty="Margin" To="33,3,3,3" Duration="0:0:0.2"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ThicknessAnimation Storyboard.TargetName="toggleButtonEllipse" Storyboard.TargetProperty="Margin" To="3,3,33,3" Duration="0:0:0.2"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="False">
+                                <Setter Property="Background" Value="#beb5eb"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#D3D3D3"/>
+                                <Setter TargetName="toggleButtonEllipse" Property="Fill" Value="#A9A9A9"/>
+                                <Setter TargetName="toggleButtonEllipse" Property="Stroke" Value="#696969"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
         <converter:BooleanToOnOffConverter x:Key="BooleanToOnOffConverter" />
         <converter:InverseBooleanConverter x:Key="InverseBooleanConverter" />
     </UserControl.Resources>
@@ -278,14 +326,29 @@
             </TabItem>
             
             <TabItem Header="SHH">
-                <Grid IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}">
+                <Grid>
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="10">
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <TextBlock Text="Toggle SHH" VerticalAlignment="Center" Margin="10"></TextBlock>
+                        <ToggleButton 
+                             Height="30" 
+                             Width="60"
+                             Cursor="Hand" 
+                             IsChecked="{Binding IsShhEnabled}" 
+                             Margin="10" 
+                             Padding="10" 
+                             VerticalAlignment="Center" 
+                             Style="{StaticResource AnimatedSliderToggleButtonStyle}"/>
+                    </StackPanel>
+   
+                    
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="10">
                         <TextBox x:Name="txtZoneName"
                      Width="200"
                      Height="20"
@@ -302,10 +365,11 @@
                     BorderThickness="1"
                     BorderBrush="Black"
                     Height="20"
-                    Cursor="Hand" />
+                    Cursor="Hand"
+                    IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}"/>
                     </StackPanel>
 
-                    <ListBox Grid.Row="1" ItemsSource="{Binding Zones}" Margin="10"  SelectedItem="{Binding SelectedZone, Mode=TwoWay}">
+                    <ListBox Grid.Row="2" ItemsSource="{Binding Zones}" Margin="10"  SelectedItem="{Binding SelectedZone, Mode=TwoWay}" IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <Expander Header="{Binding Name}" Foreground="Black" Expanded="Expander_Expanded">
@@ -333,7 +397,8 @@
                                                                 Foreground="White"
                                                                 FontWeight="Bold"
                                                                 Height="30"
-                                                                Cursor="Hand"/>
+                                                                Cursor="Hand"
+                                                                IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}"/>
                                                     </Grid>
                                                 </DataTemplate>
                                             </ListBox.ItemTemplate>
@@ -360,8 +425,8 @@
 
                                         <!-- Buttons to Add/Remove Temperature Period -->
                                         <StackPanel Margin="5" HorizontalAlignment="Left">
-                                            <Button Content="Add Period" Style="{StaticResource ButtonWithoutMouseOver}" Background="Transparent" BorderThickness="0" Cursor="Hand"  HorizontalAlignment="Left" Command="{Binding DataContext.AddTemperaturePeriodCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Margin="0,0,0,6" />
-                                            <Button Content="View/Remove Period(s)" Style="{StaticResource ButtonWithoutMouseOver}" Background="Transparent" BorderThickness="0" Cursor="Hand" Command="{Binding DataContext.RemoveTemperaturePeriodCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" />
+                                            <Button Content="Add Period" Style="{StaticResource ButtonWithoutMouseOver}" Background="Transparent" BorderThickness="0" Cursor="Hand"  HorizontalAlignment="Left" Command="{Binding DataContext.AddTemperaturePeriodCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Margin="0,0,0,6" IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}" />
+                                            <Button Content="View/Remove Period(s)" Style="{StaticResource ButtonWithoutMouseOver}" Background="Transparent" BorderThickness="0" Cursor="Hand" Command="{Binding DataContext.RemoveTemperaturePeriodCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}" />
                                         </StackPanel>
 
                                         <StackPanel Orientation="Horizontal" Margin="5">
@@ -394,7 +459,7 @@
                                                     Height="30"
                                                     Width="70"
                                                     BorderThickness="0"
-                                                    Cursor="Hand"/>
+                                                    Cursor="Hand" />
                                         </StackPanel>
 
                                         <Button Content="Remove Zone" 
@@ -406,12 +471,41 @@
                                                         Background="#D9534F"
                                                         Foreground="White"
                                                         BorderThickness="0"
-                                                        Cursor="Hand"/>   
+                                                        Cursor="Hand" />   
                                     </StackPanel>
                                 </Expander>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
+                    
+                    <!-- Air Conditioner Section-->
+                    <Border Grid.Row="3" BorderBrush="Gray" BorderThickness="1" Margin="10" Padding="10" CornerRadius="5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Air Conditioner Status:" VerticalAlignment="Center"/>
+                            <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <Image  Width="50" Height="50" Source="{Binding AirConditioner.ACImage}" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                                <ToggleButton Height="30" Width="60" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Cursor="Hand" IsEnabled="{Binding IsShhEnabled}" Command="{Binding ToggleAcCommand}" IsChecked="{Binding AirConditioner.IsOn, Mode=OneWay}" Margin="10" Padding="10" VerticalAlignment="Center" Style="{StaticResource AnimatedSliderToggleButtonStyle}"/>
+                            </StackPanel>
+                           
+
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="Desired Temperature:" VerticalAlignment="Center"/>
+                            <Slider x:Name="setTemperature"  Grid.Row="1" Grid.Column="1" Minimum="0" Maximum="30" IsSnapToTickEnabled="True" IsEnabled="{Binding IsShhEnabled}" Value="{Binding AirConditioner.DesiredTemperature, Mode=TwoWay}" Width="200" VerticalAlignment="Center" ToolTip="Adjust desired temperature" ValueChanged="setTemperature_ValueChanged"/>
+                            <TextBlock x:Name="tempDisplay" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+
+                        </Grid>
+                    </Border>
+
+
                 </Grid>
             </TabItem>
 

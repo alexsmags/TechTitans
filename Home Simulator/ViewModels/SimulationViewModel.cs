@@ -33,6 +33,8 @@ namespace Home_Simulator.ViewModels
 
         private bool _isSimulationRunning;
 
+        private bool _isShhEnabled = false;
+
         private DateTimeModel _simulationModel;
 
         public ObservableCollection<User> users;
@@ -60,6 +62,8 @@ namespace Home_Simulator.ViewModels
         private OutsideTemperatureService _outsideTemperatureService;
 
         private ZoneRoomTemperatureService _zoneRoomTemperatureService;
+
+        private AirConditionerService _airConditionerService;
 
         #endregion
 
@@ -102,8 +106,10 @@ namespace Home_Simulator.ViewModels
         public ICommand RemoveTemperaturePeriodCommand { get; private set; }
 
         public ICommand DeletePeriodCommand { get; private set; }
-        
+
         public ICommand LoadCSVTemperatureCommand { get; private set; }
+
+        public ICommand ToggleAcCommand { get; private set; }   
 
 
         #endregion
@@ -111,6 +117,8 @@ namespace Home_Simulator.ViewModels
         #region Properties
 
         public bool CanEditUser => CurrentUser != null && users.Any();
+
+        public AirConditioner AirConditioner {get; set;}
 
         public List<(DateTime dateTime, double temperature)> OutsideTemperatureData { get; set; }
 
@@ -121,6 +129,7 @@ namespace Home_Simulator.ViewModels
             {
                 _outsideTemperature = value;
                 OnPropertyChanged(nameof(OutsideTemperature));
+                _airConditionerService.UpdateAirConditionerState(this);
 
             }
         }
@@ -139,6 +148,19 @@ namespace Home_Simulator.ViewModels
                         _timer.Start();
                     else
                         _timer.Stop();
+                }
+            }
+        }
+
+        public bool IsShhEnabled
+        {
+            get => _isShhEnabled;
+            set
+            {
+                if (_isShhEnabled != value)
+                {
+                    _isShhEnabled = value;
+                    OnPropertyChanged(nameof(IsShhEnabled));
                 }
             }
         }
@@ -300,10 +322,12 @@ namespace Home_Simulator.ViewModels
             ToggleDoorCommand = new ToggleDoorCommand();
             ToggleOpenCloseWindowCommand = new ToggleOpenCloseWindowCommand();
             ToggleBlockUnblockWindowCommand = new ToggleBlockUnblockWindowCommand();
+            ToggleAcCommand = new ToggleAcCommand(this);
 
             _windowStateService = new WindowStateService();
             _outsideTemperatureService = new OutsideTemperatureService();
             _zoneRoomTemperatureService = new ZoneRoomTemperatureService();
+            _airConditionerService = new AirConditionerService();
 
             _timer = new DispatcherTimer
             {
@@ -316,16 +340,21 @@ namespace Home_Simulator.ViewModels
 
             SimulationModel.PropertyChanged += (sender, e) =>
             {
-                if (e.PropertyName == nameof(DateTimeModel.SimulationDate))
+                if (IsShhEnabled)
                 {
-                    _outsideTemperatureService.UpdateOutsideTemperature(this);
-                    _zoneRoomTemperatureService.AdjustRoomTemperature(this);
-                }
+                    if (e.PropertyName == nameof(DateTimeModel.SimulationDate))
+                    {
+                        _outsideTemperatureService.UpdateOutsideTemperature(this);
+                        _zoneRoomTemperatureService.AdjustRoomTemperature(this);
+                        _airConditionerService.UpdateAirConditionerState(this);
+                    }
 
-                if (e.PropertyName == nameof(DateTimeModel.SimulationTime))
-                {
-                    _zoneRoomTemperatureService.UpdateRoomTemperatures(this);
-                    _windowStateService.UpdateWindowStates(this);
+                    if (e.PropertyName == nameof(DateTimeModel.SimulationTime))
+                    {
+                        _zoneRoomTemperatureService.UpdateRoomTemperatures(this, AirConditioner);
+                        _windowStateService.UpdateWindowStates(this);
+                        _airConditionerService.UpdateRoomTemperatures(this, AirConditioner);
+                    }
                 }
             };
 

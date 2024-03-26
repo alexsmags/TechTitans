@@ -9,7 +9,7 @@ namespace Home_Simulator.Models.HouseModels.Services
 {
     public class ZoneRoomTemperatureService
     {
-        public void UpdateRoomTemperatures(SimulationViewModel simulationViewModel)
+        public void UpdateRoomTemperatures(SimulationViewModel simulationViewModel, AirConditioner airConditioner)
         {
             foreach (var zone in simulationViewModel.Zones)
             {
@@ -20,6 +20,11 @@ namespace Home_Simulator.Models.HouseModels.Services
                     {
                         foreach (var room in zone.Rooms)
                         {
+                            if (airConditioner.IsOn)
+                            {
+                                room.RoomTemperature = period.DesiredTemperature + 0.1;
+                                continue;
+                            }
                             room.RoomTemperature = period.DesiredTemperature;
                         }
                         break;

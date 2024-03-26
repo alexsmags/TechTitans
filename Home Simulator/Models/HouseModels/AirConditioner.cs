@@ -18,28 +18,9 @@ namespace Home_Simulator.Models.HouseModels
 
         private BitmapImage _acImage;
 
-        private double _insideTemperature;
-        private double _outsideTemperature;
+        private double _desiredTemperature;
 
-        public double DesiredTemperature { get; set; }
 
-        private bool ShouldOperate(double outsideTemperature, double insideTemperature, DateTime currentDate)
-        {
-            return IsSummer(currentDate) && outsideTemperature < insideTemperature;
-        }
-
-        private static bool IsSummer(DateTime date)
-        {
-            return date.Month >= 6 && date.Month <= 8;
-        }
-
-        public void CheckAndAdjustTemperature(DateTime currentDate)
-        {
-            if (ShouldOperate(OutsideTemperature, InsideTemperature, currentDate) && IsOn)
-            {
-                TurnOffAC();
-            }
-        }
 
         public bool IsOn
         {
@@ -72,27 +53,16 @@ namespace Home_Simulator.Models.HouseModels
             }
         }
 
-        public double InsideTemperature
+        public double DesiredTemperature
         {
-            get { return _insideTemperature; }
+            get { return _desiredTemperature; }
             set
             {
-                _insideTemperature = value;
-                OnPropertyChanged(nameof(InsideTemperature));
-                AdjustACBasedOnTemperature();
+                _desiredTemperature = value;
+                OnPropertyChanged(nameof(DesiredTemperature));
             }
         }
 
-        public double OutsideTemperature
-        {
-            get { return _outsideTemperature; }
-            set
-            {
-                _outsideTemperature = value;
-                OnPropertyChanged(nameof(OutsideTemperature));
-                AdjustACBasedOnTemperature();
-            }
-        }
 
         public AirConditioner()
         {
@@ -113,13 +83,6 @@ namespace Home_Simulator.Models.HouseModels
             ACImage = new BitmapImage(new Uri(@"\..\..\Images\HouseObjectIcons\ac_off.png", UriKind.RelativeOrAbsolute));
         }
 
-        private void AdjustACBasedOnTemperature()
-        {
-            if (IsOn && OutsideTemperature < InsideTemperature)
-            {
-                TurnOffAC();
-            }
-        }
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {

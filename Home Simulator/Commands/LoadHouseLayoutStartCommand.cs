@@ -32,12 +32,13 @@ namespace Home_Simulator.Commands
             {
                 string fileContent = File.ReadAllText(openFileDialog.FileName);
 
-                ObservableCollection<Room> roomList = LoadFile(fileContent);
+                HouseData houseData = LoadFile(fileContent);
                 SimulationViewModel simulationViewModel = new SimulationViewModel();
-                simulationViewModel.LocationService.AddRooms(roomList);
-                simulationViewModel.LocationService.Rooms = roomList;
+                simulationViewModel.LocationService.AddRooms(houseData.Rooms);
+                simulationViewModel.LocationService.Rooms = houseData.Rooms;
+                simulationViewModel.AirConditioner = houseData.AirConditioner;
                 
-                ObservableCollection <Room> availableRooms = new ObservableCollection<Room>(roomList);
+                ObservableCollection <Room> availableRooms = new ObservableCollection<Room>(houseData.Rooms);
 
                 simulationViewModel.AvailableRooms = availableRooms;
                 simulationViewModel.LightPermissionManager.UpdateLightPermissionsForAllUsers(simulationViewModel.Rooms, simulationViewModel.CurrentUser);
@@ -49,25 +50,28 @@ namespace Home_Simulator.Commands
             }
         }
 
-        public ObservableCollection<Room> LoadFile(string filePath)
+        public HouseData LoadFile(string filePath)
         {
-            ObservableCollection<Room> roomList = new ObservableCollection<Room>(); 
+            HouseData houseData = new HouseData
+            {
+                Rooms = new ObservableCollection<Room>()
+            };
+
             HouseBuilder builder = new HouseBuilder();
             HouseService houseService = new HouseService(builder);
 
             House house = houseService.CreateHouseFromTextFile(filePath);
             if (house != null)
             {
-                int roomNumber = 1;
                 foreach (var room in house.Rooms)
                 {
-                    roomList.Add(room);
-                    roomNumber++;
+                    houseData.Rooms.Add(room);
                 }
+
+                houseData.AirConditioner = house.AirConditioner;
             }
 
-            return roomList;
-
+            return houseData;
         }
 
     }

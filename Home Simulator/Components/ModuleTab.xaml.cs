@@ -24,6 +24,7 @@ namespace Home_Simulator.Components
         public ModuleTab()
         {
             InitializeComponent();
+            UpdateTemperatureDisplay();
         }
 
         private void btnToggle_Click(object sender, RoutedEventArgs e)
@@ -93,14 +94,16 @@ namespace Home_Simulator.Components
             listBox.SelectedItem = listBoxItem.DataContext;
         }
 
-        private void Button_GiveFeedback(object sender, GiveFeedbackEventArgs e)
+        private void UpdateTemperatureDisplay()
         {
+            if (tempDisplay == null) { return; }
 
+            tempDisplay.Text = "Temperature: " + setTemperature.Value.ToString("N0") + "°C";
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void setTemperature_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-
+            UpdateTemperatureDisplay();
         }
     }
 }
