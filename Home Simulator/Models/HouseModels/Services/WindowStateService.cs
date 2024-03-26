@@ -26,7 +26,7 @@ namespace Home_Simulator.Models.HouseModels.Services
                         if (!window.IsBlocked)
                         {
                             window.OpenWindow();
-                            _simulationViewModel.AddLogMessage($"Window {window.WindowName} opened");
+                            //_simulationViewModel.AddLogMessage($"Window {window.WindowName} opened");
                         }
                     }
                 }

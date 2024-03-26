@@ -1,1 +1,26 @@
 ﻿
+2024-03-25 8:51:00 PM - Child : User set to Child
+2024-03-25 9:05:40 PM - Bathroom automation is enabled
+2024-03-25 9:05:43 PM - Child : User set to Child
+2024-03-25 9:05:45 PM - Child : Simulation started
+2024-03-25 9:05:48 PM - Child : Simulation stopped
+2024-03-25 9:05:49 PM - Bathroom automation is disabled
+2024-03-25 9:05:50 PM - Bathroom automation is enabled
+2024-03-25 9:05:50 PM - Bathroom automation is disabled
+2024-03-25 9:05:50 PM - Bathroom automation is enabled
+2024-03-25 9:05:51 PM - Bathroom automation is disabled
+2024-03-25 9:05:51 PM - Bathroom automation is enabled
+2024-03-25 9:05:51 PM - Bathroom automation is disabled
+2024-03-25 9:05:52 PM - Bathroom automation is enabled
+2024-03-25 9:05:52 PM - Bathroom automation is disabled
+2024-03-25 9:05:52 PM - Bathroom automation is enabled
+2024-03-25 9:06:12 PM - Bathroom automation is disabled
+2024-03-25 9:06:12 PM - Bathroom automation is enabled
+2024-03-25 9:35:14 PM - Child : User set to Child
+2024-03-25 9:35:18 PM - Child : Automation for Bathroom is now enabled
+2024-03-25 9:35:23 PM - Child : Automation for Guest Room is now enabled
+2024-03-25 9:35:26 PM - Child : Automation for Dining Room is now enabled
+2024-03-25 9:35:27 PM - Child : Automation for Garage is now enabled
+2024-03-25 9:35:34 PM - Child : Zone 'zone 1' added.
+2024-03-25 9:37:47 PM - Dad : User set to Dad
+2024-03-25 9:42:32 PM - Dad : User set to Dad

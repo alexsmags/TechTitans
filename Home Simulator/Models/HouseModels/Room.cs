@@ -1,4 +1,5 @@
-﻿using Home_Simulator.Models.ProfileModels;
+﻿using Home_Simulator.MessageLogs;
+using Home_Simulator.Models.ProfileModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -56,6 +57,8 @@ namespace Home_Simulator.Models.HouseModels
             {
                 _isAutomationEnabled = value;
                 OnPropertyChanged(nameof(IsAutomationEnabled));
+                Log log = Log.Instance(new ViewModels.SimulationViewModel());
+                log.AddMessage($"Automation for {Name} is now {(value ? "enabled" : "disabled")}");
             }
         }
 

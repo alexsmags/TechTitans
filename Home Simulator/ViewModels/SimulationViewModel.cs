@@ -1,4 +1,5 @@
-﻿using Home_Simulator.Components;
+﻿
+using Home_Simulator.Components;
 using Home_Simulator.Models.HouseModels;
 using Home_Simulator.Models;
 using System;
@@ -306,7 +307,8 @@ namespace Home_Simulator.ViewModels
         #region Initializers
 
         private void InitializeSimulation()
-        {
+        {  
+            _log = Log.Instance(this);
             users = new ObservableCollection<User>();
             LocationService = new LocationService();
             SimulationModel = new DateTimeModel();
@@ -336,7 +338,7 @@ namespace Home_Simulator.ViewModels
             _zoneRoomTemperatureService = new ZoneRoomTemperatureService();
 
 
-            _log = new Log(this);
+          
 
             
             _timer = new DispatcherTimer

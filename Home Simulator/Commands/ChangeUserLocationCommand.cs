@@ -63,6 +63,10 @@ namespace Home_Simulator.Commands
                             oldRoom.RemoveUser(_simulationViewModel?.CurrentUser); 
                             _simulationViewModel.AddLogMessage($"User '{_simulationViewModel.CurrentUser.Name}' moved from '{oldRoom.Name}' to 'Outside'.");
                        }
+                       else
+                        {
+                            _simulationViewModel.AddLogMessage($"User '{_simulationViewModel.CurrentUser.Name}' moved to 'Outside'.");
+                       }    
                     }
 
                     _simulationViewModel.CurrentLocation = _simulationViewModel.CurrentUser.CurrentLocation;
