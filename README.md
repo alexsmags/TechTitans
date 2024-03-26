@@ -108,15 +108,29 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 <img width="715" alt="Screenshot 2024-03-13 160012" src="https://github.com/alexsmags/TechTitans/assets/111084379/f24219d3-fb61-47bc-8d7d-3852cf2ff02c">
 
 # - Phase III
+
 ## Team Members and Role 
 | Name                  | Role                 | ID       |
 | --------------------- | -------------------- | -------- |
-| Alexander Smagorinski | UC 1.1, UC 1.2,Design Patterns                | 40190986 |
-| Cosmin Suna           | UC 1.6 | 40125921 |
-| Mohamad Mounir Yassin | UC 1.6 implementation, Activity Diagram for SHH module  | 40198854 |
-| Saikou Diallo         |  | 40191902 |
-| Patrick MacEachen     |  | 40209790 |
+| Alexander Smagorinski | UC 1.1 / UC 1.2 / UC 1.3 / Design Pattern | 40190986 |
+| Cosmin Suna           | UC 1.6 / UC 1.7 / Updated State-machine diagram for the Context of the simulation | 40125921 |
+| Mohamad Mounir Yassin | UC 1.5 / Activity Diagram for SHH module / Updated Activity diagram for Context of the simulation | 40198854 |
+| Saikou Diallo         | UC 1.9 / Use-case diagram for the whole system | 40191902 |
+| Patrick MacEachen     | UC 1.8 / State-machine diagram for the SHH module | 40209790 |
+
+### Use-case diagram for the whole system
+ ![image](https://github.com/alexsmags/TechTitans/assets/111084379/d6200234-2077-4f43-93bf-f2910cf7a031)
+
+### Sequence diagrams for the Smart home core functionality (SHC) module
+
+### State-machine diagram for the Context of the simulation
+![image](https://github.com/alexsmags/TechTitans/assets/111084379/fca8e772-e57e-4f05-bc7c-365c15378613)
+
+### Activity diagram for Context of the simulation
+![Screenshot 2024-03-25 180022](https://github.com/alexsmags/TechTitans/assets/111084379/27712066-1d4f-46eb-a093-c9ee7957c1ea)
 
 ### State-machine diagram for the SHH module
+![image](https://github.com/alexsmags/TechTitans/assets/111084379/d2a23cb5-95c8-4ff2-95c8-e011fe9577ce)
+
 ### Activity diagram for the SHH module
-![ZLJ1Rjim3BthAtXCJiDE0-81Qx4ES85s7M0Ck-oYIdH2m183YKhcVVqekrcyfHbsiYG-FfAFf6-os2Gb34P81eGkw1LQj49n2wkkRTVmoBwewTO97KX6k2ExJJOOC_aQivaiLjIxRQ4Ris1eZA4ULlTvyJOpu8Sro0uZh4RCQmEm-PenWNKESyOPxstUFRDDlb7xRuXBcfOYE4](https://github.com/alexsmags/TechTitans/assets/111084379/1027c9f2-f2d3-4362-86ca-6fa1d3e52e77)
+![image](https://github.com/alexsmags/TechTitans/assets/111084379/1a448c8c-840e-4f4b-84f8-6c24493acde8)
