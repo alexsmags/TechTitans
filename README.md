@@ -10,7 +10,6 @@ This repo contains the code for the Smart Home Simulator done for the SOEN343 co
 | Cosmin Suna           | Making Domain Model/Review  | 40125921 |
 | Mohamad Mounir Yassin |    Documentation/Review     | 40198854 |
 | Saikou Diallo         | Making Domain Model/Review  | 40191902 |
-| Theodore Ku           |Making Context Diagram/Review| 40191463 |
 | Patrick MacEachen     | Making Domain Model/Review  | 40209790 |
 
 
@@ -108,5 +107,31 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 ### Command Design Pattern
 <img width="715" alt="Screenshot 2024-03-13 160012" src="https://github.com/alexsmags/TechTitans/assets/111084379/f24219d3-fb61-47bc-8d7d-3852cf2ff02c">
 
+# - Phase III
 
+## Team Members and Role 
+| Name                  | Role                 | ID       |
+| --------------------- | -------------------- | -------- |
+| Alexander Smagorinski | UC 1.1 / UC 1.2 / UC 1.3 / Design Pattern | 40190986 |
+| Cosmin Suna           | UC 1.6 / UC 1.7 / Updated State-machine diagram for the Context of the simulation | 40125921 |
+| Mohamad Mounir Yassin | UC 1.5 / Activity Diagram for SHH module / Updated Activity diagram for Context of the simulation | 40198854 |
+| Saikou Diallo         | UC 1.9 / Use-case diagram for the whole system | 40191902 |
+| Patrick MacEachen     | UC 1.8 / State-machine diagram for the SHH module | 40209790 |
 
+### Use-case diagram for the whole system
+ ![image](https://github.com/alexsmags/TechTitans/assets/111084379/d6200234-2077-4f43-93bf-f2910cf7a031)
+
+### Sequence diagrams for the Smart home core functionality (SHC) module (NO CHANGE)
+<img width="261" alt="Screenshot 2024-03-13 154531" src="https://github.com/alexsmags/TechTitans/assets/111084379/8eb93176-6d26-444d-9a45-92a94e18e20b">
+
+### State-machine diagram for the Context of the simulation
+![image](https://github.com/alexsmags/TechTitans/assets/111084379/fca8e772-e57e-4f05-bc7c-365c15378613)
+
+### Activity diagram for Context of the simulation
+![Screenshot 2024-03-25 180022](https://github.com/alexsmags/TechTitans/assets/111084379/27712066-1d4f-46eb-a093-c9ee7957c1ea)
+
+### State-machine diagram for the SHH module
+![image](https://github.com/alexsmags/TechTitans/assets/111084379/d2a23cb5-95c8-4ff2-95c8-e011fe9577ce)
+
+### Activity diagram for the SHH module
+![image](https://github.com/alexsmags/TechTitans/assets/111084379/1a448c8c-840e-4f4b-84f8-6c24493acde8)

@@ -25,15 +25,30 @@ namespace Home_Simulator.Models.HouseModels
 
         public List<Window> Windows { get; set; } = new List<Window>();
 
+        public AirConditioner AirConditioner { get; set; }
+
         public double RoomTemperature
         {
-            get { return _roomTemperature; }
-            set 
-            { 
-                _roomTemperature = value; 
+            get => _roomTemperature;
+            set
+            {
+                _roomTemperature = value;
                 OnPropertyChanged(nameof(RoomTemperature));
+
+                if (AirConditioner != null)
+                {
+                    if (_roomTemperature < AirConditioner.DesiredTemperature && AirConditioner.IsOn)
+                    {
+                        AirConditioner.TurnOffAC();
+                    }
+                    else if (_roomTemperature > AirConditioner.DesiredTemperature && !AirConditioner.IsOn)
+                    {
+                        AirConditioner.TurnOnAC();
+                    }
+                }
             }
         }
+
 
 
         public Zone AssignedZone

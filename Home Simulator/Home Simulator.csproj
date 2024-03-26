@@ -74,6 +74,7 @@
     <Compile Include="Commands\RemoveTemperaturePeriodCommand.cs" />
     <Compile Include="Commands\RemoveUserCommand.cs" />
     <Compile Include="Commands\RemoveZoneCommand.cs" />
+    <Compile Include="Commands\ToggleAcCommand.cs" />
     <Compile Include="Components\AddUserDialog.xaml.cs">
       <DependentUpon>AddUserDialog.xaml</DependentUpon>
     </Compile>
@@ -114,12 +115,14 @@
     <Compile Include="Models\HouseModels\Door.cs" />
     <Compile Include="Models\HouseModels\House.cs" />
     <Compile Include="Models\HouseModels\HouseBuilder.cs" />
+    <Compile Include="Models\HouseModels\HouseData.cs" />
     <Compile Include="Models\HouseModels\HouseService.cs" />
     <Compile Include="Models\HouseModels\IHouseBuilder.cs" />
     <Compile Include="Models\HouseModels\Location.cs" />
     <Compile Include="Models\HouseModels\LocationService.cs" />
     <Compile Include="Models\HouseModels\OutdoorLocation.cs" />
     <Compile Include="Models\HouseModels\Room.cs" />
+    <Compile Include="Models\HouseModels\Services\AirConditionerService.cs" />
     <Compile Include="Models\HouseModels\Services\OutsideTemperatureService.cs" />
     <Compile Include="Models\HouseModels\Services\WindowStateService.cs" />
     <Compile Include="Models\HouseModels\Services\ZoneRoomTemperatureService.cs" />

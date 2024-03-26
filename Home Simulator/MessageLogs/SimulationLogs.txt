@@ -24,3 +24,50 @@
 2024-03-25 9:35:34 PM - Child : Zone 'zone 1' added.
 2024-03-25 9:37:47 PM - Dad : User set to Dad
 2024-03-25 9:42:32 PM - Dad : User set to Dad
+2024-03-26 12:04:29 AM - Dad : User set to Dad
+2024-03-26 12:04:32 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-03-26 12:04:35 AM - Dad : User 'Dad' moved from 'Bathroom' to 'Outside'.
+2024-03-26 12:04:42 AM - Mom : User changed from Dad to Mom
+2024-03-26 12:04:45 AM - Mom : Light switched on
+2024-03-26 12:04:46 AM - Mom : Light switched off
+2024-03-26 12:04:46 AM - Mom : Light switched on
+2024-03-26 12:04:46 AM - Mom : Light switched off
+2024-03-26 12:04:47 AM - Mom : Light switched on
+2024-03-26 12:04:47 AM - Mom : Light switched off
+2024-03-26 12:04:47 AM - Mom : Light switched on
+2024-03-26 12:04:47 AM - Mom : Light switched on
+2024-03-26 12:04:48 AM - Mom : Light switched off
+2024-03-26 12:04:48 AM - Mom : Light switched on
+2024-03-26 12:04:48 AM - Mom : Light switched off
+2024-03-26 12:04:48 AM - Mom : Light switched on
+2024-03-26 12:04:49 AM - Mom : Light switched off
+2024-03-26 12:04:49 AM - Mom : Light switched on
+2024-03-26 12:04:49 AM - Mom : Light switched off
+2024-03-26 12:04:50 AM - Mom : Door  opened
+2024-03-26 12:04:50 AM - Mom : Door  closed
+2024-03-26 12:04:50 AM - Mom : Door  opened
+2024-03-26 12:04:51 AM - Mom : Door  closed
+2024-03-26 12:04:51 AM - Mom : Door  opened
+2024-03-26 12:04:53 AM - Mom : Automation for Bathroom is now enabled
+2024-03-26 12:04:53 AM - Mom : Automation for Bathroom is now disabled
+2024-03-26 12:04:53 AM - Mom : Automation for Bathroom is now enabled
+2024-03-26 12:04:54 AM - Mom : Automation for Bathroom is now disabled
+2024-03-26 12:04:54 AM - Mom : Automation for Bathroom is now enabled
+2024-03-26 12:04:54 AM - Mom : Automation for Bathroom is now disabled
+2024-03-26 12:04:54 AM - Mom : Automation for Bathroom is now enabled
+2024-03-26 12:04:54 AM - Mom : Automation for Bathroom is now disabled
+2024-03-26 12:04:54 AM - Mom : Automation for Bathroom is now enabled
+2024-03-26 12:04:55 AM - Mom : Automation for Bathroom is now disabled
+2024-03-26 12:04:55 AM - Mom : Automation for Bathroom is now enabled
+2024-03-26 12:04:55 AM - Mom : Automation for Bathroom is now disabled
+2024-03-26 12:04:55 AM - Mom : Automation for Bathroom is now enabled
+2024-03-26 12:04:55 AM - Mom : Automation for Bathroom is now disabled
+2024-03-26 12:04:56 AM - Mom : Automation for Bathroom is now enabled
+2024-03-26 12:04:56 AM - Mom : Automation for Bathroom is now disabled
+2024-03-26 12:04:56 AM - Mom : Automation for Bathroom is now enabled
+2024-03-26 12:04:56 AM - Mom : Automation for Bathroom is now disabled
+2024-03-26 12:04:56 AM - Mom : Automation for Bathroom is now enabled
+2024-03-26 12:04:57 AM - Mom : Automation for Bathroom is now disabled
+2024-03-26 12:08:54 AM - Dad : User set to Dad
+2024-03-26 12:08:55 AM - Dad : Light switched on
+2024-03-26 12:08:55 AM - Dad : Light switched off
