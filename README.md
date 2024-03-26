@@ -121,7 +121,9 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 ### Use-case diagram for the whole system
  ![image](https://github.com/alexsmags/TechTitans/assets/111084379/d6200234-2077-4f43-93bf-f2910cf7a031)
 
-### Sequence diagrams for the Smart home core functionality (SHC) module
+### Sequence diagrams for the Smart home core functionality (SHC) module (NO CHANGE)
+<img width="261" alt="Screenshot 2024-03-13 154531" src="https://github.com/alexsmags/TechTitans/assets/111084379/8eb93176-6d26-444d-9a45-92a94e18e20b">
+<img width="560" alt="Screenshot 2024-03-13 154638" src="https://github.com/alexsmags/TechTitans/assets/111084379/947c22be-f52a-4ba8-a37c-1135283dc74f">
 
 ### State-machine diagram for the Context of the simulation
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/fca8e772-e57e-4f05-bc7c-365c15378613)
