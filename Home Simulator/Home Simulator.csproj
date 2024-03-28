@@ -60,6 +60,7 @@
     <Compile Include="Commands\AddUserCommand.cs" />
     <Compile Include="Commands\AddZoneCommand.cs" />
     <Compile Include="Commands\ChangeDateTimeCommand.cs" />
+    <Compile Include="Commands\ChangeRoomTemperatureCommand.cs" />
     <Compile Include="Commands\ChangeTemperatureCommand.cs" />
     <Compile Include="Commands\ChangeUserCommand.cs" />
     <Compile Include="Commands\ChangeUserLocationCommand.cs" />

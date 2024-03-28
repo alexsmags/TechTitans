@@ -12,7 +12,7 @@
         <uc:SimulationInfo DockPanel.Dock="Left" Margin="8,10,0,5" Width="175"></uc:SimulationInfo>
         <uc:RoomListing DockPanel.Dock="Right"></uc:RoomListing>
         <DockPanel>
-            <uc:LogView DockPanel.Dock="Bottom" Height="150" Margin="10" ></uc:LogView>
+            <uc:LogView DockPanel.Dock="Bottom" Height="150" Margin="0,0,0,10"></uc:LogView>
             <uc:ModuleTab DockPanel.Dock="top" Loaded="ModuleTab_Loaded"></uc:ModuleTab>
         </DockPanel>
     </DockPanel>

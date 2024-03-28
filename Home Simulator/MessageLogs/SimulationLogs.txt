@@ -71,3 +71,35 @@
 2024-03-26 12:08:54 AM - Dad : User set to Dad
 2024-03-26 12:08:55 AM - Dad : Light switched on
 2024-03-26 12:08:55 AM - Dad : Light switched off
+2024-03-27 11:47:15 PM - Zone 'tes' added.
+2024-03-27 11:52:56 PM - Zone 'r' added.
+2024-03-27 11:55:06 PM - Zone 'tes' added.
+2024-03-27 11:55:09 PM - Zone 'tes32' added.
+2024-03-27 11:57:03 PM - Zone 'test' added.
+2024-03-27 11:57:35 PM - Zone 'tes' added.
+2024-03-27 11:57:38 PM - Zone 'ttt' added.
+2024-03-27 11:57:39 PM - Zone 'tt' added.
+2024-03-27 11:57:40 PM - Zone 'fdas' added.
+2024-03-27 11:57:41 PM - Zone 'das' added.
+2024-03-27 11:57:42 PM - Zone 'gafa' added.
+2024-03-27 11:57:43 PM - Zone 'dafsdas' added.
+2024-03-28 12:02:03 AM - Zone 'dafsdas' removed.
+2024-03-28 12:02:06 AM - Zone 'gafa' removed.
+2024-03-28 12:02:08 AM - Zone 'das' removed.
+2024-03-28 12:08:48 AM - Zone 'te' added.
+2024-03-28 12:12:47 AM - Zone 'ok' added.
+2024-03-28 12:25:38 AM - Zone 'test' added.
+2024-03-28 12:26:31 AM - Bathroom temperature changed to 33
+2024-03-28 12:27:05 AM - Bathroom temperature changed to 49°
+2024-03-28 12:27:25 AM - Zone 'test' added.
+2024-03-28 12:29:39 AM - Dad : User set to Dad
+2024-03-28 12:34:52 AM - Dad : Bathroom temperature changed to 30°
+2024-03-28 12:34:59 AM - Dad : Bedroom temperature changed to -58°
+2024-03-28 12:35:08 AM - Dad : Simulation started
+2024-03-28 12:35:19 AM - Dad : Simulation stopped
+2024-03-28 12:35:33 AM - Dad : Room Bathroom added to zone test
+2024-03-28 12:35:34 AM - Dad : Simulation started
+2024-03-28 12:36:00 AM - Dad : Simulation stopped
+2024-03-28 12:36:03 AM - Dad : Bathroom temperature changed to 45°
+2024-03-28 12:41:14 AM - Zone 't' added.
+2024-03-28 12:41:52 AM - Bathroom temperature changed to 30°

@@ -117,6 +117,8 @@ namespace Home_Simulator.ViewModels
 
         public ICommand ToggleAcCommand { get; private set; }   
 
+        public ICommand ChangeRoomTemperatureCommand { get; private set; }
+
 
         #endregion
 
@@ -355,6 +357,7 @@ namespace Home_Simulator.ViewModels
             ToggleOpenCloseWindowCommand = new ToggleOpenCloseWindowCommand(this);
             ToggleBlockUnblockWindowCommand = new ToggleBlockUnblockWindowCommand(this);
             ToggleAcCommand = new ToggleAcCommand(this);
+            ChangeRoomTemperatureCommand = new ChangeRoomTemperatureCommand(this);
 
             _windowStateService = new WindowStateService();
             _outsideTemperatureService = new OutsideTemperatureService();
