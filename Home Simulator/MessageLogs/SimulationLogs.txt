@@ -202,3 +202,146 @@
 2024-03-28 1:43:33 AM - Dad : Heater  turned on
 2024-03-28 1:43:37 AM - Dad : SHH Disabled
 2024-03-28 1:43:41 AM - Dad : Simulation stopped
+2024-03-28 1:29:59 PM - SHH Enabled
+2024-03-28 1:30:02 PM - Zone 'test' added.
+2024-03-28 1:30:07 PM - Zone 'cx' added.
+2024-03-28 1:31:55 PM - SHH Enabled
+2024-03-28 1:31:56 PM - SHH Disabled
+2024-03-28 1:31:56 PM - SHH Enabled
+2024-03-28 1:31:57 PM - SHH Disabled
+2024-03-28 1:32:40 PM - Zone 'yt' added.
+2024-03-28 1:32:58 PM - Zone 'tes' added.
+2024-03-28 1:33:03 PM - Zone 'ok' added.
+2024-03-28 1:33:08 PM - Zone 'dasdsa' added.
+2024-03-28 1:33:11 PM - Zone 'dsadaqw' added.
+2024-03-28 1:33:44 PM - Zone 'tes' added.
+2024-03-28 1:33:58 PM - Zone 'gd' added.
+2024-03-28 1:38:20 PM - Zone 't' added.
+2024-03-28 1:38:22 PM - Zone 'fd' added.
+2024-03-28 1:38:24 PM - Zone 'fsd' added.
+2024-03-28 1:38:26 PM - Zone 'vsd' added.
+2024-03-28 1:39:12 PM - Zone 'gt' added.
+2024-03-28 1:39:20 PM - Zone 'fdf' added.
+2024-03-28 1:39:30 PM - Zone 'ok' added.
+2024-03-28 1:43:36 PM - Zone 'tes' added.
+2024-03-28 1:43:40 PM - Zone 'ok' added.
+2024-03-28 1:44:46 PM - Zone 'te' added.
+2024-03-28 1:44:51 PM - Zone 'ij' added.
+2024-03-28 1:46:11 PM - Zone 'tesr' added.
+2024-03-28 1:46:14 PM - Zone 'dsdas' added.
+2024-03-28 1:46:21 PM - Zone 'okayt' added.
+2024-03-28 1:47:34 PM - Zone 'tes' added.
+2024-03-28 1:48:09 PM - Zone 'tesfs' added.
+2024-03-28 1:48:11 PM - Zone 'oka' added.
+2024-03-28 1:48:14 PM - Zone 'dasdas' added.
+2024-03-28 1:48:18 PM - Zone 'isndias' added.
+2024-03-28 1:48:20 PM - Zone 'dsbuasdba' added.
+2024-03-28 1:48:30 PM - Zone 'da' added.
+2024-03-28 1:48:34 PM - SHH Enabled
+2024-03-28 1:48:35 PM - SHH Disabled
+2024-03-28 1:48:35 PM - SHH Enabled
+2024-03-28 1:48:36 PM - SHH Disabled
+2024-03-28 1:48:58 PM - Zone 'test' added.
+2024-03-28 1:49:03 PM - Zone 'dsa' added.
+2024-03-28 1:49:15 PM - Zone 'te' added.
+2024-03-28 1:49:27 PM - Zone 'tes' added.
+2024-03-28 1:49:34 PM - Zone 'sfds' added.
+2024-03-28 1:52:30 PM - Zone 'test' added.
+2024-03-28 1:52:35 PM - Zone 'da' added.
+2024-03-28 1:52:41 PM - Zone 'lsdada' added.
+2024-03-28 1:54:40 PM - Zone 'test4' added.
+2024-03-28 1:54:45 PM - Zone 'fdfsd' added.
+2024-03-28 1:55:00 PM - Zone 'fdsf' added.
+2024-03-28 1:55:04 PM - Zone 'hfd fhsd ' added.
+2024-03-28 2:01:54 PM - Zone 'test' added.
+2024-03-28 2:08:51 PM - Zone 'test' added.
+2024-03-28 2:08:53 PM - Zone 'fdsfs' added.
+2024-03-28 2:08:54 PM - Zone 'ffsdf' added.
+2024-03-28 2:08:55 PM - Zone 'fdsfsd' added.
+2024-03-28 2:08:57 PM - Zone 'fdfdsfs' added.
+2024-03-28 2:09:43 PM - Zone 'test' added.
+2024-03-28 2:09:46 PM - Zone 'dsadas' added.
+2024-03-28 2:09:49 PM - Zone 'dsdas' added.
+2024-03-28 2:10:10 PM - Zone 'test' added.
+2024-03-28 2:13:20 PM - Zone 'test' added.
+2024-03-28 2:13:22 PM - Zone 'fdfs' added.
+2024-03-28 2:13:28 PM - Zone 'fdfsfs' added.
+2024-03-28 5:27:23 PM - Dad : User set to Dad
+2024-03-28 5:27:27 PM - Dad : Light switched on
+2024-03-28 5:27:28 PM - Dad : Light switched off
+2024-03-28 5:27:28 PM - Dad : Light switched on
+2024-03-28 5:27:28 PM - Dad : Light switched off
+2024-03-28 5:27:28 PM - Dad : Light switched on
+2024-03-28 5:27:38 PM - Dad : Zone 'test' added.
+2024-03-28 5:27:44 PM - Dad : Simulation started
+2024-03-28 5:27:49 PM - Dad : Simulation stopped
+2024-03-28 5:27:49 PM - Dad : SHH Enabled
+2024-03-28 5:28:16 PM - Dad : User set to Dad
+2024-03-28 5:28:24 PM - Dad : Bathroom temperature changed to 41°
+2024-03-28 5:28:25 PM - Dad : SHH Enabled
+2024-03-28 5:28:26 PM - Dad : Simulation started
+2024-03-28 5:28:31 PM - Dad : Air Conditioner  turned on
+2024-03-28 5:28:37 PM - Dad : Simulation stopped
+2024-03-28 5:28:39 PM - Dad : Zone 'tws' added.
+2024-03-28 5:30:39 PM - Zone 'tes' added.
+2024-03-28 5:31:17 PM - Zone 'test' added.
+2024-03-28 5:46:16 PM - Zone 'test' added.
+2024-03-28 5:50:44 PM - Zone 'tes' added.
+2024-03-28 5:50:54 PM - Zone 'test' added.
+2024-03-28 5:50:58 PM - Zone 'oksaddas' added.
+2024-03-28 5:52:28 PM - Zone 'test' added.
+2024-03-28 5:52:31 PM - Zone 'sadada' added.
+2024-03-28 5:52:34 PM - Zone 'ooajfaof' added.
+2024-03-28 5:52:38 PM - Zone 'fasfaf' added.
+2024-03-28 5:52:41 PM - Zone 'ggs' added.
+2024-03-28 5:52:44 PM - Zone 'erwe' added.
+2024-03-28 5:54:45 PM - Zone 'test' added.
+2024-03-28 5:54:47 PM - Zone 'dsad' added.
+2024-03-28 5:54:49 PM - Zone 'dasda' added.
+2024-03-28 5:54:51 PM - Zone 'fdfdsfs' added.
+2024-03-28 5:54:53 PM - Zone 'sfafa' added.
+2024-03-28 5:54:54 PM - Zone 'fafa' added.
+2024-03-28 5:55:41 PM - Zone 'test' added.
+2024-03-28 5:56:35 PM - Zone 'test' added.
+2024-03-28 5:56:43 PM - Zone 'ok' added.
+2024-03-28 6:08:32 PM - SHH Enabled
+2024-03-28 6:10:28 PM - Bathroom temperature changed to 59°
+2024-03-28 6:11:53 PM - Zone 'test' added.
+2024-03-28 6:11:58 PM - Bathroom temperature changed to 45°
+2024-03-28 6:12:02 PM - Kitchen temperature changed to -43°
+2024-03-28 6:12:05 PM - Bathroom temperature changed to -60°
+2024-03-28 6:12:45 PM - Zone 'test' added.
+2024-03-28 6:12:54 PM - Zone 'ok' added.
+2024-03-28 6:14:04 PM - Bathroom temperature changed to 70°
+2024-03-28 6:14:08 PM - Dad : User set to Dad
+2024-03-28 6:14:17 PM - Dad : Simulation started
+2024-03-28 6:14:19 PM - Dad : SHH Enabled
+2024-03-28 6:14:20 PM - Dad : Air Conditioner  turned on
+2024-03-28 6:14:22 PM - Dad : Air Conditioner  turned off
+2024-03-28 6:14:23 PM - Dad : Simulation stopped
+2024-03-28 6:14:25 PM - Dad : Zone 'test' added.
+2024-03-28 6:14:28 PM - Dad : Room Bathroom added to zone test
+2024-03-28 6:14:32 PM - Dad : Air Conditioner  turned on
+2024-03-28 6:14:33 PM - Dad : Simulation started
+2024-03-28 6:14:41 PM - Dad : Simulation stopped
+2024-03-28 6:14:45 PM - Dad : Bathroom temperature changed to -28°
+2024-03-28 6:14:49 PM - Dad : Simulation started
+2024-03-28 6:14:51 PM - Dad : Air Conditioner  turned off
+2024-03-28 6:14:51 PM - Dad : Heater  turned on
+2024-03-28 6:14:57 PM - Dad : Simulation stopped
+2024-03-28 6:15:06 PM - Dad : Bathroom temperature changed to -1°
+2024-03-28 6:15:08 PM - Dad : Simulation started
+2024-03-28 6:15:32 PM - Dad : Heater  turned off
+2024-03-28 6:15:32 PM - Dad : Air Conditioner  turned on
+2024-03-28 6:15:35 PM - Dad : Air Conditioner  turned off
+2024-03-28 6:15:35 PM - Dad : Heater  turned on
+2024-03-28 6:15:39 PM - Dad : Heater  turned off
+2024-03-28 6:15:39 PM - Dad : Air Conditioner  turned on
+2024-03-28 6:15:42 PM - Dad : SHH Disabled
+2024-03-28 6:16:28 PM - Guest Room temperature changed to 23°
+2024-03-28 6:16:38 PM - Dad : User set to Dad
+2024-03-28 6:16:41 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-03-28 6:16:42 PM - Dad : SHH Enabled
+2024-03-28 6:16:43 PM - Dad : SHH Disabled
+2024-03-28 6:16:44 PM - Dad : SHH Enabled
+2024-03-28 6:16:45 PM - Dad : Simulation started

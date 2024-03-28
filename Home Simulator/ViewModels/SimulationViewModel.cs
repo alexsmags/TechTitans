@@ -123,6 +123,8 @@ namespace Home_Simulator.ViewModels
 
         public ICommand ChangeRoomTemperatureCommand { get; private set; }
 
+        public ICommand ViewRoomsCommand { get; private set; }
+
 
         #endregion
 
@@ -374,6 +376,7 @@ namespace Home_Simulator.ViewModels
             ToggleAcCommand = new ToggleAcCommand(this);
             ToggleHeaterCommand = new ToggleHeaterCommand(this);
             ChangeRoomTemperatureCommand = new ChangeRoomTemperatureCommand(this);
+            ViewRoomsCommand = new ViewRoomsCommand(this);
 
             _windowStateService = new WindowStateService();
             _outsideTemperatureService = new OutsideTemperatureService();

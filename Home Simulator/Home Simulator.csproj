@@ -77,6 +77,7 @@
     <Compile Include="Commands\RemoveZoneCommand.cs" />
     <Compile Include="Commands\ToggleAcCommand.cs" />
     <Compile Include="Commands\ToggleHeaterCommand.cs" />
+    <Compile Include="Commands\ViewRoomsCommand.cs" />
     <Compile Include="Components\AddUserDialog.xaml.cs">
       <DependentUpon>AddUserDialog.xaml</DependentUpon>
     </Compile>
@@ -106,6 +107,9 @@
     </Compile>
     <Compile Include="Components\UserSelectionDialog.xaml.cs">
       <DependentUpon>UserSelectionDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ViewRoomsDialog.xaml.cs">
+      <DependentUpon>ViewRoomsDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\BooleanToOnOffConverter.cs" />
     <Compile Include="Converters\BooleanToOpenClosedConverter.cs" />
@@ -202,6 +206,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Components\UserSelectionDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\ViewRoomsDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
