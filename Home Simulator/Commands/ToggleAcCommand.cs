@@ -23,10 +23,17 @@ namespace Home_Simulator.Commands
             if (_simulationViewModel.AirConditioner.IsOn)
             {
                 _simulationViewModel.AirConditioner.TurnOffAC();
+                _simulationViewModel.AddLogMessage($"Air Conditioner {_simulationViewModel.AirConditioner.ACName} turned off");
             }
             else
             {
+                if (_simulationViewModel.Heater.IsOn)
+                {
+                    _simulationViewModel.Heater.TurnOffHeater();
+                    _simulationViewModel.AddLogMessage($"Heater {_simulationViewModel.Heater.HeaterName} turned off");
+                }
                 _simulationViewModel.AirConditioner.TurnOnAC();
+                _simulationViewModel.AddLogMessage($"Air Conditioner {_simulationViewModel.AirConditioner.ACName} turned on");
             }
         }
     }

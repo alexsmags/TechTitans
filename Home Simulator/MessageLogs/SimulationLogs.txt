@@ -103,3 +103,102 @@
 2024-03-28 12:36:03 AM - Dad : Bathroom temperature changed to 45°
 2024-03-28 12:41:14 AM - Zone 't' added.
 2024-03-28 12:41:52 AM - Bathroom temperature changed to 30°
+2024-03-28 1:30:44 AM - Zone 'tes' added.
+2024-03-28 1:30:50 AM - Room Bathroom added to zone tes
+2024-03-28 1:30:54 AM - Bathroom temperature changed to 39°
+2024-03-28 1:31:02 AM - Dad : User set to Dad
+2024-03-28 1:31:06 AM - Dad : Simulation started
+2024-03-28 1:31:19 AM - Dad : Bathroom temperature changed to -44°
+2024-03-28 1:31:35 AM - Dad : Simulation stopped
+2024-03-28 1:31:36 AM - Dad : Simulation started
+2024-03-28 1:31:38 AM - Dad : Simulation stopped
+2024-03-28 1:31:39 AM - Dad : Simulation started
+2024-03-28 1:33:12 AM - Dad : Bathroom temperature changed to 31°
+2024-03-28 1:33:43 AM - Dad : Bathroom temperature changed to -9°
+2024-03-28 1:34:16 AM - Dad : User set to Dad
+2024-03-28 1:34:21 AM - Dad : Zone 'test' added.
+2024-03-28 1:34:23 AM - Dad : Room Bathroom added to zone test
+2024-03-28 1:34:25 AM - Dad : Simulation started
+2024-03-28 1:34:30 AM - Dad : Simulation stopped
+2024-03-28 1:34:36 AM - Dad : Bathroom temperature changed to 55°
+2024-03-28 1:34:40 AM - Dad : Simulation started
+2024-03-28 1:34:45 AM - Dad : Simulation stopped
+2024-03-28 1:34:48 AM - Dad : Bathroom temperature changed to 12°
+2024-03-28 1:34:52 AM - Dad : Simulation started
+2024-03-28 1:35:41 AM - Dad : Simulation stopped
+2024-03-28 1:38:51 AM - Air Conditioner  turned on
+2024-03-28 1:38:51 AM - Air Conditioner  turned off
+2024-03-28 1:38:53 AM - Heater  turned on
+2024-03-28 1:38:55 AM - Heater  turned off
+2024-03-28 1:38:55 AM - Air Conditioner  turned on
+2024-03-28 1:39:01 AM - Air Conditioner  turned off
+2024-03-28 1:39:01 AM - Heater  turned on
+2024-03-28 1:39:12 AM - Heater  turned off
+2024-03-28 1:39:12 AM - Air Conditioner  turned on
+2024-03-28 1:41:51 AM - SHH Enabled
+2024-03-28 1:41:52 AM - SHH Disabled
+2024-03-28 1:41:52 AM - SHH Enabled
+2024-03-28 1:41:52 AM - SHH Disabled
+2024-03-28 1:42:10 AM - SHH Enabled
+2024-03-28 1:42:10 AM - SHH Disabled
+2024-03-28 1:42:11 AM - SHH Enabled
+2024-03-28 1:42:11 AM - SHH Disabled
+2024-03-28 1:42:11 AM - SHH Enabled
+2024-03-28 1:42:11 AM - SHH Disabled
+2024-03-28 1:42:12 AM - SHH Enabled
+2024-03-28 1:42:12 AM - SHH Disabled
+2024-03-28 1:42:12 AM - SHH Enabled
+2024-03-28 1:42:12 AM - SHH Disabled
+2024-03-28 1:42:13 AM - SHH Enabled
+2024-03-28 1:42:13 AM - SHH Disabled
+2024-03-28 1:42:13 AM - SHH Enabled
+2024-03-28 1:42:13 AM - SHH Disabled
+2024-03-28 1:42:13 AM - SHH Enabled
+2024-03-28 1:42:14 AM - SHH Disabled
+2024-03-28 1:42:14 AM - SHH Enabled
+2024-03-28 1:42:17 AM - Zone 'tes' added.
+2024-03-28 1:42:20 AM - Air Conditioner  turned on
+2024-03-28 1:42:21 AM - Air Conditioner  turned off
+2024-03-28 1:42:22 AM - Air Conditioner  turned on
+2024-03-28 1:42:22 AM - Air Conditioner  turned off
+2024-03-28 1:42:22 AM - Heater  turned on
+2024-03-28 1:42:23 AM - Heater  turned off
+2024-03-28 1:42:25 AM - Air Conditioner  turned on
+2024-03-28 1:42:25 AM - Air Conditioner  turned off
+2024-03-28 1:42:25 AM - Heater  turned on
+2024-03-28 1:42:27 AM - Heater  turned off
+2024-03-28 1:42:27 AM - Air Conditioner  turned on
+2024-03-28 1:42:28 AM - Air Conditioner  turned off
+2024-03-28 1:42:28 AM - Heater  turned on
+2024-03-28 1:42:29 AM - Heater  turned off
+2024-03-28 1:42:29 AM - Air Conditioner  turned on
+2024-03-28 1:42:29 AM - Air Conditioner  turned off
+2024-03-28 1:42:29 AM - Heater  turned on
+2024-03-28 1:42:30 AM - Heater  turned off
+2024-03-28 1:42:30 AM - Air Conditioner  turned on
+2024-03-28 1:42:30 AM - Air Conditioner  turned off
+2024-03-28 1:42:30 AM - Heater  turned on
+2024-03-28 1:42:31 AM - Heater  turned off
+2024-03-28 1:42:31 AM - Air Conditioner  turned on
+2024-03-28 1:42:35 AM - Bathroom temperature changed to -1°
+2024-03-28 1:42:38 AM - Dad : User set to Dad
+2024-03-28 1:42:43 AM - Dad : Room Bathroom added to zone tes
+2024-03-28 1:42:44 AM - Dad : Simulation started
+2024-03-28 1:42:47 AM - Dad : Air Conditioner  turned off
+2024-03-28 1:42:48 AM - Dad : Heater  turned on
+2024-03-28 1:43:10 AM - Dad : Heater  turned off
+2024-03-28 1:43:15 AM - Dad : Simulation stopped
+2024-03-28 1:43:16 AM - Dad : SHH Disabled
+2024-03-28 1:43:19 AM - Dad : Simulation started
+2024-03-28 1:43:20 AM - Dad : Simulation stopped
+2024-03-28 1:43:20 AM - Dad : SHH Enabled
+2024-03-28 1:43:21 AM - Dad : Air Conditioner  turned on
+2024-03-28 1:43:22 AM - Dad : Simulation started
+2024-03-28 1:43:26 AM - Dad : SHH Disabled
+2024-03-28 1:43:30 AM - Dad : Simulation stopped
+2024-03-28 1:43:32 AM - Dad : Simulation started
+2024-03-28 1:43:32 AM - Dad : SHH Enabled
+2024-03-28 1:43:33 AM - Dad : Air Conditioner  turned off
+2024-03-28 1:43:33 AM - Dad : Heater  turned on
+2024-03-28 1:43:37 AM - Dad : SHH Disabled
+2024-03-28 1:43:41 AM - Dad : Simulation stopped

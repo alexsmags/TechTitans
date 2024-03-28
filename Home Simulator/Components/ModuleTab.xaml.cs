@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -25,6 +26,7 @@ namespace Home_Simulator.Components
         {
             InitializeComponent();
             UpdateTemperatureDisplay();
+            UpdateHeaterTemperatureDisplay();
         }
 
         private void btnToggle_Click(object sender, RoutedEventArgs e)
@@ -104,6 +106,18 @@ namespace Home_Simulator.Components
         private void setTemperature_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             UpdateTemperatureDisplay();
+        }
+
+        private void UpdateHeaterTemperatureDisplay()
+        {
+            if (heatingTempDisplay == null) { return; }
+
+            heatingTempDisplay.Text = "Temperature: " + setHeatingTemperature.Value.ToString("N0") + "°C";
+        }
+
+        private void setHeaterTemperature_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            UpdateHeaterTemperatureDisplay();
         }
     }
 }

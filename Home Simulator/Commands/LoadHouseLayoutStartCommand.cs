@@ -37,6 +37,7 @@ namespace Home_Simulator.Commands
                 simulationViewModel.LocationService.AddRooms(houseData.Rooms);
                 simulationViewModel.LocationService.Rooms = houseData.Rooms;
                 simulationViewModel.AirConditioner = houseData.AirConditioner;
+                simulationViewModel.Heater = houseData.Heater;  
                 
                 ObservableCollection <Room> availableRooms = new ObservableCollection<Room>(houseData.Rooms);
 
@@ -69,6 +70,7 @@ namespace Home_Simulator.Commands
                 }
 
                 houseData.AirConditioner = house.AirConditioner;
+                houseData.Heater = house.Heater;
             }
 
             return houseData;

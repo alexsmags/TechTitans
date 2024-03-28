@@ -18,6 +18,7 @@ namespace Home_Simulator.Models.HouseModels
         public void ConstructHouse(List<Dictionary<string, object>> roomFeatures)
         {
             _builder.addAirConditioner();
+            _builder.addHeater();
 
             foreach (var features in roomFeatures)
             {

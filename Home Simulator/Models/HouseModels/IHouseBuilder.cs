@@ -13,6 +13,7 @@ namespace Home_Simulator.Models.HouseModels
         void AddDoors(int numberOfDoors);
         void AddWindows(int numberOfWindows);
         void addAirConditioner();
+        void addHeater();
         House GetHouse(); 
         void NameRoom(string name);
     }

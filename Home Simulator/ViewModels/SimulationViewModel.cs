@@ -71,6 +71,8 @@ namespace Home_Simulator.ViewModels
 
         private AirConditionerService _airConditionerService;
 
+        private HeatingService _heatingService;
+
         #endregion
 
         #region Commands
@@ -115,7 +117,9 @@ namespace Home_Simulator.ViewModels
 
         public ICommand LoadCSVTemperatureCommand { get; private set; }
 
-        public ICommand ToggleAcCommand { get; private set; }   
+        public ICommand ToggleAcCommand { get; private set; }
+
+        public ICommand ToggleHeaterCommand { get; private set; }
 
         public ICommand ChangeRoomTemperatureCommand { get; private set; }
 
@@ -137,6 +141,8 @@ namespace Home_Simulator.ViewModels
         public bool CanEditUser => CurrentUser != null && users.Any();
 
         public AirConditioner AirConditioner {get; set;}
+
+        public Heater Heater { get; set; }
 
         public List<(DateTime dateTime, double temperature)> OutsideTemperatureData { get; set; }
 
@@ -189,6 +195,15 @@ namespace Home_Simulator.ViewModels
                 {
                     _isShhEnabled = value;
                     OnPropertyChanged(nameof(IsShhEnabled));
+
+                    if (_isShhEnabled)
+                    {
+                        _log.AddMessage("SHH Enabled");
+                    }
+                    else
+                    {
+                        _log.AddMessage("SHH Disabled");
+                    }
                 }
             }
         }
@@ -357,17 +372,18 @@ namespace Home_Simulator.ViewModels
             ToggleOpenCloseWindowCommand = new ToggleOpenCloseWindowCommand(this);
             ToggleBlockUnblockWindowCommand = new ToggleBlockUnblockWindowCommand(this);
             ToggleAcCommand = new ToggleAcCommand(this);
+            ToggleHeaterCommand = new ToggleHeaterCommand(this);
             ChangeRoomTemperatureCommand = new ChangeRoomTemperatureCommand(this);
 
             _windowStateService = new WindowStateService();
             _outsideTemperatureService = new OutsideTemperatureService();
             _zoneRoomTemperatureService = new ZoneRoomTemperatureService();
             _airConditionerService = new AirConditionerService();
+            _heatingService = new HeatingService();
 
 
-          
 
-            
+
             _timer = new DispatcherTimer
             {
                 Interval = TimeSpan.FromSeconds(1)
@@ -386,6 +402,7 @@ namespace Home_Simulator.ViewModels
                         _outsideTemperatureService.UpdateOutsideTemperature(this);
                         _zoneRoomTemperatureService.AdjustRoomTemperature(this);
                         _airConditionerService.UpdateAirConditionerState(this);
+                        _heatingService.UpdateRoomTemperatures(this, Heater);
                     }
 
                     if (e.PropertyName == nameof(DateTimeModel.SimulationTime))
@@ -393,6 +410,7 @@ namespace Home_Simulator.ViewModels
                         _zoneRoomTemperatureService.UpdateRoomTemperatures(this, AirConditioner);
                         _windowStateService.UpdateWindowStates(this);
                         _airConditionerService.UpdateRoomTemperatures(this, AirConditioner);
+                        _heatingService.UpdateRoomTemperatures(this, Heater);
                     }
                 }
             };

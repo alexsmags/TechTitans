@@ -44,6 +44,10 @@ namespace Home_Simulator.Models.HouseModels
         {
             _house.AirConditioner = new AirConditioner(); 
         }
+        public void addHeater()
+        {
+            _house.Heater = new Heater();
+        }
         public House GetHouse()
         {
             House result = _house;

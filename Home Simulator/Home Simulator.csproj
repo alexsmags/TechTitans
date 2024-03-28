@@ -76,6 +76,7 @@
     <Compile Include="Commands\RemoveUserCommand.cs" />
     <Compile Include="Commands\RemoveZoneCommand.cs" />
     <Compile Include="Commands\ToggleAcCommand.cs" />
+    <Compile Include="Commands\ToggleHeaterCommand.cs" />
     <Compile Include="Components\AddUserDialog.xaml.cs">
       <DependentUpon>AddUserDialog.xaml</DependentUpon>
     </Compile>
@@ -114,6 +115,7 @@
     <Compile Include="Models\HouseModels\AirConditioner.cs" />
     <Compile Include="Models\HouseModels\Director.cs" />
     <Compile Include="Models\HouseModels\Door.cs" />
+    <Compile Include="Models\HouseModels\Heater.cs" />
     <Compile Include="Models\HouseModels\House.cs" />
     <Compile Include="Models\HouseModels\HouseBuilder.cs" />
     <Compile Include="Models\HouseModels\HouseData.cs" />
@@ -124,6 +126,7 @@
     <Compile Include="Models\HouseModels\OutdoorLocation.cs" />
     <Compile Include="Models\HouseModels\Room.cs" />
     <Compile Include="Models\HouseModels\Services\AirConditionerService.cs" />
+    <Compile Include="Models\HouseModels\Services\HeatingService.cs" />
     <Compile Include="Models\HouseModels\Services\OutsideTemperatureService.cs" />
     <Compile Include="Models\HouseModels\Services\WindowStateService.cs" />
     <Compile Include="Models\HouseModels\Services\ZoneRoomTemperatureService.cs" />
@@ -314,6 +317,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="MessageLogs\SimulationLogs.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HouseObjectIcons\heater_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HouseObjectIcons\heater_off.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

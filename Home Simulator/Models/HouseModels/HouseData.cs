@@ -10,7 +10,10 @@ namespace Home_Simulator.Models.HouseModels
     public class HouseData
     {
         public ObservableCollection<Room> Rooms { get; set; }
+
         public AirConditioner AirConditioner { get; set; }
+
+        public Heater Heater { get; set; }
     }
 
 }

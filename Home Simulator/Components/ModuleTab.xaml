@@ -538,14 +538,19 @@
                     </Border>
                     </ScrollViewer>
 
-                    <!-- Air Conditioner Section-->
+                    <!-- Climate Control Section: Air Conditioner and Heater -->
                     <Border Grid.Row="4" BorderBrush="Black" BorderThickness="1" Margin="10" Padding="10" CornerRadius="5">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
+                            
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="Auto"/>
@@ -553,17 +558,26 @@
 
                             <TextBlock Grid.Row="0" Grid.Column="0" Text="Air Conditioner Status:" VerticalAlignment="Center"/>
                             <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
-                                <Image  Width="50" Height="50" Source="{Binding AirConditioner.ACImage}" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-                                <ToggleButton Height="30" Width="60" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Cursor="Hand" IsEnabled="{Binding IsShhEnabled}" Command="{Binding ToggleAcCommand}" IsChecked="{Binding AirConditioner.IsOn, Mode=OneWay}" Margin="10" Padding="10" VerticalAlignment="Center" Style="{StaticResource AnimatedSliderToggleButtonStyle}"/>
+                                <Image Width="50" Height="50" Source="{Binding AirConditioner.ACImage}" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                                <ToggleButton Height="30" Width="60" Cursor="Hand" IsEnabled="{Binding IsShhEnabled}" Command="{Binding ToggleAcCommand}" IsChecked="{Binding AirConditioner.IsOn, Mode=OneWay}" Margin="10" Padding="10" VerticalAlignment="Center" Style="{StaticResource AnimatedSliderToggleButtonStyle}"/>
                             </StackPanel>
-                           
-
                             <TextBlock Grid.Row="1" Grid.Column="0" Text="Desired Temperature:" VerticalAlignment="Center"/>
-                            <Slider x:Name="setTemperature"  Grid.Row="1" Grid.Column="1" Minimum="0" Maximum="30" IsSnapToTickEnabled="True" IsEnabled="{Binding IsShhEnabled}" Value="{Binding AirConditioner.DesiredTemperature, Mode=TwoWay}" Width="200" VerticalAlignment="Center" ToolTip="Adjust desired temperature" ValueChanged="setTemperature_ValueChanged"/>
-                            <TextBlock x:Name="tempDisplay" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                            <Slider x:Name="setTemperature" Grid.Row="1" Grid.Column="1" Minimum="0" Maximum="30" IsSnapToTickEnabled="True" IsEnabled="{Binding IsShhEnabled}" Value="{Binding AirConditioner.DesiredTemperature, Mode=TwoWay}" Width="200" VerticalAlignment="Center" ToolTip="Adjust desired temperature" ValueChanged="setTemperature_ValueChanged"/>
+                            <TextBlock x:Name="tempDisplay" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
+                            <Grid Grid.Row="3" Grid.ColumnSpan="2" Height="20"></Grid>
+
+                            <TextBlock Grid.Row="4" Grid.Column="0" Text="Heating Status:" VerticalAlignment="Center"/>
+                            <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <Image Width="50" Height="50" Source="{Binding Heater.HeaterImage}" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                                <ToggleButton Height="30" Width="60" Cursor="Hand" IsEnabled="{Binding IsShhEnabled}" Command="{Binding ToggleHeaterCommand}" IsChecked="{Binding Heater.IsOn, Mode=OneWay}" Margin="10" Padding="10" VerticalAlignment="Center" Style="{StaticResource AnimatedSliderToggleButtonStyle}"/>
+                            </StackPanel>
+                            <TextBlock Grid.Row="5" Grid.Column="0" Text="Desired Temperature:" VerticalAlignment="Center"/>
+                            <Slider x:Name="setHeatingTemperature" Grid.Row="5" Grid.Column="1" Minimum="0" Maximum="30" IsSnapToTickEnabled="True" IsEnabled="{Binding IsShhEnabled}" Value="{Binding Heater.DesiredTemperature, Mode=TwoWay}" Width="200" VerticalAlignment="Center" ToolTip="Adjust desired temperature" ValueChanged="setHeaterTemperature_ValueChanged"/>
+                            <TextBlock x:Name="heatingTempDisplay" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
                     </Border>
+
 
 
                 </Grid>
