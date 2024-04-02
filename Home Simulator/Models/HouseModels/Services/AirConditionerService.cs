@@ -10,51 +10,60 @@ namespace Home_Simulator.Models.HouseModels.Services
 {
     public class AirConditionerService
     {
-        public void UpdateAirConditionerState(SimulationViewModel simulationViewModel)
+        private SimulationViewModel _simulationViewModel;  
+        
+        public AirConditionerService(SimulationViewModel simulationViewModel) 
         {
-            var currentDate = DateTime.ParseExact(simulationViewModel.SimulationModel.GetCurrentDate(), "yyyy-MM-dd", CultureInfo.InvariantCulture);
+            _simulationViewModel = simulationViewModel;
+        }
 
-            double roomAvgTemperature = calculateAverageTemperatureInRooms(simulationViewModel);
-            double outsideTemperature = simulationViewModel.OutsideTemperature;
+        public void UpdateAirConditionerState()
+        {
+            var currentDate = DateTime.ParseExact(_simulationViewModel.SimulationModel.GetCurrentDate(), "yyyy-MM-dd", CultureInfo.InvariantCulture);
+
+            double roomAvgTemperature = calculateAverageTemperatureInRooms();
+            double outsideTemperature = _simulationViewModel.OutsideTemperature;
             bool isSummer = (currentDate >= new DateTime(currentDate.Year, 6, 21) && currentDate <= new DateTime(currentDate.Year, 9, 21));
 
 
             if (outsideTemperature < roomAvgTemperature && isSummer)
             {
-                simulationViewModel.AirConditioner.TurnOffAC();
+                _simulationViewModel.AirConditioner.TurnOffAC();
             }
 
         }
 
-        private double calculateAverageTemperatureInRooms(SimulationViewModel simulationViewModel)
+        private double calculateAverageTemperatureInRooms()
         {
             double totalRoomTemperature = 0;
 
-            foreach(var room in simulationViewModel.Rooms)
+            foreach(var room in _simulationViewModel.Rooms)
             {
                 totalRoomTemperature += room.RoomTemperature;
             }
 
-            return totalRoomTemperature / simulationViewModel.Rooms.Count;
+            return totalRoomTemperature / _simulationViewModel.Rooms.Count;
         }
 
-        public void UpdateRoomTemperatures(SimulationViewModel simulationViewModel, AirConditioner airConditioner)
+        public void UpdateRoomTemperatures(SimulationViewModel simulationViewModel)
         {
-            if (!airConditioner.IsOn) { return; }
+            if (!_simulationViewModel.AirConditioner.IsOn) { return; }
 
             foreach (var zone in simulationViewModel.Zones)
             {
                 foreach (var room in zone.Rooms)
                 {
-                    if (Math.Abs(room.RoomTemperature - airConditioner.DesiredTemperature) >= 0.25)
+                    if (Math.Abs(room.RoomTemperature - _simulationViewModel.AirConditioner.DesiredTemperature) >= 0.25)
                     {
-                        double temperatureChange = (room.RoomTemperature < airConditioner.DesiredTemperature) ? 0 : -0.1;
+                        double temperatureChange = (room.RoomTemperature < _simulationViewModel.AirConditioner.DesiredTemperature) ? 0 : -0.1;
                         room.RoomTemperature += temperatureChange;
+                        room.LastKnownRoomTemperature += temperatureChange;
 
-                        if ((temperatureChange > 0 && room.RoomTemperature > airConditioner.DesiredTemperature) ||
-                            (temperatureChange < 0 && room.RoomTemperature < airConditioner.DesiredTemperature))
+                        if ((temperatureChange > 0 && room.RoomTemperature > _simulationViewModel.AirConditioner.DesiredTemperature) ||
+                            (temperatureChange < 0 && room.RoomTemperature < _simulationViewModel.AirConditioner.DesiredTemperature))
                         {
-                            room.RoomTemperature = airConditioner.DesiredTemperature;
+                            room.RoomTemperature = _simulationViewModel.AirConditioner.DesiredTemperature;
+                            room.LastKnownRoomTemperature = _simulationViewModel.AirConditioner.DesiredTemperature;
                         }
                     }
                 }

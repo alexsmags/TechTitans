@@ -10,6 +10,7 @@
     <UserControl.Resources>
         <converter:BooleanToOnOffConverter x:Key="BooleanToOnOffConverter" />
         <converter:BooleanToOpenClosedConverter x:Key="BooleanToOpenClosedConverter"/>
+        <converter:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
     </UserControl.Resources>
 
     <Border CornerRadius="8" BorderBrush="Gray" BorderThickness="0.8" Padding="8" Background="#958bc9" Width="160" Margin="0,0,0,8">
@@ -21,6 +22,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <!-- Bind the room name to the TextBlock -->
@@ -83,6 +85,20 @@
                     </TextBlock.Text>
                 </TextBlock>
             </StackPanel>
+
+            <!-- Motion Detection Icon -->
+            <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,20,0,0">
+                <Image Width="20" Height="20" Margin="4"
+                       Source="pack://application:,,,/Images/HouseObjectIcons/motion_detected.png"
+                       Visibility="{Binding IsMotionDetected, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+
+                <TextBlock Text="Motion Detected" 
+                           VerticalAlignment="Center" 
+                           Visibility="{Binding IsMotionDetected, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+            </StackPanel>
+
+
+
 
         </Grid>
     </Border>

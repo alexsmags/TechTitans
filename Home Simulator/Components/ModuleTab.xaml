@@ -266,18 +266,18 @@
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
-                    
+
                     <TextBlock Text="Automations" Grid.Row="2" Margin="0,20,0,0"></TextBlock>
 
                     <Expander Header="Lights" 
                               Grid.Row="3" 
                               Margin="0" 
                               Background="#958bc9" 
-                              Foreground="Black">    
+                              Foreground="Black">
                         <ScrollViewer VerticalScrollBarVisibility="Auto" Background="#958bc9">
                             <ListBox ItemsSource="{Binding Rooms}" 
                                      Background="#958bc9"
-                                     IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}">   
+                                     IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}">
                                 <ListBox.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel Margin="5">
@@ -287,7 +287,7 @@
                                                       IsChecked="{Binding IsAutomationEnabled, Mode=TwoWay}" 
 
                                                       Margin="0,5,5,0" 
-                                                      Foreground="Black"/>      
+                                                      Foreground="Black"/>
                                         </StackPanel>
                                     </DataTemplate>
                                 </ListBox.ItemTemplate>
@@ -295,36 +295,9 @@
                         </ScrollViewer>
                     </Expander>
 
-
-
-                    <TextBlock Grid.Row="4" Margin="5,5,5,0" Text="Open/close" FontWeight="Bold"/>
-
-                    <Border Grid.Row="5" BorderBrush="#958bc9" BorderThickness="2" Padding="5">
-                        <StackPanel Margin="0,4,0,0" Grid.Row="3">
-                            <CheckBox x:Name="chkBackyard">Backyard</CheckBox>
-                            <CheckBox x:Name="chkGarage">Garage</CheckBox>
-                            <CheckBox x:Name="chkMain">Main</CheckBox>
-                            <Button 
-                                x:Name="btnToggle"
-                                Content="All" 
-                                Margin="3,8,0,0" 
-                                Width="100" 
-                                Background="Transparent" 
-                                HorizontalAlignment="Left" 
-                                FontWeight="Bold"
-                                Click="btnToggle_Click">
-                            </Button>
-                        </StackPanel>
-                    </Border>
-              
                 </Grid>
             </TabItem>
 
-
-            <TabItem Header="SHP">
-
-            </TabItem>
-            
             <TabItem Header="SHH">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -364,9 +337,34 @@
                     Foreground="Black" 
                     BorderThickness="1"
                     BorderBrush="Black"
-                    Height="20"
+                    Height="30"
                     Cursor="Hand"
-                    IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}"/>
+                    IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}">
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border x:Name="border" 
+                                           Background="#beb5eb" 
+                                           CornerRadius="15" 
+                                           Padding="10,5"
+                                           BorderBrush="White"
+                                           BorderThickness="2">
+
+                                        <ContentPresenter HorizontalAlignment="Center" 
+                                                             VerticalAlignment="Center"
+                                                             TextBlock.Foreground="White"
+                                                             TextBlock.FontWeight="Bold"
+                                                             TextBlock.FontSize="13"
+                                                             TextBlock.TextAlignment="Center"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="border" Property="Background" Value="#958bc9"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
 
                         <Button x:Name="viewRooms" 
                                 Content="View Rooms" 
@@ -377,8 +375,33 @@
                                 Foreground="Black" 
                                 BorderThickness="1"
                                 BorderBrush="Black"
-                                Height="20"
-                                Cursor="Hand"/>
+                                Height="30"
+                                Cursor="Hand">
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border x:Name="border" 
+                                           Background="#beb5eb" 
+                                           CornerRadius="15" 
+                                           Padding="10,5"
+                                           BorderBrush="White"
+                                           BorderThickness="2">
+
+                                        <ContentPresenter HorizontalAlignment="Center" 
+                                                         VerticalAlignment="Center"
+                                                         TextBlock.Foreground="White"
+                                                         TextBlock.FontWeight="Bold"
+                                                         TextBlock.FontSize="13"
+                                                         TextBlock.TextAlignment="Center"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="border" Property="Background" Value="#958bc9"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
                     </StackPanel>
 
                     <Border BorderBrush="Black" BorderThickness="1" Grid.Row="2"  Margin="10" Padding="2" CornerRadius="5">
@@ -544,6 +567,169 @@
 
                 </Grid>
             </TabItem>
+
+
+            <TabItem Header="SHP">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Toggle Away Mode -->
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <TextBlock Text="Toggle Away Mode" VerticalAlignment="Center" Margin="10"></TextBlock>
+                        <ToggleButton 
+                             Height="30" 
+                             Width="60"
+                             Cursor="Hand" 
+                             IsChecked="{Binding IsAwayModeEnabled}" 
+                             Margin="10" 
+                             Padding="10" 
+                             VerticalAlignment="Center" 
+                             Style="{StaticResource AnimatedSliderToggleButtonStyle}"/>
+                    </StackPanel>
+                    
+                    <!-- Set Location of Motion Detectors -->
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,10,10,10"  IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}">
+                        <TextBlock Text="Set Motion Detector Location:" VerticalAlignment="Center" Margin="10,0"></TextBlock>
+                        <ComboBox 
+                            x:Name="RoomComboBox"
+                            Width="200" 
+                            Height="30" 
+                            VerticalAlignment="Center" 
+                            ItemsSource="{Binding Rooms}" 
+                            DisplayMemberPath="Name" 
+                            Margin="10"/>
+                        <Button 
+                            Content="Set" 
+                            Width="60" 
+                            Height="30" 
+                            Command="{Binding SetMotionDetectorLocationCommand}" 
+                            CommandParameter="{Binding SelectedItem, ElementName=RoomComboBox}" 
+                            Margin="5,0" 
+                            VerticalAlignment="Center"
+                            Cursor="Hand">
+                            
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border x:Name="border" 
+                                              Background="#beb5eb" 
+                                              CornerRadius="15" 
+                                              Padding="10,5"
+                                              BorderBrush="White"
+                                              BorderThickness="2">
+
+                                        <ContentPresenter HorizontalAlignment="Center" 
+                                                            VerticalAlignment="Center"
+                                                            TextBlock.Foreground="White"
+                                                            TextBlock.FontWeight="Bold"
+                                                            TextBlock.FontSize="13"
+                                                            TextBlock.TextAlignment="Center"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="border" Property="Background" Value="#958bc9"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Button.Template>
+                            
+                        </Button>
+                        <Button 
+                            Content="Remove" 
+                            Width="100" 
+                            Height="30" 
+                            Command="{Binding RemoveMotionDetectorLocationCommand}" 
+                            CommandParameter="{Binding SelectedItem, ElementName=RoomComboBox}" 
+                            Margin="5,0" 
+                            VerticalAlignment="Center"
+                            Cursor="Hand">
+                            
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border x:Name="border" 
+                                          Background="#beb5eb" 
+                                          CornerRadius="15" 
+                                          Padding="20,5"
+                                          BorderBrush="White"
+                                          BorderThickness="2">
+
+                                        <ContentPresenter HorizontalAlignment="Center" 
+                                                            VerticalAlignment="Center"
+                                                            TextBlock.Foreground="White"
+                                                            TextBlock.FontWeight="Bold"
+                                                            TextBlock.FontSize="13"
+                                                            TextBlock.TextAlignment="Center"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="border" Property="Background" Value="#958bc9"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Button.Template>
+                            
+                        </Button>
+                    </StackPanel>
+
+                    <!-- Set Timer to Call Police -->
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,10,10,10"  IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}">
+                        <TextBlock Text="Set Timer to Call Police (seconds):" VerticalAlignment="Center" Margin="10,0"></TextBlock>
+                        <TextBox x:Name="policeTimerTextBox"
+                                 FontSize="18"
+                                 Width="60" 
+                                 Height="30" 
+                                 VerticalAlignment="Center" 
+                                 Text="{Binding PoliceTimer, UpdateSourceTrigger=PropertyChanged}" 
+                                 Margin="10"/>
+                        <Button Content="Set" 
+                                Width="60" 
+                                Height="30" 
+                                Command="{Binding SetPoliceTimerCommand}" 
+                                CommandParameter="{Binding Text, ElementName=policeTimerTextBox}" 
+                                Margin="5,0"
+                                Cursor="Hand"
+                                IsEnabled="{Binding IsPoliceTimerActive}">
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border x:Name="border" 
+                                             Background="#beb5eb" 
+                                             CornerRadius="15" 
+                                             Padding="10,5"
+                                             BorderBrush="White"
+                                             BorderThickness="2">
+
+                                        <ContentPresenter HorizontalAlignment="Center" 
+                                                           VerticalAlignment="Center"
+                                                           TextBlock.Foreground="White"
+                                                           TextBlock.FontWeight="Bold"
+                                                           TextBlock.FontSize="13"
+                                                           TextBlock.TextAlignment="Center"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="border" Property="Background" Value="#958bc9"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Button.Template>
+                            
+                        </Button>
+
+                        <ToggleButton 
+                                      Command="{Binding TogglePoliceTimerCommand}"
+                                      Margin="10"
+                                      Style="{StaticResource AnimatedSliderToggleButtonStyle}"
+                                      Cursor="Hand"/>
+                    </StackPanel>
+
+                </Grid>
+            </TabItem>
+
 
 
 

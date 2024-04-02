@@ -18,6 +18,7 @@ namespace Home_Simulator.Components
     public partial class ViewRoomsDialog : Window
     {
         private SimulationViewModel _simulationViewModel;
+
         public ViewRoomsDialog(SimulationViewModel simulationViewModel)
         {
             InitializeComponent();

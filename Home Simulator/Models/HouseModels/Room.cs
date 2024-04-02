@@ -15,9 +15,15 @@ namespace Home_Simulator.Models.HouseModels
     {
         private bool _isAutomationEnabled;
 
-        private Zone _assignedZoned;
-
         private double _roomTemperature;
+
+        private bool _hasMotionDetector;
+
+        private bool _isMotionDetected;
+
+        private double _lastKnownTemperature;
+
+        private Zone _assignedZoned;
 
         public List<Light> Lights { get; set; } = new List<Light>();
 
@@ -25,7 +31,6 @@ namespace Home_Simulator.Models.HouseModels
 
         public List<Window> Windows { get; set; } = new List<Window>();
 
-        public AirConditioner AirConditioner { get; set; }
 
         public double RoomTemperature
         {
@@ -34,22 +39,19 @@ namespace Home_Simulator.Models.HouseModels
             {
                 _roomTemperature = value;
                 OnPropertyChanged(nameof(RoomTemperature));
-
-                if (AirConditioner != null)
-                {
-                    if (_roomTemperature < AirConditioner.DesiredTemperature && AirConditioner.IsOn)
-                    {
-                        AirConditioner.TurnOffAC();
-                    }
-                    else if (_roomTemperature > AirConditioner.DesiredTemperature && !AirConditioner.IsOn)
-                    {
-                        AirConditioner.TurnOnAC();
-                    }
-                }
             }
         }
 
+        public double LastKnownRoomTemperature
+        {
+            get => _lastKnownTemperature;
 
+            set
+            {
+                _lastKnownTemperature = value;
+                OnPropertyChanged(nameof(LastKnownRoomTemperature));    
+            }
+        }
 
         public Zone AssignedZone
         {
@@ -61,8 +63,25 @@ namespace Home_Simulator.Models.HouseModels
             }
         }
 
+        public bool HasMotionDetector
+        {
+            get => _hasMotionDetector;
+            set
+            {
+                _hasMotionDetector = value;
+                OnPropertyChanged(nameof(HasMotionDetector));
+            }
+        }
 
-        public ObservableCollection<User> _usersInRoom { get; set; } = new ObservableCollection<User>();
+        public bool IsMotionDetected
+        {
+            get => _isMotionDetected;
+            set
+            {
+                _isMotionDetected = value;
+                OnPropertyChanged(nameof(IsMotionDetected));
+            }
+        }
 
         public bool IsAutomationEnabled
         {
@@ -88,9 +107,12 @@ namespace Home_Simulator.Models.HouseModels
             }
         }
 
+        public ObservableCollection<User> _usersInRoom { get; set; } = new ObservableCollection<User>();
+
         public Room()
         {
             UsersInRoom.CollectionChanged += UsersInRoom_CollectionChanged;
+            _lastKnownTemperature = RoomTemperature;
         }
 
         public void AddUser(User user)
@@ -126,6 +148,4 @@ namespace Home_Simulator.Models.HouseModels
         }
 
     }
-
-
 }

@@ -34,6 +34,7 @@ namespace Home_Simulator.Commands
                 if (result == true)
                 {
                     room.RoomTemperature = dialog.SelectedTemperature;
+                    room.LastKnownRoomTemperature = dialog.SelectedTemperature;
                     _simulationViewModel.AddLogMessage($"{room.Name} temperature changed to {dialog.SelectedTemperature}°");
                 }
             }

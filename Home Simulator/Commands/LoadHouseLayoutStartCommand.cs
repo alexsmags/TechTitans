@@ -37,8 +37,13 @@ namespace Home_Simulator.Commands
                 simulationViewModel.LocationService.AddRooms(houseData.Rooms);
                 simulationViewModel.LocationService.Rooms = houseData.Rooms;
                 simulationViewModel.AirConditioner = houseData.AirConditioner;
-                simulationViewModel.Heater = houseData.Heater;  
-                
+                simulationViewModel.Heater = houseData.Heater;
+
+                foreach (Room room in simulationViewModel.Rooms)
+                {
+                    room.PropertyChanged += simulationViewModel.Room_PropertyChanged;
+                }
+
                 ObservableCollection <Room> availableRooms = new ObservableCollection<Room>(houseData.Rooms);
 
                 simulationViewModel.AvailableRooms = availableRooms;

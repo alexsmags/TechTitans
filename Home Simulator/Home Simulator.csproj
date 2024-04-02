@@ -71,12 +71,16 @@
     <Compile Include="Commands\HouseObjectCommands\ToggleLightCommand.cs" />
     <Compile Include="Commands\HouseObjectCommands\ToggleOpenCloseWindowCommand.cs" />
     <Compile Include="Commands\LoadCSVTemperatureCommand.cs" />
+    <Compile Include="Commands\RemoveMotionDetectorLocationCommand.cs" />
     <Compile Include="Commands\RemoveRoomFromZoneCommand.cs" />
     <Compile Include="Commands\RemoveTemperaturePeriodCommand.cs" />
     <Compile Include="Commands\RemoveUserCommand.cs" />
     <Compile Include="Commands\RemoveZoneCommand.cs" />
+    <Compile Include="Commands\SetMotionDetectorLocationCommand.cs" />
+    <Compile Include="Commands\SetPoliceTimerCommand.cs" />
     <Compile Include="Commands\ToggleAcCommand.cs" />
     <Compile Include="Commands\ToggleHeaterCommand.cs" />
+    <Compile Include="Commands\TogglePoliceTimerCommand.cs" />
     <Compile Include="Commands\ViewRoomsCommand.cs" />
     <Compile Include="Components\AddUserDialog.xaml.cs">
       <DependentUpon>AddUserDialog.xaml</DependentUpon>
@@ -113,6 +117,7 @@
     </Compile>
     <Compile Include="Converters\BooleanToOnOffConverter.cs" />
     <Compile Include="Converters\BooleanToOpenClosedConverter.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\InverseBooleanConverter.cs" />
     <Compile Include="Converters\NullToBoolConverter.cs" />
     <Compile Include="MessageLogs\Log.cs" />
@@ -130,8 +135,11 @@
     <Compile Include="Models\HouseModels\OutdoorLocation.cs" />
     <Compile Include="Models\HouseModels\Room.cs" />
     <Compile Include="Models\HouseModels\Services\AirConditionerService.cs" />
+    <Compile Include="Models\HouseModels\Services\DoorStateService.cs" />
     <Compile Include="Models\HouseModels\Services\HeatingService.cs" />
+    <Compile Include="Models\HouseModels\Services\MotionDetectionService.cs" />
     <Compile Include="Models\HouseModels\Services\OutsideTemperatureService.cs" />
+    <Compile Include="Models\HouseModels\Services\TemperatureMonitorService.cs" />
     <Compile Include="Models\HouseModels\Services\WindowStateService.cs" />
     <Compile Include="Models\HouseModels\Services\ZoneRoomTemperatureService.cs" />
     <Compile Include="Models\HouseModels\Window.cs" />
@@ -331,6 +339,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\HouseObjectIcons\heater_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HouseObjectIcons\motion_detected.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -116,8 +116,7 @@
                     Content="Change User" 
                     Foreground="White" 
                     BorderThickness="0"
-                    Cursor="Hand" 
-                    IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}"/>
+                    Cursor="Hand"/>
             <StackPanel Grid.Row="3" Margin="5">
                 <TextBlock Text="Location:" FontWeight="Bold" HorizontalAlignment="Center"/>
                 <TextBlock Text="{Binding CurrentLocation.Name, FallbackValue='Please select a room'}" HorizontalAlignment="Center"/>
@@ -148,31 +147,30 @@
                     </TextBlock>
                 </StackPanel>
                 <Button 
-      Command="{Binding ChangeTemperatureCommand}"
-      Style="{StaticResource ButtonWithoutMouseOver}"
-      Grid.Row="4" 
-      Height="20" 
-      VerticalAlignment="Bottom" 
-      Background="Transparent"
-      Content="Change Temperature" 
-      Foreground="White" 
-      BorderThickness="0"
-      Cursor="Hand"
-      IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}"
-      />
+                  Command="{Binding ChangeTemperatureCommand}"
+                  Style="{StaticResource ButtonWithoutMouseOver}"
+                  Grid.Row="4" 
+                  Height="20" 
+                  VerticalAlignment="Bottom" 
+                  Background="Transparent"
+                  Content="Change Temperature" 
+                  Foreground="White" 
+                  BorderThickness="0"
+                  Cursor="Hand"
+                  />
                 <Button 
-       Command="{Binding LoadCSVTemperatureCommand}"
-       Style="{StaticResource ButtonWithoutMouseOver}"
-       Grid.Row="4" 
-       Height="20" 
-       VerticalAlignment="Bottom" 
-       Background="Transparent"
-       Content="Load Temperature" 
-       Foreground="White" 
-       BorderThickness="0"
-       Cursor="Hand"
-       IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}"
-       />
+                   Command="{Binding LoadCSVTemperatureCommand}"
+                   Style="{StaticResource ButtonWithoutMouseOver}"
+                   Grid.Row="4" 
+                   Height="20" 
+                   VerticalAlignment="Bottom" 
+                   Background="Transparent"
+                   Content="Load Temperature" 
+                   Foreground="White" 
+                   BorderThickness="0"
+                   Cursor="Hand"
+                   IsEnabled="{Binding IsSimulationRunning, Converter={StaticResource InverseBooleanConverter}}"
+                   />
             </StackPanel>
             <StackPanel Grid.Row="5">
                 <TextBlock Grid.Row="5" Text="{Binding SimulationModel.FormattedSimulationDate}" Margin="5" FontWeight="Bold" HorizontalAlignment="Center"/>

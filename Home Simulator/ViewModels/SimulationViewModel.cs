@@ -20,6 +20,7 @@ using Home_Simulator.Stores;
 using System.Globalization;
 using Home_Simulator.Models.HouseModels.Services;
 using Home_Simulator.MessageLogs;
+using System.ComponentModel;
 
 namespace Home_Simulator.ViewModels
 {
@@ -40,6 +41,8 @@ namespace Home_Simulator.ViewModels
         private bool _isSimulationRunning;
 
         private bool _isShhEnabled = false;
+
+        private bool _isAwayModeEnabled = false;
 
         private DateTimeModel _simulationModel;
 
@@ -65,6 +68,8 @@ namespace Home_Simulator.ViewModels
 
         private WindowStateService _windowStateService;
 
+        private DoorStateService _doorStateService;
+
         private OutsideTemperatureService _outsideTemperatureService;
 
         private ZoneRoomTemperatureService _zoneRoomTemperatureService;
@@ -72,6 +77,14 @@ namespace Home_Simulator.ViewModels
         private AirConditionerService _airConditionerService;
 
         private HeatingService _heatingService;
+
+        private MotionDetectionService _motionDetectionService;
+
+        private TemperatureMonitorService _temperatureMonitorService;
+
+        private int _policeTimer;
+
+        private bool _isPoliceTimerActive = false;
 
         #endregion
 
@@ -125,6 +138,14 @@ namespace Home_Simulator.ViewModels
 
         public ICommand ViewRoomsCommand { get; private set; }
 
+        public ICommand SetMotionDetectorLocationCommand { get; private set; }
+
+        public ICommand SetPoliceTimerCommand { get; private set; }
+
+        public ICommand RemoveMotionDetectorLocationCommand { get; private set; }
+
+        public ICommand TogglePoliceTimerCommand { get; private set; }
+
 
         #endregion
 
@@ -152,10 +173,12 @@ namespace Home_Simulator.ViewModels
         {
             get { return _outsideTemperature; }
             set
-            {   
+            {
+                double oldTemperature = _outsideTemperature;
                 _outsideTemperature = value;
                 OnPropertyChanged(nameof(OutsideTemperature));
-                _airConditionerService.UpdateAirConditionerState(this);
+                _temperatureMonitorService.CheckOutsideTemperatureChanges(value);
+                _airConditionerService.UpdateAirConditionerState();
 
             }
         }
@@ -210,6 +233,41 @@ namespace Home_Simulator.ViewModels
             }
         }
 
+        public bool IsAwayModeEnabled
+        {
+            get => _isAwayModeEnabled;
+            set
+            {
+                if (_isAwayModeEnabled != value)
+                {
+                    _isAwayModeEnabled = value;
+                    OnPropertyChanged(nameof(IsAwayModeEnabled));
+                    _windowStateService.BlockWindowsOnAwayModeOn();
+                    _doorStateService.CloseDoorsOnAwayModeOn();
+
+                    if (_isAwayModeEnabled)
+                    {
+                        _windowStateService.CheckDoorsAndWindows();
+                        _log.AddMessage("Away Mode turned On");
+                    }
+                    else
+                    {
+                        _log.AddMessage("Away Mode turned Off");
+                    }
+                }
+            }
+        }
+
+        public bool IsPoliceTimerActive
+        {
+            get => _isPoliceTimerActive;
+            set
+            {
+                _isPoliceTimerActive = value;
+                OnPropertyChanged(nameof(IsPoliceTimerActive));
+            }
+        }
+
         public User CurrentUser
         {
             get { return _currentUser; }
@@ -236,8 +294,15 @@ namespace Home_Simulator.ViewModels
             {
                 _currentLocation = value;
                 OnPropertyChanged(nameof(CurrentLocation));
-                _zoneRoomTemperatureService.AdjustRoomTemperature(this);
+                _zoneRoomTemperatureService.AdjustRoomTemperature();
                 LightPermissionManager.UpdateLightPermissionsForAllUsers(Rooms, CurrentUser);
+
+
+                Room currentRoom = value as Room;
+                if (currentRoom != null && currentRoom.HasMotionDetector)
+                {
+                    _motionDetectionService.DetectMotion(currentRoom);
+                }
 
             }
         }
@@ -329,6 +394,16 @@ namespace Home_Simulator.ViewModels
             }
         }
 
+        public int PoliceTimer
+        {
+            get => _policeTimer;
+            set
+            {
+                _policeTimer = value;
+                OnPropertyChanged(nameof(PoliceTimer));
+            }
+        }
+
         public void AddLogMessage(string message)
         {
             _log.AddMessage(message);
@@ -377,14 +452,19 @@ namespace Home_Simulator.ViewModels
             ToggleHeaterCommand = new ToggleHeaterCommand(this);
             ChangeRoomTemperatureCommand = new ChangeRoomTemperatureCommand(this);
             ViewRoomsCommand = new ViewRoomsCommand(this);
+            SetMotionDetectorLocationCommand = new SetMotionDetectorLocationCommand(this);
+            RemoveMotionDetectorLocationCommand = new RemoveMotionDetectorLocationCommand(this);
+            SetPoliceTimerCommand = new SetPoliceTimerCommand(this);
+            TogglePoliceTimerCommand = new TogglePoliceTimerCommand(this);  
+            _motionDetectionService = new MotionDetectionService(this);
 
-            _windowStateService = new WindowStateService();
-            _outsideTemperatureService = new OutsideTemperatureService();
-            _zoneRoomTemperatureService = new ZoneRoomTemperatureService();
-            _airConditionerService = new AirConditionerService();
-            _heatingService = new HeatingService();
-
-
+            _windowStateService = new WindowStateService(this);
+            _doorStateService = new DoorStateService(this);
+            _outsideTemperatureService = new OutsideTemperatureService(this);
+            _zoneRoomTemperatureService = new ZoneRoomTemperatureService(this, AirConditioner);
+            _airConditionerService = new AirConditionerService(this);
+            _heatingService = new HeatingService(this);
+            _temperatureMonitorService = new TemperatureMonitorService(this);
 
 
             _timer = new DispatcherTimer
@@ -402,18 +482,29 @@ namespace Home_Simulator.ViewModels
                 {
                     if (e.PropertyName == nameof(DateTimeModel.SimulationDate))
                     {
-                        _outsideTemperatureService.UpdateOutsideTemperature(this);
-                        _zoneRoomTemperatureService.AdjustRoomTemperature(this);
-                        _airConditionerService.UpdateAirConditionerState(this);
-                        _heatingService.UpdateRoomTemperatures(this, Heater);
+                        _zoneRoomTemperatureService.AdjustRoomTemperature();
+                        _airConditionerService.UpdateAirConditionerState();
+                        _heatingService.UpdateRoomTemperatures();
                     }
 
                     if (e.PropertyName == nameof(DateTimeModel.SimulationTime))
                     {
-                        _zoneRoomTemperatureService.UpdateRoomTemperatures(this, AirConditioner);
-                        _windowStateService.UpdateWindowStates(this);
-                        _airConditionerService.UpdateRoomTemperatures(this, AirConditioner);
-                        _heatingService.UpdateRoomTemperatures(this, Heater);
+                        _zoneRoomTemperatureService.UpdateRoomTemperatures();
+                        _airConditionerService.UpdateRoomTemperatures(this);
+                        _heatingService.UpdateRoomTemperatures();
+
+                        if (!IsAwayModeEnabled)
+                        {
+                            _windowStateService.UpdateWindowStates();
+                        }
+                    }
+                }
+
+                else
+                {
+                    if (e.PropertyName == nameof(DateTimeModel.SimulationDate))
+                    {
+                        _outsideTemperatureService.UpdateOutsideTemperature();
                     }
                 }
             };
@@ -430,6 +521,15 @@ namespace Home_Simulator.ViewModels
 
         #endregion
 
+        public void Room_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == nameof(Room.RoomTemperature) && sender is Room room)
+            {
+                double newTemperature = room.RoomTemperature;
+                // Now, invoke the temperature monitoring logic
+                _temperatureMonitorService.CheckTemperatureChanges(room, newTemperature);
+            }
+        }
 
     }
 }

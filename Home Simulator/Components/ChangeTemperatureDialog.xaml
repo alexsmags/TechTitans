@@ -20,9 +20,9 @@
                 VerticalAlignment="Center" 
                 TickFrequency="1"
                 LargeChange="1" 
-                Minimum="-70" 
+                Minimum="-200" 
                 IsSnapToTickEnabled="True" 
-                Maximum="70" 
+                Maximum="200" 
                 ValueChanged="setTemperature_ValueChanged">
             </Slider>
             <TextBlock x:Name="tempDisplay" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>

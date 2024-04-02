@@ -10,28 +10,36 @@ namespace Home_Simulator.Models.HouseModels.Services
 {
     public class OutsideTemperatureService
     {
-        public void UpdateOutsideTemperature(SimulationViewModel simulationViewModel)
+
+        private SimulationViewModel _simulationViewModel;
+
+        public OutsideTemperatureService(SimulationViewModel simulationViewModel)
         {
-            if (simulationViewModel.OutsideTemperatureData == null)
+            _simulationViewModel = simulationViewModel;
+        }
+
+        public void UpdateOutsideTemperature()
+        {
+            if (_simulationViewModel.OutsideTemperatureData == null)
             {
-                simulationViewModel.OutsideTemperature = simulationViewModel.OutsideTemperature; 
+                _simulationViewModel.OutsideTemperature = _simulationViewModel.OutsideTemperature; 
                 return;
             }
-            var currentDate = DateTime.ParseExact(simulationViewModel.SimulationModel.GetCurrentDate(), "yyyy-MM-dd", CultureInfo.InvariantCulture).ToString("yyyy-MM-dd");
-            var currentHour = DateTime.ParseExact(simulationViewModel.SimulationModel.GetCurrentTime(), "HH:mm:ss", CultureInfo.InvariantCulture).Hour;
+            var currentDate = DateTime.ParseExact(_simulationViewModel.SimulationModel.GetCurrentDate(), "yyyy-MM-dd", CultureInfo.InvariantCulture).ToString("yyyy-MM-dd");
+            var currentHour = DateTime.ParseExact(_simulationViewModel.SimulationModel.GetCurrentTime(), "HH:mm:ss", CultureInfo.InvariantCulture).Hour;
 
-            var temperatureData = simulationViewModel.OutsideTemperatureData.FirstOrDefault(data =>
+            var temperatureData = _simulationViewModel.OutsideTemperatureData.FirstOrDefault(data =>
                 data.dateTime.Date.ToString("yyyy-MM-dd") == currentDate &&
                 data.dateTime.Hour == currentHour);
 
             if (temperatureData != default)
             {
-                simulationViewModel.OutsideTemperature = temperatureData.temperature;
-                simulationViewModel.AddLogMessage($"Outside temperature updated to {temperatureData.temperature}°C");
+                _simulationViewModel.OutsideTemperature = temperatureData.temperature;
+                _simulationViewModel.AddLogMessage($"Outside temperature updated to {temperatureData.temperature}°C");
             }
             else
             {
-                simulationViewModel.OutsideTemperature = 10; 
+                _simulationViewModel.OutsideTemperature = 10; 
             }
         }
     }

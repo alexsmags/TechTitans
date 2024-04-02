@@ -345,3 +345,760 @@
 2024-03-28 6:16:43 PM - Dad : SHH Disabled
 2024-03-28 6:16:44 PM - Dad : SHH Enabled
 2024-03-28 6:16:45 PM - Dad : Simulation started
+2024-03-31 10:46:04 PM - SHH Enabled
+2024-03-31 10:46:07 PM - SHH Disabled
+2024-03-31 10:46:08 PM - SHH Enabled
+2024-03-31 10:46:09 PM - SHH Disabled
+2024-03-31 10:46:27 PM - Away Mode turned ON
+2024-03-31 10:46:30 PM - Away Mode turned OFF
+2024-03-31 10:49:05 PM - Away Mode turned ON
+2024-03-31 10:49:06 PM - Away Mode turned OFF
+2024-03-31 10:49:07 PM - Away Mode turned ON
+2024-03-31 10:49:07 PM - Away Mode turned OFF
+2024-03-31 10:49:07 PM - Away Mode turned ON
+2024-03-31 10:49:08 PM - Away Mode turned OFF
+2024-03-31 10:49:08 PM - Away Mode turned ON
+2024-03-31 10:49:08 PM - Away Mode turned OFF
+2024-03-31 10:49:09 PM - Away Mode turned ON
+2024-03-31 10:49:09 PM - Away Mode turned OFF
+2024-03-31 10:49:09 PM - Away Mode turned ON
+2024-03-31 10:49:09 PM - Away Mode turned OFF
+2024-03-31 10:49:09 PM - Away Mode turned ON
+2024-03-31 10:51:42 PM - Away Mode turned ON
+2024-03-31 10:51:43 PM - Away Mode turned OFF
+2024-03-31 10:51:43 PM - Away Mode turned ON
+2024-03-31 10:51:43 PM - Away Mode turned OFF
+2024-03-31 10:51:43 PM - Away Mode turned ON
+2024-03-31 10:51:44 PM - Away Mode turned OFF
+2024-03-31 10:51:44 PM - Away Mode turned ON
+2024-03-31 10:51:46 PM - Away Mode turned OFF
+2024-03-31 10:51:48 PM - Dad : User set to Dad
+2024-03-31 10:51:52 PM - Dad : Door  opened
+2024-03-31 10:51:55 PM - Dad : Away Mode turned ON
+2024-03-31 10:51:55 PM - Dad : Away Mode turned OFF
+2024-03-31 10:52:30 PM - Away Mode turned ON
+2024-03-31 10:52:31 PM - Away Mode turned OFF
+2024-03-31 10:52:32 PM - Away Mode turned ON
+2024-03-31 10:52:33 PM - Away Mode turned OFF
+2024-03-31 10:52:33 PM - Away Mode turned ON
+2024-03-31 10:52:35 PM - Away Mode turned OFF
+2024-03-31 10:53:58 PM - Dad : User set to Dad
+2024-03-31 10:54:01 PM - Dad : Door  opened
+2024-03-31 10:54:02 PM - Dad : Away Mode turned ON
+2024-03-31 10:54:03 PM - Dad : Away Mode turned OFF
+2024-03-31 10:54:03 PM - Dad : Away Mode turned ON
+2024-03-31 10:54:04 PM - Dad : Away Mode turned OFF
+2024-03-31 10:54:04 PM - Dad : Away Mode turned ON
+2024-03-31 10:54:09 PM - Dad : Door  opened
+2024-03-31 10:54:10 PM - Dad : Away Mode turned OFF
+2024-03-31 10:55:13 PM - Away Mode turned ON
+2024-03-31 10:55:14 PM - Away Mode turned OFF
+2024-03-31 10:55:16 PM - Dad : User set to Dad
+2024-03-31 10:55:18 PM - Dad : Door  opened
+2024-03-31 10:55:19 PM - Dad : Away Mode turned ON
+2024-03-31 10:55:23 PM - Dad : Door  opened
+2024-03-31 10:55:24 PM - Dad : Away Mode turned OFF
+2024-03-31 10:55:25 PM - Dad : Away Mode turned ON
+2024-03-31 10:59:36 PM - Away Mode turned ON
+2024-03-31 10:59:38 PM - Away Mode turned OFF
+2024-03-31 10:59:39 PM - Away Mode turned ON
+2024-03-31 10:59:39 PM - Away Mode turned OFF
+2024-03-31 11:00:05 PM - Away Mode turned ON
+2024-03-31 11:07:56 PM - Motion detector set in room: Bathroom
+2024-03-31 11:08:01 PM - Motion detector set in room: Bathroom
+2024-03-31 11:09:06 PM - Motion detector set in room: Kitchen
+2024-03-31 11:09:07 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:07 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:07 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:08 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:08 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:08 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:09 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:10 PM - Motion detector set in room: Bathroom
+2024-03-31 11:09:10 PM - Motion detector is already set in room: Bathroom
+2024-03-31 11:09:10 PM - Motion detector is already set in room: Bathroom
+2024-03-31 11:09:12 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:12 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:12 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:12 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:12 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:13 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:13 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:13 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:13 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:13 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:19 PM - Away Mode turned ON
+2024-03-31 11:09:20 PM - Away Mode turned OFF
+2024-03-31 11:09:21 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:21 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:22 PM - Motion detector is already set in room: Kitchen
+2024-03-31 11:09:24 PM - Motion detector set in room: Guest Room
+2024-03-31 11:15:47 PM - Motion detector set in room: Bathroom
+2024-03-31 11:15:49 PM - Dad : User set to Dad
+2024-03-31 11:15:52 PM - Dad : User 'Dad' moved to 'Kitchen'.
+2024-03-31 11:15:57 PM - Dad : User 'Dad' moved from 'Kitchen' to 'Bathroom'.
+2024-03-31 11:15:57 PM - Dad : Motion detected in room: Bathroom. The room is equipped with a motion detector.
+2024-03-31 11:16:25 PM - Dad : User set to Dad
+2024-03-31 11:16:26 PM - Dad : Motion detector set in room: Bathroom
+2024-03-31 11:16:29 PM - Dad : User 'Dad' moved to 'Outside'.
+2024-03-31 11:16:33 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-03-31 11:16:33 PM - Dad : Motion detected in room: Bathroom.
+2024-03-31 11:16:36 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-03-31 11:16:36 PM - Dad : Motion detected in room: Bathroom.
+2024-03-31 11:21:43 PM - Away Mode turned ON
+2024-03-31 11:22:13 PM - Dad : User set to Dad
+2024-03-31 11:22:14 PM - Dad : Door  opened
+2024-03-31 11:22:15 PM - Dad : Light switched on
+2024-03-31 11:22:15 PM - Dad : Light switched on
+2024-03-31 11:22:20 PM - Dad : Away Mode turned ON
+2024-03-31 11:22:26 PM - Dad : Away Mode turned OFF
+2024-03-31 11:23:15 PM - Dad : User set to Dad
+2024-03-31 11:23:18 PM - Dad : Door  opened
+2024-03-31 11:23:36 PM - Dad : Window  opened
+2024-03-31 11:23:43 PM - Dad : Window  opened
+2024-03-31 11:23:45 PM - Dad : Door  opened
+2024-03-31 11:23:45 PM - Dad : Door  opened
+2024-03-31 11:23:46 PM - Dad : Window  opened
+2024-03-31 11:23:48 PM - Dad : Alert: Window is open in Kitchen while in Away Mode.
+2024-03-31 11:23:48 PM - Dad : Alert: Window is open in Bedroom while in Away Mode.
+2024-03-31 11:23:48 PM - Dad : Alert: Window is open in Guest Room while in Away Mode.
+2024-03-31 11:23:48 PM - Dad : Away Mode turned ON
+2024-03-31 11:31:47 PM - Invalid input for police timer.
+2024-03-31 11:31:59 PM - Police alert timer set to: 20 seconds.
+2024-03-31 11:40:20 PM - Dad : User set to Dad
+2024-03-31 11:40:22 PM - Dad : Motion detector set in room: Bathroom
+2024-03-31 11:40:29 PM - Dad : Police alert timer set to: 20 seconds.
+2024-03-31 11:40:38 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-03-31 11:40:38 PM - Dad : Motion detected in room: Bathroom.
+2024-03-31 11:40:41 PM - Dad : Simulation started
+2024-03-31 11:40:45 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-03-31 11:40:45 PM - Dad : Motion detected in room: Bathroom.
+2024-03-31 11:41:36 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-03-31 11:41:36 PM - Dad : Motion detected in room: Bathroom.
+2024-03-31 11:41:45 PM - Dad : Away Mode turned ON
+2024-03-31 11:41:50 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-03-31 11:41:50 PM - Dad : Motion detected. Notifying police in 20 seconds.
+2024-03-31 11:41:50 PM - Dad : Motion detected in room: Bathroom.
+2024-03-31 11:42:34 PM - Dad : Police notified due to motion detection.
+2024-03-31 11:43:02 PM - Dad : Simulation stopped
+2024-03-31 11:43:05 PM - Dad : Police alert timer set to: 5 seconds.
+2024-03-31 11:43:07 PM - Dad : Simulation started
+2024-03-31 11:43:10 PM - Dad : User 'Dad' moved from 'Bathroom' to 'Kitchen'.
+2024-03-31 11:43:14 PM - Dad : Simulation stopped
+2024-03-31 11:43:18 PM - Dad : Motion detector set in room: Kitchen
+2024-03-31 11:43:20 PM - Dad : Simulation started
+2024-03-31 11:43:23 PM - Dad : User 'Dad' moved to 'Kitchen'.
+2024-03-31 11:43:23 PM - Dad : Motion detected. Notifying police in 5 seconds.
+2024-03-31 11:43:23 PM - Dad : Motion detected in room: Kitchen.
+2024-03-31 11:43:33 PM - Dad : Police notified due to motion detection.
+2024-03-31 11:43:38 PM - Dad : User 'Dad' moved to 'Kitchen'.
+2024-03-31 11:43:38 PM - Dad : Motion detected. Notifying police in 5 seconds.
+2024-03-31 11:43:38 PM - Dad : Motion detected in room: Kitchen.
+2024-03-31 11:43:46 PM - Dad : Police notified due to motion detection.
+2024-03-31 11:49:58 PM - Motion detector set in room: Bathroom
+2024-03-31 11:50:02 PM - Motion detector removed from room: Bathroom.
+2024-03-31 11:50:03 PM - Motion detector removed from room: Bathroom.
+2024-03-31 11:50:04 PM - Motion detector removed from room: Bathroom.
+2024-03-31 11:51:01 PM - Motion detector set in room: Bathroom
+2024-03-31 11:51:02 PM - Motion detector is already set in room: Bathroom
+2024-03-31 11:51:03 PM - Motion detector removed from room: Bathroom.
+2024-03-31 11:51:06 PM - Room: Bathroom already had no motion detector.
+2024-03-31 11:51:08 PM - Room: Bathroom already had no motion detector.
+2024-03-31 11:51:09 PM - Room: Bathroom already had no motion detector.
+2024-03-31 11:51:09 PM - Room: Bathroom already had no motion detector.
+2024-03-31 11:51:10 PM - Room: Bathroom already had no motion detector.
+2024-03-31 11:51:10 PM - Room: Bathroom already had no motion detector.
+2024-03-31 11:51:10 PM - Room: Bathroom already had no motion detector.
+2024-03-31 11:51:12 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:51:13 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:51:14 PM - Police timer was already removed.
+2024-03-31 11:51:15 PM - Police timer was already removed.
+2024-03-31 11:51:16 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:51:17 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:52:04 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:52:07 PM - Police timer was already removed.
+2024-03-31 11:52:52 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:52:53 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:52:56 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:52:57 PM - Police timer removed.
+2024-03-31 11:52:58 PM - Police timer was already removed.
+2024-03-31 11:52:59 PM - Police timer was already removed.
+2024-03-31 11:52:59 PM - Police timer was already removed.
+2024-03-31 11:53:29 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:53:30 PM - Police timer removed.
+2024-03-31 11:53:38 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:54:42 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:54:43 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:54:43 PM - Police alert timer set to: 0 seconds.
+2024-03-31 11:55:15 PM - Police alert timer set to: 12 seconds.
+2024-03-31 11:56:00 PM - Room: Bathroom already had no motion detector.
+2024-03-31 11:56:02 PM - Room: Bathroom already had no motion detector.
+2024-03-31 11:56:03 PM - Room: Bathroom already had no motion detector.
+2024-04-01 12:05:45 AM - Police alert timer set to: 0 seconds.
+2024-04-01 12:05:48 AM - Motion detector set in room: Bathroom
+2024-04-01 12:06:01 AM - Away Mode turned ON
+2024-04-01 12:06:02 AM - Away Mode turned OFF
+2024-04-01 12:06:03 AM - Motion detector is already set in room: Bathroom
+2024-04-01 12:06:09 AM - Dad : User set to Dad
+2024-04-01 12:06:10 AM - Dad : Simulation started
+2024-04-01 12:06:12 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 12:06:12 AM - Dad : Motion detected in room: Bathroom.
+2024-04-01 12:06:18 AM - Dad : Police alert timer set to: 10 seconds.
+2024-04-01 12:06:22 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 12:06:22 AM - Dad : Motion detected in room: Bathroom.
+2024-04-01 12:06:34 AM - Dad : Motion detector is already set in room: Bathroom
+2024-04-01 12:06:36 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 12:06:36 AM - Dad : Motion detected in room: Bathroom.
+2024-04-01 12:06:59 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 12:07:05 AM - Dad : Motion detected in room: Bathroom.
+2024-04-01 12:07:07 AM - Dad : Away Mode turned ON
+2024-04-01 12:07:10 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 12:07:12 AM - Dad : Motion detected. Notifying police in 10 seconds.
+2024-04-01 12:07:12 AM - Dad : Motion detected in room: Bathroom.
+2024-04-01 12:07:32 AM - Dad : Police notified due to motion detection.
+2024-04-01 12:07:41 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 12:07:41 AM - Dad : Motion detected. Notifying police in 10 seconds.
+2024-04-01 12:07:41 AM - Dad : Motion detected in room: Bathroom.
+2024-04-01 12:08:00 AM - Dad : Police notified due to motion detection.
+2024-04-01 12:08:07 AM - Dad : Simulation stopped
+2024-04-01 12:08:10 AM - Dad : Away Mode turned OFF
+2024-04-01 12:08:11 AM - Dad : Away Mode turned ON
+2024-04-01 12:08:12 AM - Dad : Away Mode turned OFF
+2024-04-01 12:08:13 AM - Dad : Away Mode turned ON
+2024-04-01 12:08:13 AM - Dad : Away Mode turned OFF
+2024-04-01 12:08:13 AM - Dad : Away Mode turned ON
+2024-04-01 12:08:13 AM - Dad : Away Mode turned OFF
+2024-04-01 12:08:14 AM - Dad : Away Mode turned ON
+2024-04-01 12:08:14 AM - Dad : Away Mode turned OFF
+2024-04-01 12:08:14 AM - Dad : Away Mode turned ON
+2024-04-01 12:08:14 AM - Dad : Away Mode turned OFF
+2024-04-01 12:08:14 AM - Dad : Away Mode turned ON
+2024-04-01 12:08:14 AM - Dad : Away Mode turned OFF
+2024-04-01 12:08:15 AM - Dad : Away Mode turned ON
+2024-04-01 12:08:15 AM - Dad : Away Mode turned OFF
+2024-04-01 12:08:15 AM - Dad : Away Mode turned ON
+2024-04-01 12:08:15 AM - Dad : Away Mode turned OFF
+2024-04-01 12:08:15 AM - Dad : Away Mode turned ON
+2024-04-01 12:08:16 AM - Dad : Away Mode turned OFF
+2024-04-01 12:08:16 AM - Dad : Away Mode turned ON
+2024-04-01 12:08:16 AM - Dad : Away Mode turned OFF
+2024-04-01 12:08:16 AM - Dad : Away Mode turned ON
+2024-04-01 12:11:51 PM - Away Mode turned On
+2024-04-01 12:11:51 PM - Away Mode turned Off
+2024-04-01 12:13:09 PM - Dad : User set to Dad
+2024-04-01 12:13:12 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 12:13:15 PM - Dad : Motion detector set in room: Bathroom
+2024-04-01 12:13:17 PM - Dad : Away Mode turned On
+2024-04-01 12:13:22 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 12:13:22 PM - Dad : Motion detected. Notifying police in 0 seconds.
+2024-04-01 12:13:22 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:08:22 PM - Motion detector set in room: Bathroom
+2024-04-01 11:08:22 PM - Away Mode turned On
+2024-04-01 11:08:25 PM - Dad : User set to Dad
+2024-04-01 11:08:28 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:08:28 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:08:28 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:10:53 PM - Motion detector set in room: Bathroom
+2024-04-01 11:10:55 PM - Dad : User set to Dad
+2024-04-01 11:10:57 PM - Dad : Away Mode turned On
+2024-04-01 11:11:01 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:11:01 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:11:01 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:11:27 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:11:46 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:11:48 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:13:22 PM - Motion detector set in room: Bathroom
+2024-04-01 11:13:24 PM - Dad : User set to Dad
+2024-04-01 11:13:25 PM - Dad : Away Mode turned On
+2024-04-01 11:13:27 PM - Dad : User changed from Dad to Dad
+2024-04-01 11:13:30 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:13:30 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:13:30 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:13:38 PM - Dad : User 'Dad' moved from 'Bathroom' to 'Kitchen'.
+2024-04-01 11:13:41 PM - Dad : User 'Dad' moved from 'Kitchen' to 'Bathroom'.
+2024-04-01 11:13:41 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:13:41 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:13:45 PM - Dad : Away Mode turned Off
+2024-04-01 11:13:46 PM - Dad : Away Mode turned On
+2024-04-01 11:13:46 PM - Dad : Away Mode turned Off
+2024-04-01 11:13:46 PM - Dad : Away Mode turned On
+2024-04-01 11:13:47 PM - Dad : Away Mode turned Off
+2024-04-01 11:13:47 PM - Dad : Away Mode turned On
+2024-04-01 11:13:47 PM - Dad : Away Mode turned Off
+2024-04-01 11:13:47 PM - Dad : Away Mode turned On
+2024-04-01 11:13:47 PM - Dad : Away Mode turned Off
+2024-04-01 11:13:47 PM - Dad : Away Mode turned On
+2024-04-01 11:13:47 PM - Dad : Away Mode turned Off
+2024-04-01 11:13:48 PM - Dad : Away Mode turned On
+2024-04-01 11:13:48 PM - Dad : Away Mode turned Off
+2024-04-01 11:13:48 PM - Dad : Away Mode turned On
+2024-04-01 11:14:57 PM - Away Mode turned On
+2024-04-01 11:14:58 PM - Motion detector set in room: Bathroom
+2024-04-01 11:15:01 PM - Dad : User set to Dad
+2024-04-01 11:15:02 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:15:58 PM - Motion detector set in room: Bathroom
+2024-04-01 11:16:00 PM - Dad : User set to Dad
+2024-04-01 11:16:00 PM - Dad : Away Mode turned On
+2024-04-01 11:16:03 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:16:03 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:16:03 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:16:20 PM - Away Mode turned On
+2024-04-01 11:16:22 PM - Motion detector set in room: Bathroom
+2024-04-01 11:16:23 PM - Dad : User set to Dad
+2024-04-01 11:16:25 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:16:25 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:16:25 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:16:39 PM - Motion detector set in room: Bathroom
+2024-04-01 11:16:41 PM - Dad : User set to Dad
+2024-04-01 11:16:47 PM - Dad : Away Mode turned On
+2024-04-01 11:16:50 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:16:50 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:16:50 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:17:11 PM - Dad : User set to Dad
+2024-04-01 11:17:13 PM - Dad : Motion detector set in room: Bathroom
+2024-04-01 11:17:16 PM - Dad : Away Mode turned On
+2024-04-01 11:17:18 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:17:18 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:17:18 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:17:40 PM - Away Mode turned On
+2024-04-01 11:17:40 PM - Motion detector set in room: Bathroom
+2024-04-01 11:17:42 PM - Dad : User set to Dad
+2024-04-01 11:17:44 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:17:44 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:17:44 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:18:17 PM - Away Mode turned On
+2024-04-01 11:18:18 PM - Motion detector set in room: Bathroom
+2024-04-01 11:18:19 PM - Dad : User set to Dad
+2024-04-01 11:18:21 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:18:21 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:18:21 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:18:45 PM - Motion detector set in room: Bathroom
+2024-04-01 11:18:46 PM - Away Mode turned On
+2024-04-01 11:18:48 PM - Dad : User set to Dad
+2024-04-01 11:18:50 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:18:50 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:18:50 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:19:33 PM - Motion detector set in room: Bathroom
+2024-04-01 11:19:35 PM - Away Mode turned On
+2024-04-01 11:19:37 PM - Dad : User set to Dad
+2024-04-01 11:19:38 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:19:38 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:19:38 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:20:01 PM - Motion detector set in room: Bathroom
+2024-04-01 11:20:02 PM - Away Mode turned On
+2024-04-01 11:20:04 PM - Dad : User set to Dad
+2024-04-01 11:20:05 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:20:05 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:20:05 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:20:32 PM - Motion detector set in room: Bathroom
+2024-04-01 11:20:33 PM - Away Mode turned On
+2024-04-01 11:20:35 PM - Dad : User set to Dad
+2024-04-01 11:20:37 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:20:37 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:20:37 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:21:04 PM - Away Mode turned On
+2024-04-01 11:21:06 PM - Motion detector set in room: Bathroom
+2024-04-01 11:21:10 PM - Dad : User set to Dad
+2024-04-01 11:21:12 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:21:12 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:21:12 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:21:18 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:21:18 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:21:18 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:26:44 PM - Motion detector set in room: Bathroom
+2024-04-01 11:35:01 PM - Motion detector set in room: Bathroom
+2024-04-01 11:35:02 PM - Dad : User set to Dad
+2024-04-01 11:35:03 PM - Dad : Away Mode turned On
+2024-04-01 11:35:04 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:35:04 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:35:04 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:35:25 PM - Away Mode turned On
+2024-04-01 11:35:26 PM - Motion detector set in room: Bathroom
+2024-04-01 11:35:28 PM - Dad : User set to Dad
+2024-04-01 11:35:30 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:35:30 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:35:30 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:36:54 PM - Motion detector set in room: Bathroom
+2024-04-01 11:36:55 PM - Away Mode turned On
+2024-04-01 11:36:57 PM - Dad : User set to Dad
+2024-04-01 11:36:58 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:36:58 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:36:58 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:42:22 PM - Police alert timer set to: 5 seconds.
+2024-04-01 11:42:23 PM - Away Mode turned On
+2024-04-01 11:42:25 PM - Dad : User set to Dad
+2024-04-01 11:42:27 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:42:30 PM - Dad : Motion detector set in room: Bathroom
+2024-04-01 11:42:33 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:42:33 PM - Dad : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-01 11:42:33 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:42:39 PM - Dad : Simulation started
+2024-04-01 11:42:44 PM - Dad : Police notified due to motion detection in Bathroom.
+2024-04-01 11:42:54 PM - Dad : Motion detector set in room: Kitchen
+2024-04-01 11:42:58 PM - Dad : User 'Dad' moved from 'Bathroom' to 'Kitchen'.
+2024-04-01 11:42:58 PM - Dad : Motion detected in Kitchen. Notifying police in 5 seconds.
+2024-04-01 11:42:58 PM - Dad : Motion detected in room: Kitchen.
+2024-04-01 11:43:07 PM - Dad : Police notified due to motion detection in Kitchen.
+2024-04-01 11:43:12 PM - Dad : User 'Dad' moved to 'Kitchen'.
+2024-04-01 11:43:12 PM - Dad : Motion detected in Kitchen. Notifying police in 5 seconds.
+2024-04-01 11:43:12 PM - Dad : Motion detected in room: Kitchen.
+2024-04-01 11:43:14 PM - Dad : User 'Dad' moved from 'Kitchen' to 'Bathroom'.
+2024-04-01 11:43:14 PM - Dad : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-01 11:43:14 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:43:21 PM - Dad : Police notified due to motion detection in Bathroom.
+2024-04-01 11:45:50 PM - Dad : User set to Dad
+2024-04-01 11:45:50 PM - Dad : Away Mode turned On
+2024-04-01 11:45:52 PM - Dad : Simulation started
+2024-04-01 11:45:53 PM - Dad : Motion detector set in room: Bathroom
+2024-04-01 11:45:59 PM - Dad : Motion detector is already set in room: Bathroom
+2024-04-01 11:46:00 PM - Dad : Motion detector set in room: Kitchen
+2024-04-01 11:46:02 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:46:02 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:46:02 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:46:02 PM - Dad : Police notified due to motion detection in Bathroom.
+2024-04-01 11:46:04 PM - Dad : User 'Dad' moved from 'Bathroom' to 'Kitchen'.
+2024-04-01 11:46:04 PM - Dad : Motion detected in Kitchen. Notifying police in 0 seconds.
+2024-04-01 11:46:04 PM - Dad : Motion detected in room: Kitchen.
+2024-04-01 11:46:05 PM - Dad : Police notified due to motion detection in Kitchen.
+2024-04-01 11:46:09 PM - Dad : Police alert timer set to: 14 seconds.
+2024-04-01 11:46:12 PM - Dad : User 'Dad' moved from 'Kitchen' to 'Bathroom'.
+2024-04-01 11:46:12 PM - Dad : Motion detected in Bathroom. Notifying police in 14 seconds.
+2024-04-01 11:46:12 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:46:29 PM - Away Mode turned On
+2024-04-01 11:46:30 PM - Dad : User set to Dad
+2024-04-01 11:46:32 PM - Dad : Motion detector set in room: Bathroom
+2024-04-01 11:46:35 PM - Dad : Motion detector set in room: Kitchen
+2024-04-01 11:46:38 PM - Dad : Simulation started
+2024-04-01 11:46:40 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-01 11:46:40 PM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-01 11:46:40 PM - Dad : Motion detected in room: Bathroom.
+2024-04-01 11:46:40 PM - Dad : Police notified due to motion detection in Bathroom.
+2024-04-01 11:46:42 PM - Dad : User 'Dad' moved from 'Bathroom' to 'Kitchen'.
+2024-04-01 11:46:42 PM - Dad : Motion detected in Kitchen. Notifying police in 0 seconds.
+2024-04-01 11:46:42 PM - Dad : Motion detected in room: Kitchen.
+2024-04-01 11:46:42 PM - Dad : Police notified due to motion detection in Kitchen.
+2024-04-01 11:56:33 PM - Police timer is now disabled.
+2024-04-01 11:57:41 PM - Police timer is now disabled.
+2024-04-01 11:57:55 PM - Police timer is now enabled.
+2024-04-01 11:58:54 PM - Police timer is now disabled.
+2024-04-01 11:58:57 PM - Police timer is now enabled.
+2024-04-01 11:59:02 PM - Police timer is now disabled.
+2024-04-01 11:59:12 PM - Police timer is now disabled.
+2024-04-01 11:59:45 PM - Police timer is now enabled.
+2024-04-02 12:01:40 AM - Police timer is now disabled.
+2024-04-02 12:03:05 AM - Police timer is now disabled.
+2024-04-02 12:03:08 AM - Police timer is now disabled.
+2024-04-02 12:03:09 AM - Police timer is now disabled.
+2024-04-02 12:03:09 AM - Police timer is now disabled.
+2024-04-02 12:03:09 AM - Police timer is now disabled.
+2024-04-02 12:03:09 AM - Police timer is now disabled.
+2024-04-02 12:03:09 AM - Police timer is now disabled.
+2024-04-02 12:03:09 AM - Police timer is now disabled.
+2024-04-02 12:03:28 AM - Police timer is now disabled.
+2024-04-02 12:04:19 AM - Police timer is now disabled.
+2024-04-02 12:05:52 AM - Police timer is now enabled.
+2024-04-02 12:05:54 AM - Police timer is now disabled.
+2024-04-02 12:05:54 AM - Police timer is now enabled.
+2024-04-02 12:05:55 AM - Police timer is now disabled.
+2024-04-02 12:05:56 AM - Police timer is now enabled.
+2024-04-02 12:05:57 AM - Police timer is now disabled.
+2024-04-02 12:05:57 AM - Police timer is now enabled.
+2024-04-02 12:05:57 AM - Police timer is now disabled.
+2024-04-02 12:05:57 AM - Police timer is now enabled.
+2024-04-02 12:05:58 AM - Police timer is now disabled.
+2024-04-02 12:05:58 AM - Police timer is now enabled.
+2024-04-02 12:05:59 AM - Police timer is now disabled.
+2024-04-02 12:06:08 AM - Police timer is now enabled.
+2024-04-02 12:06:10 AM - Police alert timer set to: 50 seconds.
+2024-04-02 12:06:42 AM - Police timer is now enabled.
+2024-04-02 12:06:42 AM - Police timer is now disabled.
+2024-04-02 12:06:44 AM - Police timer is now enabled.
+2024-04-02 12:06:45 AM - Police timer is now disabled.
+2024-04-02 12:06:47 AM - Police timer is now enabled.
+2024-04-02 12:06:51 AM - Police alert timer set to: 50 seconds.
+2024-04-02 12:06:55 AM - Dad : User set to Dad
+2024-04-02 12:07:00 AM - Dad : Away Mode turned On
+2024-04-02 12:07:05 AM - Dad : Simulation started
+2024-04-02 12:07:08 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:07:15 AM - Dad : Motion detector set in room: Bathroom
+2024-04-02 12:07:17 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:07:17 AM - Dad : Motion detected in Bathroom. Notifying police in 50 seconds.
+2024-04-02 12:07:17 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:08:25 AM - Dad : Police notified due to motion detection.
+2024-04-02 12:08:44 AM - Dad : Police timer is now disabled.
+2024-04-02 12:08:47 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:08:47 AM - Dad : Motion detected in Bathroom. Police timer is disabled.
+2024-04-02 12:08:47 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:16:47 AM - Away Mode turned On
+2024-04-02 12:16:48 AM - Motion detector set in room: Bathroom
+2024-04-02 12:16:50 AM - Police timer is now enabled.
+2024-04-02 12:16:51 AM - Police alert timer set to: 76 seconds.
+2024-04-02 12:16:54 AM - Police alert timer set to: 5 seconds.
+2024-04-02 12:16:56 AM - Dad : User set to Dad
+2024-04-02 12:16:57 AM - Dad : Simulation started
+2024-04-02 12:16:58 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:16:58 AM - Dad : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-02 12:16:58 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:17:04 AM - Dad : Police notified due to motion detection.
+2024-04-02 12:17:26 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:17:26 AM - Dad : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-02 12:18:04 AM - Away Mode turned On
+2024-04-02 12:18:05 AM - Motion detector set in room: Bathroom
+2024-04-02 12:18:07 AM - Police timer is now enabled.
+2024-04-02 12:18:07 AM - Police alert timer set to: 5 seconds.
+2024-04-02 12:18:09 AM - Dad : User set to Dad
+2024-04-02 12:18:12 AM - Dad : Simulation started
+2024-04-02 12:18:14 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:18:14 AM - Dad : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-02 12:18:14 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:25:28 AM - Police timer is now enabled.
+2024-04-02 12:25:30 AM - Police alert timer set to: 5 seconds.
+2024-04-02 12:25:32 AM - Motion detector set in room: Bathroom
+2024-04-02 12:25:33 AM - Away Mode turned On
+2024-04-02 12:25:35 AM - Dad : User set to Dad
+2024-04-02 12:25:36 AM - Dad : Simulation started
+2024-04-02 12:25:42 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:25:42 AM - Dad : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-02 12:25:42 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:29:20 AM - Police timer is now enabled.
+2024-04-02 12:29:23 AM - Police alert timer set to: 5 seconds.
+2024-04-02 12:29:24 AM - Motion detector set in room: Bathroom
+2024-04-02 12:29:24 AM - Away Mode turned On
+2024-04-02 12:29:26 AM - Dad : User set to Dad
+2024-04-02 12:29:27 AM - Dad : Simulation started
+2024-04-02 12:29:30 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:29:30 AM - Dad : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-02 12:29:30 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:29:36 AM - Dad : Police notified due to motion detection in Bathroom.
+2024-04-02 12:29:41 AM - Dad : Motion detector set in room: Kitchen
+2024-04-02 12:29:44 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:29:44 AM - Dad : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-02 12:29:44 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:29:46 AM - Dad : User 'Dad' moved from 'Bathroom' to 'Kitchen'.
+2024-04-02 12:29:46 AM - Dad : Motion detected in Kitchen. Notifying police in 5 seconds.
+2024-04-02 12:29:46 AM - Dad : Motion detected in room: Kitchen.
+2024-04-02 12:29:51 AM - Dad : Police notified due to motion detection in Bathroom.
+2024-04-02 12:29:55 AM - Dad : Police notified due to motion detection in Kitchen.
+2024-04-02 12:30:07 AM - Dad : User 'Dad' moved from 'Kitchen' to 'Bathroom'.
+2024-04-02 12:30:07 AM - Dad : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-02 12:30:07 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:30:07 AM - Dad : Simulation stopped
+2024-04-02 12:30:14 AM - Dad : Simulation started
+2024-04-02 12:30:22 AM - Dad : Police notified due to motion detection in Bathroom.
+2024-04-02 12:32:05 AM - Dad : User set to Dad
+2024-04-02 12:32:08 AM - Dad : Away Mode turned On
+2024-04-02 12:32:09 AM - Dad : Simulation started
+2024-04-02 12:32:12 AM - Dad : Simulation stopped
+2024-04-02 12:32:14 AM - Dad : Simulation started
+2024-04-02 12:32:14 AM - Dad : Simulation stopped
+2024-04-02 12:32:16 AM - Dad : Motion detector set in room: Bathroom
+2024-04-02 12:32:18 AM - Dad : Simulation started
+2024-04-02 12:32:24 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:32:24 AM - Dad : Motion detected in Bathroom. Police timer is disabled.
+2024-04-02 12:32:24 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:32:26 AM - Dad : Simulation stopped
+2024-04-02 12:32:27 AM - Dad : Police timer is now enabled.
+2024-04-02 12:32:30 AM - Dad : Simulation started
+2024-04-02 12:32:34 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:32:34 AM - Dad : Motion detected in Bathroom. Notifying police in 0 seconds.
+2024-04-02 12:32:34 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:32:34 AM - Dad : Police notified due to motion detection in Bathroom.
+2024-04-02 12:32:36 AM - Dad : Simulation stopped
+2024-04-02 12:32:38 AM - Dad : Police alert timer set to: 5 seconds.
+2024-04-02 12:32:40 AM - Dad : Simulation started
+2024-04-02 12:32:43 AM - Dad : User 'Dad' moved from 'Bathroom' to 'Kitchen'.
+2024-04-02 12:32:45 AM - Dad : User 'Dad' moved from 'Kitchen' to 'Bathroom'.
+2024-04-02 12:32:45 AM - Dad : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-02 12:32:45 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:32:52 AM - Dad : Police notified due to motion detection in Bathroom.
+2024-04-02 12:32:56 AM - Dad : Simulation stopped
+2024-04-02 12:32:57 AM - Child : User changed from Dad to Child
+2024-04-02 12:32:58 AM - Child : Simulation started
+2024-04-02 12:33:04 AM - Child : User 'Child' moved to 'Bathroom'.
+2024-04-02 12:33:04 AM - Child : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-02 12:33:04 AM - Child : Motion detected in room: Bathroom.
+2024-04-02 12:33:11 AM - Child : Police notified due to motion detection in Bathroom.
+2024-04-02 12:33:16 AM - Child : Simulation stopped
+2024-04-02 12:33:17 AM - Child : Simulation started
+2024-04-02 12:33:17 AM - Child : Away Mode turned Off
+2024-04-02 12:33:20 AM - Child : User 'Child' moved to 'Bathroom'.
+2024-04-02 12:33:20 AM - Child : Motion detected in room: Bathroom.
+2024-04-02 12:33:23 AM - Child : Away Mode turned On
+2024-04-02 12:33:26 AM - Child : User 'Child' moved to 'Bathroom'.
+2024-04-02 12:33:26 AM - Child : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-02 12:33:26 AM - Child : Motion detected in room: Bathroom.
+2024-04-02 12:33:32 AM - Child : Police notified due to motion detection in Bathroom.
+2024-04-02 12:33:33 AM - Child : Away Mode turned Off
+2024-04-02 12:33:35 AM - Child : User 'Child' moved to 'Bathroom'.
+2024-04-02 12:33:35 AM - Child : Motion detected in room: Bathroom.
+2024-04-02 12:33:40 AM - Child : User 'Child' moved to 'Bathroom'.
+2024-04-02 12:33:40 AM - Child : Motion detected in room: Bathroom.
+2024-04-02 12:33:47 AM - Child : User 'Child' moved to 'Bathroom'.
+2024-04-02 12:33:47 AM - Child : Motion detected in room: Bathroom.
+2024-04-02 12:34:34 AM - Away Mode turned On
+2024-04-02 12:34:36 AM - Motion detector set in room: Bathroom
+2024-04-02 12:34:39 AM - Dad : User set to Dad
+2024-04-02 12:34:41 AM - Dad : Away Mode turned Off
+2024-04-02 12:34:44 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:34:44 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:34:55 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:34:55 AM - Dad : Motion detected in room: Bathroom.
+2024-04-02 12:35:44 AM - Away Mode turned On
+2024-04-02 12:35:45 AM - Motion detector set in room: Bathroom
+2024-04-02 12:35:47 AM - Dad : User set to Dad
+2024-04-02 12:35:49 AM - Dad : Simulation started
+2024-04-02 12:35:50 AM - Dad : Simulation stopped
+2024-04-02 12:35:52 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:35:55 AM - Dad : Motion detected in Bathroom. Police timer is disabled.
+2024-04-02 12:35:58 AM - Dad : Away Mode turned Off
+2024-04-02 12:36:03 AM - Dad : User changed from Dad to Dad
+2024-04-02 12:36:06 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:36:09 AM - Dad : Away Mode turned On
+2024-04-02 12:36:18 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:36:18 AM - Dad : Motion detected in Bathroom. Police timer is disabled.
+2024-04-02 12:37:17 AM - Away Mode turned On
+2024-04-02 12:37:20 AM - Motion detector set in room: Bathroom
+2024-04-02 12:37:24 AM - Dad : User set to Dad
+2024-04-02 12:37:26 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:37:39 AM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:38:10 AM - Dad : Away Mode turned Off
+2024-04-02 12:17:55 PM - Dad : User set to Dad
+2024-04-02 12:18:00 PM - Dad : Simulation started
+2024-04-02 12:18:03 PM - Dad : Bathroom temperature changed to 31°
+2024-04-02 12:18:18 PM - Dad : Bathroom temperature changed to 30°
+2024-04-02 12:20:24 PM - Dad : User set to Dad
+2024-04-02 12:20:35 PM - Dad : Simulation started
+2024-04-02 12:21:46 PM - Dad : User set to Dad
+2024-04-02 12:21:46 PM - Dad : Simulation started
+2024-04-02 12:23:29 PM - Dad : User set to Dad
+2024-04-02 12:23:29 PM - Dad : Simulation started
+2024-04-02 12:24:14 PM - Dad : User set to Dad
+2024-04-02 12:24:16 PM - Dad : Simulation started
+2024-04-02 12:24:19 PM - Dad : Bathroom temperature changed to 31°
+2024-04-02 12:25:11 PM - Dad : Bathroom temperature changed to 15°
+2024-04-02 12:26:12 PM - Dad : User set to Dad
+2024-04-02 12:26:13 PM - Dad : Simulation started
+2024-04-02 12:31:13 PM - Dad : User set to Dad
+2024-04-02 12:31:14 PM - Dad : Simulation started
+2024-04-02 12:32:28 PM - Dad : Bathroom temperature changed to 70°
+2024-04-02 12:32:39 PM - Dad : SHH Enabled
+2024-04-02 12:33:53 PM - Away Mode turned On
+2024-04-02 12:33:55 PM - Dad : User set to Dad
+2024-04-02 12:33:57 PM - Dad : Simulation started
+2024-04-02 12:33:58 PM - Dad : SHH Enabled
+2024-04-02 12:35:07 PM - Dad : User set to Dad
+2024-04-02 12:35:08 PM - Dad : Simulation started
+2024-04-02 12:35:09 PM - Dad : SHH Enabled
+2024-04-02 12:35:24 PM - Dad : Heater  turned on
+2024-04-02 12:35:25 PM - Dad : Heater  turned off
+2024-04-02 12:35:26 PM - Dad : Air Conditioner  turned on
+2024-04-02 12:35:26 PM - Dad : Air Conditioner  turned off
+2024-04-02 12:35:27 PM - Dad : Air Conditioner  turned on
+2024-04-02 12:35:27 PM - Dad : Air Conditioner  turned off
+2024-04-02 12:35:27 PM - Dad : Air Conditioner  turned on
+2024-04-02 12:36:22 PM - SHH Enabled
+2024-04-02 12:36:24 PM - Dad : User set to Dad
+2024-04-02 12:36:24 PM - Dad : Simulation started
+2024-04-02 12:36:27 PM - Dad : SHH Disabled
+2024-04-02 12:36:27 PM - Dad : SHH Enabled
+2024-04-02 12:36:28 PM - Dad : Air Conditioner  turned on
+2024-04-02 12:36:28 PM - Dad : Air Conditioner  turned off
+2024-04-02 12:36:28 PM - Dad : Heater  turned on
+2024-04-02 12:36:29 PM - Dad : Heater  turned off
+2024-04-02 12:36:30 PM - Dad : Air Conditioner  turned on
+2024-04-02 12:36:30 PM - Dad : Air Conditioner  turned off
+2024-04-02 12:36:30 PM - Dad : Heater  turned on
+2024-04-02 12:36:31 PM - Dad : Heater  turned off
+2024-04-02 12:36:32 PM - Dad : Away Mode turned On
+2024-04-02 12:36:35 PM - Dad : Away Mode turned Off
+2024-04-02 12:36:36 PM - Dad : Away Mode turned On
+2024-04-02 12:36:38 PM - Dad : Simulation stopped
+2024-04-02 12:37:16 PM - Dad : User set to Dad
+2024-04-02 12:37:16 PM - Dad : Simulation started
+2024-04-02 12:37:30 PM - Dad : Bathroom temperature changed to 61°
+2024-04-02 12:37:33 PM - Dad : SHH Enabled
+2024-04-02 12:43:50 PM - Dad : User set to Dad
+2024-04-02 12:43:54 PM - Dad : SHH Enabled
+2024-04-02 12:43:56 PM - Dad : Simulation started
+2024-04-02 12:43:59 PM - Dad : Bathroom temperature changed to 54°
+2024-04-02 12:44:25 PM - Dad : Bathroom temperature changed to -63°
+2024-04-02 12:44:28 PM - Dad : Away Mode turned On
+2024-04-02 12:44:42 PM - Dad : Away Mode turned Off
+2024-04-02 12:44:42 PM - Dad : Away mode turned off due to rapid temperature change in Bathroom.
+2024-04-02 12:44:47 PM - Dad : Bathroom temperature changed to 60°
+2024-04-02 12:44:57 PM - Dad : Away Mode turned On
+2024-04-02 12:45:11 PM - Dad : Bathroom temperature changed to 70°
+2024-04-02 12:45:18 PM - Dad : Away Mode turned Off
+2024-04-02 12:45:18 PM - Dad : Away mode turned off due to rapid temperature change in Bathroom.
+2024-04-02 12:45:18 PM - Dad : Bathroom temperature changed to 0°
+2024-04-02 12:45:24 PM - Dad : Away Mode turned On
+2024-04-02 12:45:30 PM - Dad : Away Mode turned Off
+2024-04-02 12:45:30 PM - Dad : Away mode turned off due to rapid temperature change in Bathroom.
+2024-04-02 12:45:30 PM - Dad : Bathroom temperature changed to 42°
+2024-04-02 12:45:33 PM - Dad : SHH Disabled
+2024-04-02 12:45:34 PM - Dad : SHH Enabled
+2024-04-02 12:45:34 PM - Dad : SHH Disabled
+2024-04-02 12:45:34 PM - Dad : SHH Enabled
+2024-04-02 12:45:34 PM - Dad : SHH Disabled
+2024-04-02 12:45:35 PM - Dad : SHH Enabled
+2024-04-02 12:45:35 PM - Dad : SHH Disabled
+2024-04-02 12:45:35 PM - Dad : SHH Enabled
+2024-04-02 12:45:41 PM - Dad : Simulation stopped
+2024-04-02 12:45:42 PM - Dad : Motion detector set in room: Bathroom
+2024-04-02 12:45:45 PM - Dad : Police timer is now enabled.
+2024-04-02 12:45:45 PM - Dad : Police alert timer set to: 5 seconds.
+2024-04-02 12:45:47 PM - Dad : Away Mode turned On
+2024-04-02 12:45:49 PM - Dad : User changed from Dad to Dad
+2024-04-02 12:45:50 PM - Dad : Simulation started
+2024-04-02 12:45:51 PM - Dad : User 'Dad' moved to 'Bathroom'.
+2024-04-02 12:45:51 PM - Dad : Motion detected in Bathroom. Notifying police in 5 seconds.
+2024-04-02 12:45:58 PM - Dad : Police notified due to motion detection in Bathroom.
+2024-04-02 12:52:45 PM - Dad : User set to Dad
+2024-04-02 12:52:47 PM - Dad : Away Mode turned On
+2024-04-02 12:52:48 PM - Dad : Away Mode turned Off
+2024-04-02 12:53:06 PM - Dad : Temperature changed to 200°
+2024-04-02 12:53:08 PM - Dad : Away Mode turned On
+2024-04-02 12:53:11 PM - Dad : Simulation started
+2024-04-02 12:53:18 PM - Dad : Simulation stopped
+2024-04-02 12:53:18 PM - Dad : Simulation started
+2024-04-02 12:53:19 PM - Dad : Simulation stopped
+2024-04-02 12:53:21 PM - Dad : Simulation started
+2024-04-02 12:55:33 PM - Dad : User set to Dad
+2024-04-02 12:55:34 PM - Dad : Away Mode turned On
+2024-04-02 12:55:35 PM - Dad : Away Mode turned Off
+2024-04-02 12:55:37 PM - Dad : Away Mode turned On
+2024-04-02 12:55:52 PM - Dad : Temperature changed to 200°
+2024-04-02 12:55:54 PM - Dad : Simulation started
+2024-04-02 12:56:10 PM - Dad : Away Mode turned Off
+2024-04-02 12:56:10 PM - Dad : Away mode turned off due to extreme outside temperature.
+2024-04-02 12:56:10 PM - Dad : Temperature changed to 200°
+2024-04-02 12:56:35 PM - Dad : Away Mode turned On
+2024-04-02 12:56:41 PM - Dad : Away Mode turned Off
+2024-04-02 12:56:41 PM - Dad : Away mode turned off due to extreme outside temperature.
+2024-04-02 12:56:41 PM - Dad : Temperature changed to 200°
+2024-04-02 12:56:46 PM - Dad : Simulation stopped
+2024-04-02 12:56:48 PM - Dad : Away Mode turned On
+2024-04-02 12:56:51 PM - Dad : Temperature changed to 200°
+2024-04-02 12:56:53 PM - Dad : Simulation started
+2024-04-02 12:56:58 PM - Dad : Away Mode turned Off
+2024-04-02 12:56:58 PM - Dad : Away mode turned off due to extreme outside temperature.
+2024-04-02 12:56:58 PM - Dad : Temperature changed to 200°
+2024-04-02 1:01:23 PM - SHH Enabled
+2024-04-02 1:01:24 PM - SHH Disabled
+2024-04-02 1:01:27 PM - Dad : User set to Dad
+2024-04-02 1:01:28 PM - Dad : Simulation started
+2024-04-02 1:01:36 PM - Dad : Simulation stopped
+2024-04-02 1:01:46 PM - Dad : Police timer is now enabled.
+2024-04-02 1:01:46 PM - Dad : Police timer is now disabled.
+2024-04-02 1:01:48 PM - Dad : Police timer is now enabled.
+2024-04-02 1:01:48 PM - Dad : Police timer is now disabled.
+2024-04-02 1:01:52 PM - Dad : Simulation started
+2024-04-02 1:01:53 PM - Dad : Simulation stopped
+2024-04-02 1:01:53 PM - Dad : Simulation started
+2024-04-02 1:01:53 PM - Dad : Simulation stopped
+2024-04-02 1:02:12 PM - Dad : User set to Dad
+2024-04-02 1:02:16 PM - Child : User changed from Dad to Child
+2024-04-02 1:02:19 PM - Child : User 'Child' moved to 'Bathroom'.
+2024-04-02 1:02:20 PM - Child : Light switched on
+2024-04-02 1:02:20 PM - Child : Light switched on
+2024-04-02 1:02:20 PM - Child : Light switched on

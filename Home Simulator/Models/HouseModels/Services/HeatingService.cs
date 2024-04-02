@@ -10,24 +10,32 @@ namespace Home_Simulator.Models.HouseModels.Services
 {
     public class HeatingService
     {
+        private SimulationViewModel _simulationViewModel;
 
-        public void UpdateRoomTemperatures(SimulationViewModel simulationViewModel, Heater heater)
+        public HeatingService(SimulationViewModel simulationViewModel) 
+        { 
+            _simulationViewModel = simulationViewModel;
+        }
+
+        public void UpdateRoomTemperatures()
         {
-            if (!heater.IsOn) { return; }
+            if (!_simulationViewModel.Heater.IsOn) { return; }
 
-            foreach (var zone in simulationViewModel.Zones)
+            foreach (var zone in _simulationViewModel.Zones)
             {
                 foreach (var room in zone.Rooms)
                 {
-                    if (Math.Abs(room.RoomTemperature - heater.DesiredTemperature) >= 0.25)
+                    if (Math.Abs(room.RoomTemperature - _simulationViewModel.Heater.DesiredTemperature) >= 0.25)
                     {
-                        double temperatureChange = (room.RoomTemperature > heater.DesiredTemperature) ? 0 : +0.1;
+                        double temperatureChange = (room.RoomTemperature > _simulationViewModel.Heater.DesiredTemperature) ? 0 : +0.1;
                         room.RoomTemperature += temperatureChange;
+                        room.LastKnownRoomTemperature += temperatureChange;
 
-                        if ((temperatureChange > 0 && room.RoomTemperature > heater.DesiredTemperature) ||
-                            (temperatureChange < 0 && room.RoomTemperature < heater.DesiredTemperature))
+                        if ((temperatureChange > 0 && room.RoomTemperature > _simulationViewModel.Heater.DesiredTemperature) ||
+                            (temperatureChange < 0 && room.RoomTemperature < _simulationViewModel.Heater.DesiredTemperature))
                         {
-                            room.RoomTemperature = heater.DesiredTemperature;
+                            room.RoomTemperature = _simulationViewModel.Heater.DesiredTemperature;
+                            room.LastKnownRoomTemperature = _simulationViewModel.Heater.DesiredTemperature;
                         }
                     }
                 }
