@@ -135,3 +135,26 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 
 ### Activity diagram for the SHH module
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/1a448c8c-840e-4f4b-84f8-6c24493acde8)
+
+# - Phase IV
+
+## Team Members and Role 
+| Name                  | Role                 | ID       |
+| --------------------- | -------------------- | -------- |
+| Alexander Smagorinski |  | 40190986 |
+| Cosmin Suna           |  | 40125921 |
+| Mohamad Mounir Yassin |  | 40198854 |
+| Saikou Diallo         |  | 40191902 |
+| Patrick MacEachen     |  | 40209790 |
+
+### Use-case diagram for the whole system
+
+
+### Sequence diagrams for the Smart home core functionality (SHC) module
+
+### State-machine diagram for the Context of the simulation
+![image](https://github.com/alexsmags/TechTitans/assets/111084379/d76755e6-3b63-40de-a040-e493c92d5b2e)
+
+### Activity diagram for Context of the simulation
+### State-machine diagram for the SHP module
+### Activity diagram for the SHP module
