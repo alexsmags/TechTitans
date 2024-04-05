@@ -118,6 +118,8 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 | Saikou Diallo         | UC 1.9 / Use-case diagram for the whole system | 40191902 |
 | Patrick MacEachen     | UC 1.8 / State-machine diagram for the SHH module | 40209790 |
 
+## Diagrams
+
 ### Use-case diagram for the whole system
  ![image](https://github.com/alexsmags/TechTitans/assets/111084379/d6200234-2077-4f43-93bf-f2910cf7a031)
 
@@ -147,6 +149,8 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 | Saikou Diallo         |  | 40191902 |
 | Patrick MacEachen     |  | 40209790 |
 
+## Diagrams
+
 ### Use-case diagram for the whole system
 
 
@@ -156,5 +160,7 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/d76755e6-3b63-40de-a040-e493c92d5b2e)
 
 ### Activity diagram for Context of the simulation
+![image](https://github.com/alexsmags/TechTitans/assets/111084379/5a0f34b6-00e7-40ba-b20e-f04c9ff4927e)
+
 ### State-machine diagram for the SHP module
 ### Activity diagram for the SHP module
