@@ -478,6 +478,8 @@ namespace Home_Simulator.ViewModels
 
             SimulationModel.PropertyChanged += (sender, e) =>
             {
+                _airConditionerService.NotifyPipeRisk();
+
                 if (IsShhEnabled)
                 {
                     if (e.PropertyName == nameof(DateTimeModel.SimulationDate))

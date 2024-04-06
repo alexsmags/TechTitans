@@ -31,6 +31,8 @@ namespace Home_Simulator.Models.HouseModels.Services
                 _simulationViewModel.AirConditioner.TurnOffAC();
             }
 
+          
+
         }
 
         private double calculateAverageTemperatureInRooms()
@@ -67,6 +69,21 @@ namespace Home_Simulator.Models.HouseModels.Services
                         }
                     }
                 }
+            }
+        }
+
+        private void LogEvent(string message)
+        {
+            _simulationViewModel.AddLogMessage(message);
+        }
+
+        public void NotifyPipeRisk()
+        {
+            double roomAvgTemperature = calculateAverageTemperatureInRooms();
+
+            if (roomAvgTemperature <= 0 && _simulationViewModel.IsSimulationRunning)
+            {
+                LogEvent("Pipes are at risk of bursting. Average Room Temperature: " + roomAvgTemperature);
             }
         }
     }

@@ -1102,3 +1102,47 @@
 2024-04-02 1:02:20 PM - Child : Light switched on
 2024-04-02 1:02:20 PM - Child : Light switched on
 2024-04-02 1:02:20 PM - Child : Light switched on
+2024-04-06 3:36:44 PM - Pipes are at risk of bursting.
+2024-04-06 3:36:44 PM - Outside temperature updated to 4°C
+2024-04-06 3:36:44 PM - Temperature data loaded successfully.
+2024-04-06 3:41:54 PM - Dad : User set to Dad
+2024-04-06 3:42:03 PM - Dad : Outside temperature updated to 4°C
+2024-04-06 3:42:03 PM - Dad : Temperature data loaded successfully.
+2024-04-06 3:42:07 PM - Dad : Simulation started
+2024-04-06 3:43:11 PM - Dad : Pipes are at risk of bursting.
+2024-04-06 3:43:11 PM - Dad : Temperature changed to -180°
+2024-04-06 3:44:02 PM - Dad : Simulation stopped
+2024-04-06 3:44:05 PM - Dad : Temperature changed to -73°
+2024-04-06 3:44:07 PM - Dad : Simulation started
+2024-04-06 3:45:47 PM - Dad : SHH Enabled
+2024-04-06 3:46:06 PM - Dad : Pipes are at risk of bursting.
+2024-04-06 3:46:06 PM - Dad : Temperature changed to 0°
+2024-04-06 3:46:19 PM - Dad : Pipes are at risk of bursting.
+2024-04-06 3:46:19 PM - Dad : Temperature changed to 2°
+2024-04-06 3:47:33 PM - Dad : User set to Dad
+2024-04-06 3:47:44 PM - Dad : Outside temperature updated to 4°C
+2024-04-06 3:47:44 PM - Dad : Temperature data loaded successfully.
+2024-04-06 3:47:46 PM - Dad : Simulation started
+2024-04-06 3:47:50 PM - Dad : SHH Enabled
+2024-04-06 3:48:06 PM - Dad : SHH Disabled
+2024-04-06 3:48:07 PM - Dad : SHH Enabled
+2024-04-06 3:48:07 PM - Dad : SHH Disabled
+2024-04-06 3:48:07 PM - Dad : SHH Enabled
+2024-04-06 3:50:45 PM - Dad : User set to Dad
+2024-04-06 3:50:53 PM - Dad : Outside temperature updated to 4°C
+2024-04-06 3:50:53 PM - Dad : Temperature data loaded successfully.
+2024-04-06 3:50:59 PM - Dad : Simulation started
+2024-04-06 3:51:01 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:02 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:04 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:06 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:07 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:09 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:11 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:12 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:13 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:14 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:15 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:16 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:17 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: 0
+2024-04-06 3:51:19 PM - Dad : Simulation stopped
