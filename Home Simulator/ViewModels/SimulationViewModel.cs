@@ -480,6 +480,12 @@ namespace Home_Simulator.ViewModels
             {
                 _airConditionerService.NotifyPipeRisk();
 
+
+                if (!IsShhEnabled)
+                {
+                    _heatingService.UpdateRoomTemperaturesWithoutHeating();
+                }
+
                 if (IsShhEnabled)
                 {
                     if (e.PropertyName == nameof(DateTimeModel.SimulationDate))
@@ -501,7 +507,6 @@ namespace Home_Simulator.ViewModels
                         }
                     }
                 }
-
                 else
                 {
                     if (e.PropertyName == nameof(DateTimeModel.SimulationDate))

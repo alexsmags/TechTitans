@@ -41,5 +41,30 @@ namespace Home_Simulator.Models.HouseModels.Services
                 }
             }
         }
+
+        public void UpdateRoomTemperaturesWithoutHeating()
+        {
+            if (_simulationViewModel.Heater.IsOn) { return; }
+
+            double temperatureOutside = _simulationViewModel.OutsideTemperature;
+            double temperatureChangeRate = 0.05; // Temperature change rate per second
+   
+                foreach (var room in _simulationViewModel.AvailableRooms)
+                {
+                    if (room.RoomTemperature < temperatureOutside)
+                    {
+                        room.RoomTemperature += temperatureChangeRate;
+                        room.LastKnownRoomTemperature += temperatureChangeRate;
+                    }
+                    else if (room.RoomTemperature > temperatureOutside)
+                    {
+                        room.RoomTemperature -= temperatureChangeRate;
+                        room.LastKnownRoomTemperature -= temperatureChangeRate;
+                    }
+                }
+            
+        }
+
+
     }
 }
