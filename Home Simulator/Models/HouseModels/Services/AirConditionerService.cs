@@ -35,18 +35,6 @@ namespace Home_Simulator.Models.HouseModels.Services
 
         }
 
-        private double calculateAverageTemperatureInRooms()
-        {
-            double totalRoomTemperature = 0;
-
-            foreach(var room in _simulationViewModel.Rooms)
-            {
-                totalRoomTemperature += room.RoomTemperature;
-            }
-
-            return totalRoomTemperature / _simulationViewModel.Rooms.Count;
-        }
-
         public void UpdateRoomTemperatures(SimulationViewModel simulationViewModel)
         {
             if (!_simulationViewModel.AirConditioner.IsOn) { return; }
@@ -72,19 +60,16 @@ namespace Home_Simulator.Models.HouseModels.Services
             }
         }
 
-        private void LogEvent(string message)
+        private double calculateAverageTemperatureInRooms()
         {
-            _simulationViewModel.AddLogMessage(message);
-        }
+            double totalRoomTemperature = 0;
 
-        public void NotifyPipeRisk()
-        {
-            double roomAvgTemperature = calculateAverageTemperatureInRooms();
-
-            if (roomAvgTemperature <= 0 && _simulationViewModel.IsSimulationRunning)
+            foreach (var room in _simulationViewModel.Rooms)
             {
-                LogEvent("Pipes are at risk of bursting. Average Room Temperature: " + roomAvgTemperature);
+                totalRoomTemperature += room.RoomTemperature;
             }
+
+            return totalRoomTemperature / _simulationViewModel.Rooms.Count;
         }
     }
 }

@@ -57,12 +57,32 @@ namespace Home_Simulator.Models.HouseModels.Services
         }
 
 
+        public void NotifyPipeRisk()
+        {
+            double roomAvgTemperature = calculateAverageTemperatureInRooms();
+
+            if (roomAvgTemperature <= 0 && _simulationViewModel.IsSimulationRunning)
+            {
+                LogEvent("Pipes are at risk of bursting. Average Room Temperature: " + roomAvgTemperature);
+            }
+        }
+
+        private double calculateAverageTemperatureInRooms()
+        {
+            double totalRoomTemperature = 0;
+
+            foreach (var room in _simulationViewModel.Rooms)
+            {
+                totalRoomTemperature += room.RoomTemperature;
+            }
+
+            return totalRoomTemperature / _simulationViewModel.Rooms.Count;
+        }
+
         private void LogEvent(string message)
         {
             _simulationViewModel.AddLogMessage(message);
         }
-
-
 
     }
 }

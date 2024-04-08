@@ -478,8 +478,6 @@ namespace Home_Simulator.ViewModels
 
             SimulationModel.PropertyChanged += (sender, e) =>
             {
-                _airConditionerService.NotifyPipeRisk();
-
 
                 if (!IsShhEnabled)
                 {
@@ -535,6 +533,7 @@ namespace Home_Simulator.ViewModels
                 double newTemperature = room.RoomTemperature;
                 // Now, invoke the temperature monitoring logic
                 _temperatureMonitorService.CheckTemperatureChanges(room, newTemperature);
+                _temperatureMonitorService.NotifyPipeRisk();
             }
         }
 

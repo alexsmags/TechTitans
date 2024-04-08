@@ -49,14 +49,14 @@ namespace Home_Simulator.Models.HouseModels.Services
             double temperatureOutside = _simulationViewModel.OutsideTemperature;
             double temperatureChangeRate = 0.05; // Temperature change rate per second
    
-                foreach (var room in _simulationViewModel.AvailableRooms)
+                foreach (var room in _simulationViewModel.Rooms)
                 {
-                    if (room.RoomTemperature < temperatureOutside)
+                    if (Math.Floor(room.RoomTemperature * 10000) / 10000 < temperatureOutside)
                     {
                         room.RoomTemperature += temperatureChangeRate;
                         room.LastKnownRoomTemperature += temperatureChangeRate;
                     }
-                    else if (room.RoomTemperature > temperatureOutside)
+                    else if (Math.Floor(room.RoomTemperature * 10000) / 10000 > temperatureOutside)
                     {
                         room.RoomTemperature -= temperatureChangeRate;
                         room.LastKnownRoomTemperature -= temperatureChangeRate;
