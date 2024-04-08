@@ -143,7 +143,7 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 ## Team Members and Role 
 | Name                  | Role                 | ID       |
 | --------------------- | -------------------- | -------- |
-| Alexander Smagorinski |  | 40190986 |
+| Alexander Smagorinski |UC 2.1, 2.3, 2.4, 2.5, 2.7 & Design Pattern  | 40190986 |
 | Cosmin Suna           |  | 40125921 |
 | Mohamad Mounir Yassin | State-machine diagram for the Context of the simulation / Activity diagram for Context of the simulation / State-machine diagram for the SHP module / Activity diagram for the SHP module | 40198854 |
 | Saikou Diallo         |  | 40191902 |
