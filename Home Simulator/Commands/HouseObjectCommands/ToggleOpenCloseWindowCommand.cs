@@ -33,8 +33,16 @@ namespace Home_Simulator.Commands.HouseObjectCommands
                 }
                 else
                 {
+
                     window.OpenWindow();
-                    _simulationViewModel.AddLogMessage($"Window {window.WindowName} opened");
+                    if (_simulationViewModel.IsAwayModeEnabled == true)
+                    {
+                        _simulationViewModel.AddLogMessage($"WARNING NOTIFICATION: Window {window.WindowName} opened when in away mode");
+                    }
+                    else
+                    {
+                        _simulationViewModel.AddLogMessage($"Window {window.WindowName} opened");
+                    }
                 }
 
             }
