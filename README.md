@@ -145,7 +145,7 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 | --------------------- | -------------------- | -------- |
 | Alexander Smagorinski |  | 40190986 |
 | Cosmin Suna           |  | 40125921 |
-| Mohamad Mounir Yassin |  | 40198854 |
+| Mohamad Mounir Yassin | State-machine diagram for the Context of the simulation / Activity diagram for Context of the simulation / State-machine diagram for the SHP module / Activity diagram for the SHP module | 40198854 |
 | Saikou Diallo         |  | 40191902 |
 | Patrick MacEachen     |  | 40209790 |
 
@@ -163,4 +163,9 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/5a0f34b6-00e7-40ba-b20e-f04c9ff4927e)
 
 ### State-machine diagram for the SHP module
+![image](https://github.com/alexsmags/TechTitans/assets/111084379/79c28467-6ee2-4691-b42c-77284ef4c5cb)
+
+
 ### Activity diagram for the SHP module
+![image](https://github.com/alexsmags/TechTitans/assets/111084379/8d47f25f-1d8a-4fb0-b4f2-d4316bf4e615)
+
