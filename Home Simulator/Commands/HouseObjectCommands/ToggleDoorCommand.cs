@@ -33,7 +33,14 @@ namespace Home_Simulator.Commands.HouseObjectCommands
                 else
                 {
                     door.OpenDoor();
-                    _simulationViewModel.AddLogMessage($"Door {door.DoorName} opened");
+                    if (_simulationViewModel.IsAwayModeEnabled == true)
+                    {
+                        _simulationViewModel.AddLogMessage($"WARNING NOTIFICATION: Door {door.DoorName} opened when in away mode");
+                    } else
+                    {
+                        _simulationViewModel.AddLogMessage($"Door {door.DoorName} opened");
+                    }
+
                 }
 
             }
