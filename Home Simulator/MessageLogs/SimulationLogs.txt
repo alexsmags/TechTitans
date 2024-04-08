@@ -2596,3 +2596,9 @@
 2024-04-07 10:01:09 PM - Dad : Air Conditioner  turned on
 2024-04-07 10:01:09 PM - Dad : Pipes are at risk of bursting. Average Room Temperature: -0.0916666666667119
 2024-04-07 10:01:12 PM - Dad : Air Conditioner  turned off
+2024-04-07 10:13:20 PM - Dad : User set to Dad
+2024-04-07 10:13:20 PM - Dad : Away Mode turned On
+2024-04-07 10:13:46 PM - Dad : Away Mode turned Off
+2024-04-07 10:13:46 PM - Dad : Away mode turned off due to rapid temperature change in Bathroom.
+2024-04-07 10:13:46 PM - Dad : Bathroom temperature changed to 17°
+2024-04-07 10:15:13 PM - Dad : User set to Dad
