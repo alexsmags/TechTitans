@@ -2655,3 +2655,61 @@
 2024-04-09 3:11:37 PM - Dad : Window unblocked
 2024-04-09 3:11:41 PM - Away Mode turned Off
 2024-04-09 3:11:42 PM - Away Mode turned On
+2024-04-09 3:12:27 PM - Dad : User set to Dad
+2024-04-09 3:12:28 PM - Dad : Window blocked
+2024-04-09 3:12:29 PM - Dad : Window unblocked
+2024-04-09 3:12:29 PM - Dad : Window  opened
+2024-04-09 3:12:30 PM - Dad : Window  opened
+2024-04-09 3:12:30 PM - Dad : Window  opened
+2024-04-09 3:12:31 PM - Dad : Window  opened
+2024-04-09 3:12:32 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:12:32 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:12:32 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:12:32 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:12:32 PM - Dad : Away Mode turned On
+2024-04-09 3:12:35 PM - Dad : Window unblocked
+2024-04-09 3:12:37 PM - Dad : Window blocked
+2024-04-09 3:12:38 PM - Dad : Window unblocked
+2024-04-09 3:12:38 PM - Dad : Window unblocked
+2024-04-09 3:12:39 PM - Dad : Away Mode turned Off
+2024-04-09 3:12:40 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:12:40 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:12:40 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:12:40 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:12:40 PM - Dad : Away Mode turned On
+2024-04-09 3:12:48 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:12:49 PM - Dad : Door  closed
+2024-04-09 3:12:49 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:12:51 PM - Dad : Door  closed
+2024-04-09 3:13:19 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:13:21 PM - Dad : Door  closed
+2024-04-09 3:13:23 PM - Dad : Window unblocked
+2024-04-09 3:13:24 PM - Dad : Window  closed
+2024-04-09 3:13:25 PM - Dad : WARNING NOTIFICATION: Window  opened when in away mode
+2024-04-09 3:13:26 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:13:29 PM - Dad : Away Mode turned Off
+2024-04-09 3:13:29 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:13:29 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:13:29 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:13:29 PM - Dad : Alert: Window is open in Bathroom while in Away Mode
+2024-04-09 3:13:29 PM - Dad : Away Mode turned On
+2024-04-09 3:13:32 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:13:34 PM - Dad : Door  closed
+2024-04-09 3:13:45 PM - Dad : User set to Dad
+2024-04-09 3:13:47 PM - Dad : Door  opened
+2024-04-09 3:13:49 PM - Dad : Away Mode turned On
+2024-04-09 3:13:51 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:13:53 PM - Dad : Away Mode turned Off
+2024-04-09 3:13:53 PM - Dad : Away Mode turned On
+2024-04-09 3:13:56 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:13:57 PM - Dad : Away Mode turned Off
+2024-04-09 3:13:58 PM - Dad : Away Mode turned On
+2024-04-09 3:14:02 PM - Dad : Away Mode turned Off
+2024-04-09 3:14:02 PM - Dad : Away Mode turned On
+2024-04-09 3:14:03 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:14:06 PM - Dad : Away Mode turned Off
+2024-04-09 3:14:09 PM - Dad : Away Mode turned On
+2024-04-09 3:14:11 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:14:13 PM - Dad : Door  closed
+2024-04-09 3:14:14 PM - Dad : Away Mode turned Off
+2024-04-09 3:14:14 PM - Dad : Away Mode turned On
