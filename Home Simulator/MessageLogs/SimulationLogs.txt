@@ -2602,3 +2602,56 @@
 2024-04-07 10:13:46 PM - Dad : Away mode turned off due to rapid temperature change in Bathroom.
 2024-04-07 10:13:46 PM - Dad : Bathroom temperature changed to 17°
 2024-04-07 10:15:13 PM - Dad : User set to Dad
+2024-04-09 3:08:13 PM - Dad : User set to Dad
+2024-04-09 3:08:16 PM - Dad : Away Mode turned On
+2024-04-09 3:08:18 PM - Dad : Simulation started
+2024-04-09 3:08:21 PM - Dad : Light switched on
+2024-04-09 3:08:23 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:08:25 PM - Dad : Door  closed
+2024-04-09 3:08:25 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:08:27 PM - Dad : Door  closed
+2024-04-09 3:08:27 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:08:28 PM - Dad : Door  closed
+2024-04-09 3:08:28 PM - Dad : WARNING NOTIFICATION: Door  opened when in away mode
+2024-04-09 3:08:29 PM - Dad : Door  closed
+2024-04-09 3:08:41 PM - Dad : Away Mode turned Off
+2024-04-09 3:08:43 PM - Dad : Window unblocked
+2024-04-09 3:08:46 PM - Dad : Window  opened
+2024-04-09 3:08:47 PM - Dad : Window  closed
+2024-04-09 3:08:48 PM - Dad : Window  opened
+2024-04-09 3:08:48 PM - Dad : Window  closed
+2024-04-09 3:08:49 PM - Dad : Window  opened
+2024-04-09 3:08:49 PM - Dad : Window  closed
+2024-04-09 3:08:50 PM - Dad : Window  opened
+2024-04-09 3:08:50 PM - Dad : Window  closed
+2024-04-09 3:08:50 PM - Dad : Window  opened
+2024-04-09 3:08:50 PM - Dad : Window  closed
+2024-04-09 3:08:51 PM - Dad : Window  opened
+2024-04-09 3:08:51 PM - Dad : Window  closed
+2024-04-09 3:08:52 PM - Dad : Window  opened
+2024-04-09 3:08:52 PM - Dad : Window  closed
+2024-04-09 3:08:52 PM - Dad : Window  opened
+2024-04-09 3:08:52 PM - Dad : Window  closed
+2024-04-09 3:08:53 PM - Dad : Window  opened
+2024-04-09 3:08:53 PM - Dad : Window  closed
+2024-04-09 3:08:54 PM - Dad : Window  opened
+2024-04-09 3:08:54 PM - Dad : Window  closed
+2024-04-09 3:08:54 PM - Dad : Window  opened
+2024-04-09 3:08:55 PM - Dad : Window  closed
+2024-04-09 3:08:55 PM - Dad : Window  opened
+2024-04-09 3:08:55 PM - Dad : Window  closed
+2024-04-09 3:08:59 PM - Dad : Away Mode turned On
+2024-04-09 3:09:10 PM - Away Mode turned On
+2024-04-09 3:09:15 PM - Dad : User set to Dad
+2024-04-09 3:09:17 PM - Dad : Window unblocked
+2024-04-09 3:11:09 PM - Dad : User set to Dad
+2024-04-09 3:11:12 PM - Dad : Away Mode turned On
+2024-04-09 3:11:16 PM - Dad : Window unblocked
+2024-04-09 3:11:17 PM - Dad : Window blocked
+2024-04-09 3:11:26 PM - Dad : Window unblocked
+2024-04-09 3:11:27 PM - Dad : Away Mode turned Off
+2024-04-09 3:11:29 PM - Dad : Away Mode turned On
+2024-04-09 3:11:36 PM - Dad : User set to Dad
+2024-04-09 3:11:37 PM - Dad : Window unblocked
+2024-04-09 3:11:41 PM - Away Mode turned Off
+2024-04-09 3:11:42 PM - Away Mode turned On

@@ -256,7 +256,7 @@
                                                         <TextBlock Text="Open/Close:" Margin="0,0,3,0"></TextBlock>
                                                         <CheckBox  IsChecked="{Binding IsOpen, Mode=OneWay}" Command="{Binding DataContext.ToggleOpenCloseWindowCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}" VerticalAlignment="Center" IsEnabled="{Binding IsBlocked, Converter={StaticResource InverseBooleanConverter}}"/>
                                                         <TextBlock Text="Block:" Margin="10,0,3,0"></TextBlock>
-                                                        <CheckBox Command="{Binding DataContext.ToggleBlockUnblockWindowCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}" VerticalAlignment="Center" IsEnabled="{Binding DataContext.HasAccessToWindows, RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"/>
+                                                        <CheckBox IsChecked="{Binding IsBlocked, Mode=OneWay}" Command="{Binding DataContext.ToggleBlockUnblockWindowCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}" VerticalAlignment="Center" IsEnabled="{Binding DataContext.HasAccessToWindows, RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"/>
                                                     </StackPanel>
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
