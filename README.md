@@ -38,7 +38,7 @@ Among the many sophisticated software tools available on the market, the Smart H
 | **Our product**                | Offers a highly customizable, immersive, and interactive environment that promotes deep learning and innovation in smart home technology. |
 
 ## Product Overview:
-### Product Perspective:-
+### Product Perspective:
 The Smart Home Simulator is intended to function as a stand-alone, self-contained unit. Although it can integrate with a variety of IoT and smart home devices, its fundamental operations do not rely on external systems. These systems and gadgets can communicate as they would in a user's surroundings thanks to the simulator, which offers a simulated environment. Similar to other smart home management solutions, it enables the orchestration of devices and the simulation of household interactions with IoT systems; however, what sets it apart is its focus on education and experimentation.
 
 ### Assumptions and Dependancies:-
