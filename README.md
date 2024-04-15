@@ -1,7 +1,7 @@
 # TechTitans
 This repo contains the code for the Smart Home Simulator done for the SOEN343 course
 
-# - Phase I
+# Phase I
 
 ## Team Members and Role 
 | Name                  | Role                 | ID       |
