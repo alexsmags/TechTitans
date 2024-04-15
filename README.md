@@ -16,6 +16,10 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 ### Main Menu
 ![image](https://github.com/alexsmags/TechTitans/assets/94199172/d3e8621b-7dce-477c-ab5c-99d94a2e1d07)
 
+## DashboardView
+![image](https://github.com/alexsmags/TechTitans/assets/94199172/074ad1c1-7826-4bce-ab1d-13e756efebb6)
+
+
 
 # Phase I
 
