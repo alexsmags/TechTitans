@@ -1,5 +1,15 @@
 # TechTitans
 This repo contains the code for the Smart Home Simulator done for the SOEN343 course
+## How to deploy the Home Simulator Application
+
+### Clone this repo
+```bash
+git clone https://github.com/alexsmags/TechTitans
+```
+### Run the .exe
+```bash
+TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
+```
 
 # Phase I
 
@@ -70,16 +80,6 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 | Saikou Diallo         | Use Cases/Design Patterns                                 | 40191902 |
 | Patrick MacEachen     | Use Cases/Unit Testing                                    | 40209790 |
 
-## How to deploy the Home Simulator Application
-
-### Clone this repo
-```bash
-git clone https://github.com/alexsmags/TechTitans
-```
-### Run the .exe
-```bash
-TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
-```
 
 ## Diagrams
 
