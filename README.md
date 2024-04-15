@@ -224,4 +224,5 @@ UC2.7
 
 ### Design Patterns
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/25830156-d82e-4cb7-b0d8-3248779314c6)
+ 
 
