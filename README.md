@@ -158,7 +158,8 @@ Updated System Use Case Diagram / UC 2.4
 
 ## Use Case Models
 ### Smart home security (SHP) Module
-- UC2.1
+UC2.1
+
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/8c460fdf-cde4-4197-a510-49fb7eba1ee5)
 
 - UC2.2
