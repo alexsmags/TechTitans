@@ -138,7 +138,7 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 ### Activity diagram for the SHH module
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/1a448c8c-840e-4f4b-84f8-6c24493acde8)
 
-# - Phase IV
+# Phase IV
 
 ## Team Members and Role 
 | Name                  | Role                 | ID       |
