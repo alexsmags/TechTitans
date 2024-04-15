@@ -147,9 +147,7 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 | Cosmin Suna           | Previous UC(s) from phase III | 40125921 |
 | Mohamad Mounir Yassin | State-machine diagram for the Context of the simulation / Activity diagram for Context of the simulation / State-machine diagram for the SHP module / Activity diagram for the SHP module | 40198854 |
 | Saikou Diallo         | Review UC | 40191902 |
-| Patrick MacEachen     | Sequence diagram for SHP /
-Updated System Use Case Diagram / UC 2.4
- | 40209790 |
+| Patrick MacEachen     | Sequence diagram for SHP /Updated System Use Case Diagram / UC 2.4 | 40209790 |
 
 ## System Architecture
 
