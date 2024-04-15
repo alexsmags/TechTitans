@@ -170,7 +170,8 @@ UC2.3
 
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/ea085499-9ac9-407d-814a-256465847edb)
 
-- UC2.4
+UC2.4
+
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/1c1de2df-e638-494b-87fe-4e876ff0b0ca)
 
 - UC2.5
