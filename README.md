@@ -107,7 +107,7 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 ### Command Design Pattern
 <img width="715" alt="Screenshot 2024-03-13 160012" src="https://github.com/alexsmags/TechTitans/assets/111084379/f24219d3-fb61-47bc-8d7d-3852cf2ff02c">
 
-# - Phase III
+# Phase III
 
 ## Team Members and Role 
 | Name                  | Role                 | ID       |
