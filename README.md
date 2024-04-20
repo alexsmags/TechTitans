@@ -221,7 +221,6 @@ UC2.7
 ### State-machine diagram for the SHP module
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/79c28467-6ee2-4691-b42c-77284ef4c5cb)
 
-
 ### Activity diagram for the SHP module
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/8d47f25f-1d8a-4fb0-b4f2-d4316bf4e615)
 
