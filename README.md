@@ -125,7 +125,7 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 | Cosmin Suna           | UC 1.6 / UC 1.7 / Updated State-machine diagram for the Context of the simulation | 40125921 |
 | Mohamad Mounir Yassin | UC 1.5 / Activity Diagram for SHH module / Updated Activity diagram for Context of the simulation | 40198854 |
 | Saikou Diallo         | UC 1.9 / Use-case diagram for the whole system                                                    | 40191902 |
-| Patrick MacEachen     | UC 1.8 / State-machine diagram for the SHH module | 40209790 |
+| Patrick MacEachen     | UC 1.8 / State-machine diagram for the SHH module                                                 | 40209790 |
 
 ## Diagrams
 
