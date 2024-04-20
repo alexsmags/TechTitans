@@ -169,6 +169,7 @@ For the Home Simulator Application, we will be using the Model-View-ViewModel			
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/9eac0912-264c-419c-88ad-8fcc52f8bb8c)
 
 ## Use Case Models
+
 ### Smart home security (SHP) Module
 
 UC2.1
