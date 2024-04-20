@@ -80,7 +80,6 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 
 
 
-
 # Phase II
 ## Team Members and Role 
 
