@@ -70,7 +70,7 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 | The system can detect when the house is unoccupied. | Temperature adjustments and energy savings are contingent on this occupancy detection feature |
 | Notifications are sent for unusual temperature changes. | The safety and maintenance features require the system to monitor and accurately report temperature anomalies. |
 
-#### Context Diagram
+### Context Diagram
 <img width="347" alt="Screenshot 2024-03-13 160430" src="https://github.com/alexsmags/TechTitans/assets/111084379/3d5d67de-448a-46a1-bdc4-07939908340f">
 
 #### Domain Model
