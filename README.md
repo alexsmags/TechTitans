@@ -101,7 +101,6 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 <img width="261" alt="Screenshot 2024-03-13 154531" src="https://github.com/alexsmags/TechTitans/assets/111084379/8eb93176-6d26-444d-9a45-92a94e18e20b">
 <img width="560" alt="Screenshot 2024-03-13 154638" src="https://github.com/alexsmags/TechTitans/assets/111084379/947c22be-f52a-4ba8-a37c-1135283dc74f">
 
-
 ### State-machine diagram for the Context of the Simulation
 <img width="200" alt="Screenshot 2024-03-13 155207" src="https://github.com/alexsmags/TechTitans/assets/111084379/0143d54d-4cfb-453c-9948-587266d0dfa5">
 
