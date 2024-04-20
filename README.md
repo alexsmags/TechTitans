@@ -73,7 +73,7 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 ### Context Diagram
 <img width="347" alt="Screenshot 2024-03-13 160430" src="https://github.com/alexsmags/TechTitans/assets/111084379/3d5d67de-448a-46a1-bdc4-07939908340f">
 
-#### Domain Model
+### Domain Model
 <img width="350" alt="image" src="https://github.com/alexsmags/TechTitans/assets/111084379/8ddc5d48-8f9d-4a73-8247-62866b71437e">
 
 
