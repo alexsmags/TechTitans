@@ -13,7 +13,7 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 
 ## Screenshots of House Simulator App
 
-### Main Menu
+## Main Menu
 ![image](https://github.com/alexsmags/TechTitans/assets/94199172/d3e8621b-7dce-477c-ab5c-99d94a2e1d07)
 
 ## DashboardView
