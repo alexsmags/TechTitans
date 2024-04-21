@@ -25,9 +25,12 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 ![image](https://github.com/alexsmags/TechTitans/assets/94199172/074ad1c1-7826-4bce-ab1d-13e756efebb6)
 
 
+
 # Phase I
 
+
 ## Team Members and Role 
+
 | Name                  | Role                 | ID       |
 | --------------------- | -------------------- | -------- |
 | Alexander Smagorinski |Making Context Diagram/Review| 40190986 |
@@ -35,6 +38,7 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 | Mohamad Mounir Yassin |    Documentation/Review     | 40198854 |
 | Saikou Diallo         | Making Domain Model/Review  | 40191902 |
 | Patrick MacEachen     | Making Domain Model/Review  | 40209790 |
+
 
 
 # Problem Definition
