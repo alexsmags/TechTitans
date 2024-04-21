@@ -212,10 +212,6 @@ UC2.7
 
 ## Diagrams
 
-### Use-case diagram for the whole system
-![image](https://github.com/alexsmags/TechTitans/assets/111084379/c6e676f4-dd4a-4740-9a93-717ccfc28638)
-
-
 ### Sequence diagrams for the Smart home core functionality (SHC) module
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/2cb685c9-de19-455c-9bef-1ee31ea742fd)
 
