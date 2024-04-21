@@ -37,6 +37,8 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 
 # Problem Definition
 
+## Problem Statement
+The intricacies and difficulties associated with programming smart home systems are tackled by  the Smart Home Simulator project. It seeks to offer a way to coordinate different linked gadgets in a smart home setting. The simulator concentrates on addressing problems that are common to programming tasks for smart home automation, such as feature interaction, modularity, debugging, and comprehension. The project makes it easier to experiment with and find solutions for these programming issues by providing a graphical depiction of the interactions between household gadgets and IoT systems. This increases the efficacy and efficiency of developing and deploying smart home systems.
 
 | 1                             | 2                                                                                                              |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------|
