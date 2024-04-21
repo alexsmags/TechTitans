@@ -231,7 +231,6 @@ UC2.7
 ### Activity diagram for the SHP module
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/8d47f25f-1d8a-4fb0-b4f2-d4316bf4e615)
 
-### Design Patterns
-![image](https://github.com/alexsmags/TechTitans/assets/111084379/25830156-d82e-4cb7-b0d8-3248779314c6)
+
  
 
