@@ -94,8 +94,6 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 
 ## Diagrams
 
-### Use-case diagram for the whole system
-<img width="243" alt="Screenshot 2024-03-13 154354" src="https://github.com/alexsmags/TechTitans/assets/111084379/28b0ccaa-b81e-4f48-a291-41a4674bad4f">
 
 ### Sequence diagrams for the Smart Home Core functionality (SHC) module 
 <img width="261" alt="Screenshot 2024-03-13 154531" src="https://github.com/alexsmags/TechTitans/assets/111084379/8eb93176-6d26-444d-9a45-92a94e18e20b">
