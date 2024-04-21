@@ -160,6 +160,13 @@ The Smart Home Simulator is intended to function as a stand-alone, self-containe
 | Patrick MacEachen     | Sequence diagram for SHP /Updated System Use Case Diagram / UC 2.4 | 40209790 |
 
 
+## System Architecture
+
+For the Home Simulator Application, we will be using the Model-View-ViewModel			(MVVM) architectural pattern. Therefore, we will need to use the following 3 layers
+	UI Layer, Application Layer, and Domain Layer.
+
+ <br/>
+ 
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/9eac0912-264c-419c-88ad-8fcc52f8bb8c)
 
 ## Use Case Models
