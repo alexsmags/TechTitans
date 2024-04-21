@@ -9,6 +9,7 @@ This repo contains the code for the Smart Home Simulator done for the SOEN343 co
 git clone https://github.com/alexsmags/TechTitans
 ```
 
+
 ### Run the .exe
 ```bash
 TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
