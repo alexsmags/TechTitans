@@ -21,6 +21,8 @@ TechTitans\Home Simulator\bin\Debug\Home Simulator.exe
 
 
 ## DashboardView 
+![image](https://github.com/alexsmags/TechTitans/assets/94199172/074ad1c1-7826-4bce-ab1d-13e756efebb6)
+
 
 
 
