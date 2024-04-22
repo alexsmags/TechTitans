@@ -221,6 +221,8 @@ UC2.7
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/d76755e6-3b63-40de-a040-e493c92d5b2e)
 
 ### Activity diagram for Context of the simulation
+![image](https://github.com/alexsmags/TechTitans/assets/111084379/5a0f34b6-00e7-40ba-b20e-f04c9ff4927e)
+
 
 ### State-machine diagram for the SHP module
 ![image](https://github.com/alexsmags/TechTitans/assets/111084379/79c28467-6ee2-4691-b42c-77284ef4c5cb)
